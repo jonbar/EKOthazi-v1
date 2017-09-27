@@ -12,7 +12,7 @@
     <body>
         <header>
             <div class="container-fluid">
-                <h1>EKOthazi</h1>
+                <h1>EKOthazia</h1>
                 <div class="row">
                     <div class="col-sm-4" style="background-color:lavender;">Inicio</div>
                     <div class="col-sm-4" style="background-color:lavender;">Quienes somos</div>
