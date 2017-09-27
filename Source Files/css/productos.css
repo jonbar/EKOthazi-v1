@@ -1,0 +1,20 @@
+@charset "ISO-8859-1";
+
+
+/* Modifica la imagen insertada*/
+.imagenMantenimiento {
+	text-align: center;
+	padding-top: 250px;
+}
+/*Modifica el h1*/
+.h1Mantenimiento {
+	font-family: Arial, Helvetica, sans-serif;
+	color: purple;
+	font-size: 350%;
+	font-weight: bold;
+}
+
+/*Modificar el texto de la página en mantenimiento. */
+.textoMantenimiento {
+	font-size: 200%;
+}
