@@ -51,8 +51,8 @@ p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.create
 	<div class="row">
 		<div class="col-md-4">
 			<div class="thumbnail">
-				<a href="EcoMarketing-logo-1-300x300.PNG" target="_blank"> <img
-					src="C:\Users\ikaslea\eclipse-workspace\EKOthazi\Source Files\img\EcoMarketing-logo-1-300x300.png" style="width: 50%">
+				<a href="../productos/productos.php" target="_blank"> <img
+					src="../../img/ecomarket.png" style="width: 50%">
 					<div class="caption">
 						<p></p>
 					</div>

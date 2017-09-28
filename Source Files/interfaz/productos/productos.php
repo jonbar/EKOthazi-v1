@@ -14,7 +14,7 @@
 </head>
 <body>
 	<div class="imagenMantenimiento">
-		<img src="../../img/Lawn-Maintenance-Icon.png" alt="" />
+		<img src="../../img/maintenanceicon.png" alt="" />
 
 		<h1 class="h1Mantenimiento">Oops!</h1>
 		<p class="textoMantenimiento">La página no está disponible por
