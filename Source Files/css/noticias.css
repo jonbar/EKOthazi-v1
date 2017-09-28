@@ -8,7 +8,9 @@ and open the template in the editor.
     Author     : barrutieta
 */
 
-.col-sm-4 {
-	background-color: red;
-    padding-left: 50px;
+
+body,h1,h2,h3,h4,h5 {	
+	font-family: "Raleway", sans-serif
 }
+	
+
