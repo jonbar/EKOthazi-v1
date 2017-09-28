@@ -82,7 +82,7 @@
 		<img src="../../img/maintenanceicon.png" alt="" />
 
 		<h1 class="h1Mantenimiento">Oops!</h1>
-		<p class="textoMantenimiento">La página no está disponible por
+		<p class="textoMantenimiento">La p&#225;gina no est&#225; disponible por
 			mantenimiento.</p>
 		<p class="textoMantenimiento">Volvemos en breve!</p>
 	</div>
