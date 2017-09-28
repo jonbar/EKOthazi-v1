@@ -58,7 +58,7 @@
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal">&times;</button>
 								<h4 class="modal-title">Inicio de sesion</h4>
-</div>
+							</div>
 							<div class="modal-body">
 								<form>
 									<div class="form-group">
@@ -74,7 +74,10 @@
 									</div>
 									<button type="submit" class="btn btn-default">Enviar</button>
 								</form>
-		</div>
-	</body>
-
+							</div>
+							</div>
+							</div>
+							</div>
+										
+</body>
 </html>
