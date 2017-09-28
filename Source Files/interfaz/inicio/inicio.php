@@ -16,7 +16,7 @@
 			<nav class="navbar navbar-default">
 				<div class="container-fluid">
 					<div background-color="green" class="navbar-header">
-						<img src="C:\Users\barrutieta\Desktop\logo.png"
+						<img src="../../img/logo largo.png"
 							style="height: 150px;">
 					</div>
 					<div class="container-fluid">
