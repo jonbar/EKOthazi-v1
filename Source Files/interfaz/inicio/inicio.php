@@ -9,7 +9,8 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="../../css/inicio.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="../../css/inicio.css"
+	media="screen" />
 </head>
 <body>
 	<header>
@@ -110,17 +111,23 @@
                         $('[data-toggle="tooltip"]').tooltip();   
                     });
                     </script>
-					
-					<a href="../productos/productos.php" target="_blank" data-toggle="tooltip" title="Ver tienda"> 
-					<img
+
+					<a href="../productos/productos.php" target="_blank"
+						data-toggle="tooltip" title="Ver tienda"> <img
 						src="../../img/ecomarket.png" style="width: 50%">
 					</a>
 				</div>
 				<div>
 					<table>
-						<td><a href="#"><img src="../../img/facebook_icon.png" class="redSocial"/></a></td>
-						<td><a href="#"><img src="../../img/twitter_icon.png" class="redSocial"/></a></td>
-						<td><a href="#"><img src="../../img/instagram_icon.png" class="redSocial"/></a></td>
+						<td><a href="#" data-toggle="tooltip" data-placement="bottom"
+							title="Facebook"><img src="../../img/facebook_icon.png"
+								class="redSocial" /></a></td>
+						<td><a href="#" data-toggle="tooltip" data-placement="bottom"
+							title="Twitter"><img src="../../img/twitter_icon.png"
+								class="redSocial" /></a></td>
+						<td><a href="#" data-toggle="tooltip" data-placement="bottom"
+							title="Instagram"><img src="../../img/instagram_icon.png"
+								class="redSocial" /></a></td>
 					</table>
 				</div>
 				<div class="row">
@@ -136,9 +143,16 @@ p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.create
 				</div>
 			</div>
 		</div>
-	<footer>
-	
-	</footer>
+		<footer>
+			<div class="container">
+				<div class="row">
+  					<div class="col-sm-12" style="background-color: #E6E6E6;">
+  						<div class="col-sm.6"></div>
+  					</div>
+  				</div>
+			</div>
+		</footer>
+
 </body>
 </html>
 <?php
