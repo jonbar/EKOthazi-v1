@@ -9,6 +9,7 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../../css/inicio.css" media="screen" />
 </head>
 <body>
 	<header>
@@ -117,9 +118,9 @@
 				</div>
 				<div>
 					<table>
-						<td><a href=""></a></td>
-						<td></td>
-						<td></td>
+						<td><a href="#"><img src="../../img/facebook_icon.png" class="redSocial"/></a></td>
+						<td><a href="#"><img src="../../img/twitter_icon.png" class="redSocial"/></a></td>
+						<td><a href="#"><img src="../../img/instagram_icon.png" class="redSocial"/></a></td>
 					</table>
 				</div>
 				<div class="row">
