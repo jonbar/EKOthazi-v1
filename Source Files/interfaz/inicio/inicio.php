@@ -16,8 +16,7 @@
 			<nav class="navbar navbar-default">
 				<div class="container-fluid">
 					<div background-color="green" class="navbar-header">
-						<img src="../../img/logo largo.png"
-							style="height: 150px;">
+						<img src="../../img/logo largo.png" style="height: 150px;">
 					</div>
 					<div class="container-fluid">
 
@@ -80,34 +79,41 @@
 		<div class="row">
 			<div class="col-sm-8">
 				<div class="jumbotron">
-				<h1>Lorem Ipsum</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-					id lacinia ante, eget viverra sem. Integer ullamcorper massa sit
-					amet auctor porta. Suspendisse fringilla, erat vitae pharetra
-					vehicula, diam ante accumsan elit, eu vulputate libero sapien
-					consectetur urna. Vestibulum convallis nunc lorem, a euismod quam
-					suscipit vel. Vivamus fringilla pharetra tristique. Vivamus quis
-					sollicitudin nisi. Vestibulum imperdiet, tellus id dignissim
-					suscipit, metus justo tristique libero, non sodales lacus arcu
-					vitae arcu. Nam et mollis velit.</p>
-				<p>Proin et eros vitae turpis ornare pharetra eget sit amet ante.
-					Morbi eu purus non metus maximus dictum. Vivamus mi orci, malesuada
-					vel justo ac, bibendum faucibus felis. Phasellus nulla felis,
-					mollis id felis in, suscipit consequat augue. Vestibulum viverra
-					quam orci, pretium porttitor risus vestibulum vitae. Nunc tempor
-					quam sem, nec commodo ante egestas suscipit. Duis ullamcorper
-					accumsan lacinia. Curabitur vulputate facilisis nulla, at pharetra
-					nisl tristique non. Praesent tincidunt ipsum nunc, quis consequat
-					odio placerat et. Aenean fermentum vulputate massa, vel facilisis
-					turpis egestas et. Interdum et malesuada fames ac ante ipsum primis
-					in faucibus.</p>
-			</div>
+					<h1>Lorem Ipsum</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+						id lacinia ante, eget viverra sem. Integer ullamcorper massa sit
+						amet auctor porta. Suspendisse fringilla, erat vitae pharetra
+						vehicula, diam ante accumsan elit, eu vulputate libero sapien
+						consectetur urna. Vestibulum convallis nunc lorem, a euismod quam
+						suscipit vel. Vivamus fringilla pharetra tristique. Vivamus quis
+						sollicitudin nisi. Vestibulum imperdiet, tellus id dignissim
+						suscipit, metus justo tristique libero, non sodales lacus arcu
+						vitae arcu. Nam et mollis velit.</p>
+					<p>Proin et eros vitae turpis ornare pharetra eget sit amet ante.
+						Morbi eu purus non metus maximus dictum. Vivamus mi orci,
+						malesuada vel justo ac, bibendum faucibus felis. Phasellus nulla
+						felis, mollis id felis in, suscipit consequat augue. Vestibulum
+						viverra quam orci, pretium porttitor risus vestibulum vitae. Nunc
+						tempor quam sem, nec commodo ante egestas suscipit. Duis
+						ullamcorper accumsan lacinia. Curabitur vulputate facilisis nulla,
+						at pharetra nisl tristique non. Praesent tincidunt ipsum nunc,
+						quis consequat odio placerat et. Aenean fermentum vulputate massa,
+						vel facilisis turpis egestas et. Interdum et malesuada fames ac
+						ante ipsum primis in faucibus.</p>
+				</div>
 			</div>
 			<div class="col-sm-4">
 				<div class="thumbnail">
+					<a href="#" data-toggle="tooltip" title="Ver tienda">
 					<a href="../productos/productos.php" target="_blank"> <img
 						src="../../img/ecomarket.png" style="width: 50%">
 					</a>
+					</a>
+					<script>
+                    $(document).ready(function(){
+                        $('[data-toggle="tooltip"]').tooltip();   
+                    });
+                    </script>
 				</div>
 				<div class="row">
 					<div>
