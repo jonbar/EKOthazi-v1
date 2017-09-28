@@ -40,7 +40,7 @@
 									<li><a href="#">Equipo humano</a></li>
 								</ul></li>
 							<li><a href="#">NOTICIAS</a></li>
-							<li><a href="#">PRODUCTOS</a></li>
+							<li><a href="../productos/productos.php">PRODUCTOS</a></li>
 						</ul>
 					</div>
 					<div class="modal fade" id="myModal" role="dialog">
@@ -104,16 +104,16 @@
 			</div>
 			<div class="col-sm-4">
 				<div class="thumbnail">
-					<a href="#" data-toggle="tooltip" title="Ver tienda">
-					<a href="../productos/productos.php" target="_blank"> <img
-						src="../../img/ecomarket.png" style="width: 50%">
-					</a>
-					</a>
 					<script>
                     $(document).ready(function(){
                         $('[data-toggle="tooltip"]').tooltip();   
                     });
                     </script>
+					
+					<a href="../productos/productos.php" target="_blank" data-toggle="tooltip" title="Ver tienda"> 
+					<img
+						src="../../img/ecomarket.png" style="width: 50%">
+					</a>
 				</div>
 				<div class="row">
 					<div>
