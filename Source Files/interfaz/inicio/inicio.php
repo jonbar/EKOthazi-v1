@@ -115,6 +115,13 @@
 						src="../../img/ecomarket.png" style="width: 50%">
 					</a>
 				</div>
+				<div>
+					<table>
+						<td><a href=""></a></td>
+						<td></td>
+						<td></td>
+					</table>
+				</div>
 				<div class="row">
 					<div>
 						<a class="twitter-timeline"
@@ -128,8 +135,9 @@ p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.create
 				</div>
 			</div>
 		</div>
-		<!-- twiter -->
-
+	<footer>
+	
+	</footer>
 </body>
 </html>
 <?php
