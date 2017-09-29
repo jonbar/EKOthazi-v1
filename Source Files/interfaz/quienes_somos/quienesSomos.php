@@ -14,7 +14,7 @@
 
 
 </head>
-<body>
+<body style="text-align: justify;">
 	<header>
 		<div class="container">
 			<nav class="navbar navbar-default">
@@ -82,30 +82,75 @@
 	</header>
 
 	<div class="container">
-  <ul class="nav nav-tabs">
-    <li class="active"><a class="menuQuienesSomos"href="#home">Donde encontrarnos</a></li>
-    <li><a class="menuQuienesSomos" href="#menu1">Ultimos proyectos</a></li>
-    <li><a class="menuQuienesSomos" href="#menu2">Politica de empresa</a></li>
-    <li><a class="menuQuienesSomos" href="#menu3">Equipo humano</a></li>
-  </ul>
+		<ul class="nav nav-tabs">
+			<li class="active"><a class="menuQuienesSomos" href="#home">Donde
+					encontrarnos</a></li>
+			<li><a class="menuQuienesSomos" href="#menu1">Ultimos proyectos</a></li>
+			<li><a class="menuQuienesSomos" href="#menu2">Politica de empresa</a></li>
+			<li><a class="menuQuienesSomos" href="#menu3">Equipo humano</a></li>
+		</ul>
 
-  <div class="tab-content">
-    <div id="home" class="tab-pane fade in active">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div id="menu1" class="tab-pane fade">
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div id="menu2" class="tab-pane fade">
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-    </div>
-    <div id="menu3" class="tab-pane fade">
-      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-    </div>
-  </div>
-</div>
+		<div class="tab-content">
+			<div id="home" class="tab-pane fade in active">
+				<p>PAGINA DE CONTACTOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO</p>
+			</div>
+			<div id="menu1" class="tab-pane fade">
+				<p>GALERIA CON IMAGENES DE ULTIMOS PROYECTOS</p>
+			</div>
+			<div id="menu2" class="tab-pane fade">
+				<div  style="margin-left: 100px;" class="container-fluid">
+					<div class="row content">
+						<div class="col-sm-5 sidenav">
+							<h3>Quienes somos</h3>
+							<p>
+								Somos un negocio que pretende cubrir un mercado selecto de
+								personas interesadas en mejorar su salud por medio del consumo
+								de productos naturales y/o lo menos elaborados posibles. </br> </br>
+							</p>
+							<img src="../../img/ecofriendly.jpg" style="width: 50%">
+							</div>
+							<div class="col-sm-5">
+					
+							<h3>Misión</h3>
+							<p>
+								Ofrecer a nuestros clientes la alternativa y acceso a productos
+								naturales, alimentos orgánicos y cualquier otro producto que
+								ayude a mejorar su salud, con especial énfasis en la promoción
+								de los productos del País Vasco. </br> </br>
+							</p>
+							<h3>Visión</h3>
+							<ul>
+							<li>
+								Ser reconocidos como una fuente honesta de productos naturales,
+								sanos y alimentos orgánicos.
+							</li>
+							<li>
+								Construir una plataforma lo más completa posible con productos
+								que favorezcan un estilo de vida sano y sostenible.
+							</li>
+							<li>
+								Estar siempre actualizados y que nuestros productos suplan las
+								necesidades de nuestros clientes.
+							</li>
+							<li>
+								Ofrecer el mejor asesoramiento y servicio. Ser rápidos y
+								eficaces.
+							</li>
+							</ul>
+						</div>
+						</div>
+						
+					</div>
+				</div>
 
-<script>
+			</div>
+			<div id="menu3" class="tab-pane fade">
+				<p>CURRICULUMSSSSSSSSSSSS</p>
+			</div>
+		</div>
+	</div>
+
+	<script>
 $(document).ready(function(){
     $(".nav-tabs a").click(function(){
         $(this).tab('show');
@@ -115,33 +160,33 @@ $(document).ready(function(){
 
 </body>
 <footer>
-			<div class="container-fluid">
-				<div class="row" style="background-color: #E6E6E6;">
-					<div class="col-sm-4">
-						<img src="../../img/logoLargoFooter.png" class="imagenFooter">
-					</div>
-					<div class="col-sm-3">
-					<h4 style="color: 7ac043;">Informacion</h4>
-					<ul style="color: 7ac043">
-						<li>Aviso legal</li>
-						<li>Preguntas frecuentes</li>						
-						<li>Trabaja con nosotros</li>
-						<li>Envios y devoluciones</li>
-					</ul>
-					</div>
-					<div class="col-sm-3">
-					<h4 style="color: 7ac043">Visita nuestro blog</h4>
-					<ul>
-						<li style="color: 7ac043">Blog</li>
-					</ul>
-					</div>
-				</div>
-				<div class="row derechos" style="background-color: #E6E6E6;">
-					&#169; EKOthazi S.L. 2005-2017. TODOS LOS DERECHOS RESERVADOS
-				</div>
+<div class="container">
+	<div class="container-fluid">
+		<div class="row" style="background-color: #E6E6E6;">
+			<div class="col-sm-4">
+				<img src="../../img/logoLargoFooter.png" class="imagenFooter">
 			</div>
-		</footer>
+			<div class="col-sm-3">
+				<h4 style="color: 7ac043;">Informacion</h4>
+				<ul style="color: 7ac043">
+					<li>Aviso legal</li>
+					<li>Preguntas frecuentes</li>
+					<li>Trabaja con nosotros</li>
+					<li>Envios y devoluciones</li>
+				</ul>
+			</div>
+			<div class="col-sm-3">
+				<h4 style="color: 7ac043">Visita nuestro blog</h4>
+				<ul>
+					<li style="color: 7ac043">Blog</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row derechos" style="background-color: #E6E6E6;">&#169;
+			EKOthazi S.L. 2005-2017. TODOS LOS DERECHOS RESERVADOS</div>
+	</div>
+	</div>
+</footer>
 </html>
 
-					
-		
+
