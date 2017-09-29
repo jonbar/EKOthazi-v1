@@ -7,8 +7,15 @@ and open the template in the editor.
     Created on : 26-sep-2017, 13:10:28
     Author     : barrutieta
 */
+@charset "ISO-8859-1";
 
+.w3-col l8 s12 {
+	
+}
 
+.w3-container {
+	
+}
 body,h1,h2,h3,h4,h5 {	
 	font-family: "Raleway", sans-serif
 }
