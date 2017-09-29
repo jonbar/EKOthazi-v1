@@ -11,6 +11,8 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="../../css/inicio.css"
 	media="screen" />
+<link rel="stylesheet" type="text/css" href="../../css/general.css"
+	media="screen" />
 </head>
 <body>
 	<header>
@@ -32,15 +34,7 @@
 						</ul>
 						<ul class="nav navbar-nav navbar-right" style="margin-top: 75px;">
 							<li class="active"><a href="#">INICIO</a></li>
-							<li class="dropdown"><a class="dropdown-toggle"
-								data-toggle="dropdown" href="#">QUIENES SOMOS <span
-									class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Donde encontrarnos</a></li>
-									<li><a href="#">Nuestros proyectos</a></li>
-									<li><a href="#">Politica de empresa</a></li>
-									<li><a href="#">Equipo humano</a></li>
-								</ul></li>
+							<li><a href="#">QUIENES SOMOS</a></li>
 							<li><a href="#">NOTICIAS</a></li>
 							<li><a href="../productos/productos.php">PRODUCTOS</a></li>
 						</ul>
@@ -57,12 +51,12 @@
 								<div class="modal-body">
 									<form>
 										<div class="form-group">
-											<label for="email">Direccion de correo electronico:</label> <input
+											<label for="email">Correo electronico:</label> <input
 												type="email" class="form-control" id="email">
 										</div>
 										<div class="form-group">
-											<label for="pwd">Contrase&#241;a:</label> <input type="password"
-												class="form-control" id="pwd">
+											<label for="pwd">Contrase&#241;a:</label> <input
+												type="password" class="form-control" id="pwd">
 										</div>
 										<div class="checkbox">
 											<label><input type="checkbox"> Recordarme en esta pagina</label>
@@ -105,6 +99,39 @@
 				</div>
 			</div>
 			<div class="col-sm-4">
+				<div class="thumbnail">
+					<button type="button" class="btn" data-toggle="modal" data-target="#myModalRegistro">
+							<span class="glyphicons glyphicons-leaf"></span> Registrate en nuestra página
+					</button>
+					<div class="modal fade" id="myModalRegistro" role="dialog">
+						<div class="modal-dialog">
+
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">Registro</h4>
+								</div>
+								<div class="modal-body">
+									<form>
+										<div class="form-group">
+											<label for="email">Correo electronico:</label> <input
+												type="email" class="form-control" id="email">
+										</div>
+										<div class="form-group">
+											<label for="pwd">Contrase&#241;a:</label> <input
+												type="password" class="form-control" id="pwd">
+										</div>
+										<div class="checkbox">
+											<label><input type="checkbox"> Recordarme en esta pagina</label>
+										</div>
+										<button type="submit" class="btn btn-default">Enviar</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="thumbnail">
 					<script>
                     $(document).ready(function(){
@@ -150,24 +177,41 @@ p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.create
 						<img src="../../img/logoLargoFooter.png" class="imagenFooter">
 					</div>
 					<div class="col-sm-3">
-					<h4 style="color: 7ac043;">Informacion</h4>
-					<ul style="color: 7ac043">
-						<li>Aviso legal</li>
-						<li>Preguntas frecuentes</li>						
-						<li>Trabaja con nosotros</li>
-						<li>Envios y devoluciones</li>
-					</ul>
+						<h4 style="color: 7ac043;">Informacion</h4>
+						<ul style="color: 7ac043">
+							<li>Aviso legal</li>
+							<li>Preguntas frecuentes</li>
+							<li>Trabaja con nosotros</li>
+							<li>Envios y devoluciones</li>
+						</ul>
 					</div>
+
 					<div class="col-sm-3">
-					<h4 style="color: 7ac043">Visita nuestro blog</h4>
-					<ul>
-						<li style="color: 7ac043">Blog</li>
-					</ul>
+						<h4 style="color: 7ac043">Visita nuestro blog</h4>
+						<ul>
+							<li style="color: 7ac043">Blog</li>
+						</ul>
+					</div>
+					<div class="col-sm-2">
+						<table style="margin-top: 15px">
+							<tr>
+								<td colspan="2" style="text-align: center"><a href="#" data-toggle="tooltip" data-placement="bottom"
+									title="Facebook"><img src="../../img/facebook_icon.png"
+										class="redSocialFooter" /></a></td>
+							</tr>
+							<tr>
+								<td><a href="#" data-toggle="tooltip" data-placement="bottom"
+									title="Twitter"><img src="../../img/twitter_icon.png"
+										class="redSocialFooter" /></a></td>
+								<td><a href="#" data-toggle="tooltip" data-placement="bottom"
+									title="Instagram"><img src="../../img/instagram_icon.png"
+										class="redSocialFooter" /></a></td>
+							</tr>
+						</table>
 					</div>
 				</div>
-				<div class="row derechos" style="background-color: #E6E6E6;">
-					&#169; EKOthazi S.L. 2005-2017. TODOS LOS DERECHOS RESERVADOS
-				</div>
+				<div class="row derechos" style="background-color: #E6E6E6;">&#169;
+					EKOthazi S.L. 2005-2017. TODOS LOS DERECHOS RESERVADOS</div>
 			</div>
 		</footer>
 
