@@ -13,6 +13,8 @@
 	media="screen" />
 <link rel="stylesheet" type="text/css" href="../../css/general.css"
 	media="screen" />
+	<!-- descarga de jquery -->
+	<script src="jquery-3.2.1.min.js"></script>
 </head>
 <body>
 	<header>
@@ -34,8 +36,8 @@
 						</ul>
 						<ul class="nav navbar-nav navbar-right" style="margin-top: 75px;">
 							<li class="active"><a href="#">INICIO</a></li>
-							<li><a href="#">QUIENES SOMOS</a></li>
-							<li><a href="#">NOTICIAS</a></li>
+							<li><a href="../quienes_somos/quienesSomos.php">QUIENES SOMOS</a></li>
+							<li><a href="../noticias/noticias.php">NOTICIAS</a></li>
 							<li><a href="../productos/productos.php">PRODUCTOS</a></li>
 						</ul>
 					</div>
@@ -52,7 +54,7 @@
 									<form>
 										<div class="form-group">
 											<label for="email">Correo electronico:</label> <input
-												type="email" class="form-control" id="email">
+												type=class= "form-control" id="email">
 										</div>
 										<div class="form-group">
 											<label for="pwd">Contrase&#241;a:</label> <input
@@ -100,8 +102,10 @@
 			</div>
 			<div class="col-sm-4">
 				<div class="thumbnail">
-					<button type="button" class="btn" data-toggle="modal" data-target="#myModalRegistro">
-							<span class="glyphicons glyphicons-leaf"></span> Registrate en nuestra página
+					<button type="button" class="btn" data-toggle="modal"
+						data-target="#myModalRegistro">
+						<span class="glyphicons glyphicons-leaf"></span> Registrate en
+						nuestra página
 					</button>
 					<div class="modal fade" id="myModalRegistro" role="dialog">
 						<div class="modal-dialog">
@@ -195,9 +199,9 @@ p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.create
 					<div class="col-sm-2">
 						<table style="margin-top: 15px">
 							<tr>
-								<td colspan="2" style="text-align: center"><a href="#" data-toggle="tooltip" data-placement="bottom"
-									title="Facebook"><img src="../../img/facebook_icon.png"
-										class="redSocialFooter" /></a></td>
+								<td colspan="2" style="text-align: center"><a href="#"
+									data-toggle="tooltip" data-placement="bottom" title="Facebook"><img
+										src="../../img/facebook_icon.png" class="redSocialFooter" /></a></td>
 							</tr>
 							<tr>
 								<td><a href="#" data-toggle="tooltip" data-placement="bottom"
@@ -214,6 +218,9 @@ p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.create
 					EKOthazi S.L. 2005-2017. TODOS LOS DERECHOS RESERVADOS</div>
 			</div>
 		</footer>
+		<!--  -->
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="main.js"></script>
 
 </body>
 </html>
