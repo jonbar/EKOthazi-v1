@@ -34,18 +34,10 @@
 							</li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right" style="margin-top: 75px;">
-							<li class="active"><a href="#">INICIO</a></li>
-							<li class="dropdown"><a class="dropdown-toggle"
-								data-toggle="dropdown" href="#">QUIENES SOMOS <span
-									class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Donde encontrarnos</a></li>
-									<li><a href="#">Nuestros proyectos</a></li>
-									<li><a href="#">Politica de empresa</a></li>
-									<li><a href="#">Equipo humano</a></li>
-								</ul></li>
-							<li><a href="#">NOTICIAS</a></li>
-							<li><a href="#">PRODUCTOS</a></li>
+							<li><a href="../inicio/inicio.php">INICIO</a></li>
+							<li class="active"><a href="#">QUIENES SOMOS</a></li>
+							<li><a href="../noticias/noticias.php">NOTICIAS</a></li>
+							<li><a href="../productos/productos.php">PRODUCTOS</a></li>
 						</ul>
 					</div>
 					<div class="modal fade" id="myModal" role="dialog">
@@ -55,16 +47,16 @@
 							<div class="modal-content">
 								<div class="modal-header">
 									<button type="button" class="close" data-dismiss="modal">&times;</button>
-									<h4 class="modal-title">Inicio de sesion</h4>
+									<h4 class="modal-title">Inicio de sesión</h4>
 								</div>
 								<div class="modal-body">
 									<form>
 										<div class="form-group">
-											<label for="email">Direccion de correo electronico:</label> <input
+											<label for="email">Dirección de correo electrónico:</label> <input
 												type="email" class="form-control" id="email">
 										</div>
 										<div class="form-group">
-											<label for="pwd">Contrase�a:</label> <input type="password"
+											<label for="pwd">Contrasña:</label> <input type="password"
 												class="form-control" id="pwd">
 										</div>
 										<div class="checkbox">
@@ -86,7 +78,7 @@
 			<li class="active"><a class="menuQuienesSomos" href="#home">Donde
 					encontrarnos</a></li>
 			<li><a class="menuQuienesSomos" href="#menu1">Ultimos proyectos</a></li>
-			<li><a class="menuQuienesSomos" href="#menu2">Politica de empresa</a></li>
+			<li><a class="menuQuienesSomos" href="#menu2">Filosofía de empresa</a></li>
 			<li><a class="menuQuienesSomos" href="#menu3">Equipo humano</a></li>
 		</ul>
 
@@ -107,25 +99,25 @@
 								personas interesadas en mejorar su salud por medio del consumo
 								de productos naturales y/o lo menos elaborados posibles. </br> </br>
 							</p>
-							<img src="../../img/ecofriendly.jpg" style="width: 50%">
+							<img src="../../img/ecofriendly.jpg" style="width: 50%; margin-left: 100px">
 							</div>
 							<div class="col-sm-5">
 					
-							<h3>Misi�n</h3>
+							<h3>Misión</h3>
 							<p>
 								Ofrecer a nuestros clientes la alternativa y acceso a productos
-								naturales, alimentos org�nicos y cualquier otro producto que
-								ayude a mejorar su salud, con especial �nfasis en la promoci�n
-								de los productos del Pa�s Vasco. </br> </br>
+								naturales, alimentos orgánicos y cualquier otro producto que
+								ayude a mejorar su salud, con especial énfasis en la promoción
+								de los productos del País Vasco. </br> </br>
 							</p>
-							<h3>Visi�n</h3>
+							<h3>Visión</h3>
 							<ul>
 							<li>
 								Ser reconocidos como una fuente honesta de productos naturales,
-								sanos y alimentos org�nicos.
+								sanos y alimentos orgánicos.
 							</li>
 							<li>
-								Construir una plataforma lo m�s completa posible con productos
+								Construir una plataforma lo más completa posible con productos
 								que favorezcan un estilo de vida sano y sostenible.
 							</li>
 							<li>
@@ -133,7 +125,7 @@
 								necesidades de nuestros clientes.
 							</li>
 							<li>
-								Ofrecer el mejor asesoramiento y servicio. Ser r�pidos y
+								Ofrecer el mejor asesoramiento y servicio. Ser rápidos y
 								eficaces.
 							</li>
 							</ul>
