@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-<title></title>
+<title>Inicio</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
@@ -13,8 +13,8 @@
 	media="screen" />
 <link rel="stylesheet" type="text/css" href="../../css/general.css"
 	media="screen" />
-	<!-- descarga de jquery -->
-	<script src="jquery-3.2.1.min.js"></script>
+<!-- descarga de jquery -->
+<script src="jquery-3.2.1.min.js"></script>
 </head>
 <body>
 	<header>
@@ -36,7 +36,7 @@
 						</ul>
 						<ul class="nav navbar-nav navbar-right" style="margin-top: 75px;">
 							<li class="active"><a href="#">INICIO</a></li>
-							<li><a href="../quienes_somos/quienesSomos.php">QUIENES SOMOS</a></li>
+							<li><a href="../quienes_somos/quienes_somos.php">QUIENES SOMOS</a></li>
 							<li><a href="../noticias/noticias.php">NOTICIAS</a></li>
 							<li><a href="../productos/productos.php">PRODUCTOS</a></li>
 						</ul>
@@ -48,20 +48,20 @@
 							<div class="modal-content">
 								<div class="modal-header">
 									<button type="button" class="close" data-dismiss="modal">&times;</button>
-									<h4 class="modal-title">Inicio de sesion</h4>
+									<h4 class="modal-title">Inicio de sesión</h4>
 								</div>
 								<div class="modal-body">
 									<form>
 										<div class="form-group">
-											<label for="email">Correo electronico:</label> <input
+											<label for="email">Correo electrónico:</label> <input
 												type=class= "form-control" id="email">
 										</div>
 										<div class="form-group">
-											<label for="pwd">Contrase&#241;a:</label> <input
-												type="password" class="form-control" id="pwd">
+											<label for="pwd">Contraseña:</label> <input type="password"
+												class="form-control" id="pwd">
 										</div>
 										<div class="checkbox">
-											<label><input type="checkbox"> Recordarme en esta pagina</label>
+											<label><input type="checkbox"> Recordarme en esta página</label>
 										</div>
 										<button type="submit" class="btn btn-default">Enviar</button>
 									</form>
@@ -105,7 +105,7 @@
 					<button type="button" class="btn" data-toggle="modal"
 						data-target="#myModalRegistro">
 						<span class="glyphicons glyphicons-leaf"></span> Registrate en
-						nuestra p�gina
+						nuestra p�gina
 					</button>
 					<div class="modal fade" id="myModalRegistro" role="dialog">
 						<div class="modal-dialog">
@@ -119,15 +119,15 @@
 								<div class="modal-body">
 									<form>
 										<div class="form-group">
-											<label for="email">Correo electronico:</label> <input
+											<label for="email">Correo electrónico:</label> <input
 												type="email" class="form-control" id="email">
 										</div>
 										<div class="form-group">
-											<label for="pwd">Contrase&#241;a:</label> <input
-												type="password" class="form-control" id="pwd">
+											<label for="pwd">Contraseña:</label> <input type="password"
+												class="form-control" id="pwd">
 										</div>
 										<div class="checkbox">
-											<label><input type="checkbox"> Recordarme en esta pagina</label>
+											<label><input type="checkbox"> Recordarme en esta página</label>
 										</div>
 										<button type="submit" class="btn btn-default">Enviar</button>
 									</form>
@@ -165,7 +165,7 @@
 					<div>
 						<a class="twitter-timeline"
 							href="https://twitter.com/hashtag/ecologico"
-							data-widget-id="912648408506257408">Tweets sobre #ecologico</a>
+							data-widget-id="912648408506257408">Tweets sobre #ecológico</a>
 						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],
 p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+
 "://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
@@ -181,12 +181,12 @@ p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.create
 						<img src="../../img/logoLargoFooter.png" class="imagenFooter">
 					</div>
 					<div class="col-sm-3">
-						<h4 style="color: 7ac043;">Informacion</h4>
+						<h4 style="color: 7ac043;">Información</h4>
 						<ul style="color: 7ac043">
 							<li>Aviso legal</li>
 							<li>Preguntas frecuentes</li>
 							<li>Trabaja con nosotros</li>
-							<li>Envios y devoluciones</li>
+							<li>Envíos y devoluciones</li>
 						</ul>
 					</div>
 
