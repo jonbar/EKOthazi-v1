@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-/*aqui comprobamos el arroba del inicio de sesion*/
+/*aqui comprobamos el arroba del inicio de sesion y que no puedan repetirse los @*/
 function comprobarArroba(e) {
 	var caracterTecla;
 	var codigoTecla;
