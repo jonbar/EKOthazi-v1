@@ -61,7 +61,7 @@
 												type="email" class="form-control" id="email">
 										</div>
 										<div class="form-group">
-											<label for="pwd">Contraseña:</label> <input type="password"
+											<label for="pwd">Contrase&#241;a:</label> <input type="password"
 												class="form-control" id="pwd">
 										</div>
 										<div class="checkbox">
@@ -144,12 +144,30 @@ p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.create
 			</div>
 		</div>
 		<footer>
-			<div class="container">
-				<div class="row">
-  					<div class="col-sm-12" style="background-color: #E6E6E6;">
-  						<div class="col-sm.6"></div>
-  					</div>
-  				</div>
+			<div class="container-fluid">
+				<div class="row" style="background-color: #E6E6E6;">
+					<div class="col-sm-4">
+						<img src="../../img/logoLargoFooter.png" class="imagenFooter">
+					</div>
+					<div class="col-sm-3">
+					<h4 style="color: 7ac043;">Informacion</h4>
+					<ul style="color: 7ac043">
+						<li>Aviso legal</li>
+						<li>Preguntas frecuentes</li>						
+						<li>Trabaja con nosotros</li>
+						<li>Envios y devoluciones</li>
+					</ul>
+					</div>
+					<div class="col-sm-3">
+					<h4 style="color: 7ac043">Visita nuestro blog</h4>
+					<ul>
+						<li style="color: 7ac043">Blog</li>
+					</ul>
+					</div>
+				</div>
+				<div class="row derechos" style="background-color: #E6E6E6;">
+					&#169; EKOthazi S.L. 2005-2017. TODOS LOS DERECHOS RESERVADOS
+				</div>
 			</div>
 		</footer>
 
