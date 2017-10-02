@@ -16,7 +16,7 @@
 
 </header>	
 <div class="container-fluid">
-<div class="col-sm-12">
+	<div class="col-sm-12">
    <?php     
         
         $link = mysqli_connect('localhost', 'root', '', 'ekothazi');                      
@@ -43,51 +43,39 @@
                 
     ?>  
     </div>
-   </div>
-	<footer>
-			<div class="container-fluid">
-				<div class="row" style="background-color: #E6E6E6;">
-					<div class="col-sm-4">
-						<img src="../../img/logoLargoFooter.png" class="imagenFooter">
-					</div>
-					<div class="col-sm-3">
-						<h4 style="color: 7ac043;">Informacion</h4>
-						<ul style="color: 7ac043">
-							<li>Aviso legal</li>
-							<li>Preguntas frecuentes</li>
-							<li>Trabaja con nosotros</li>
-							<li>Envios y devoluciones</li>
-						</ul>
-					</div>
+</div>    
 
-					<div class="col-sm-3">
-						<h4 style="color: 7ac043">Visita nuestro blog</h4>
-						<ul>
-							<li style="color: 7ac043">Blog</li>
-						</ul>
-					</div>
-					<div class="col-sm-2">
-						<table style="margin-top: 15px">
-							<tr>
-								<td colspan="2" style="text-align: center"><a href="#"
-									data-toggle="tooltip" data-placement="bottom" title="Facebook"><img
-										src="../../img/facebook_icon.png" class="redSocialFooter" /></a></td>
-							</tr>
-							<tr>
-								<td><a href="#" data-toggle="tooltip" data-placement="bottom"
-									title="Twitter"><img src="../../img/twitter_icon.png"
-										class="redSocialFooter" /></a></td>
-								<td><a href="#" data-toggle="tooltip" data-placement="bottom"
-									title="Instagram"><img src="../../img/instagram_icon.png"
-										class="redSocialFooter" /></a></td>
-							</tr>
-						</table>
-					</div>
-				</div>
-				<div class="row derechos" style="background-color: #E6E6E6;">&#169;
-					EKOthazi S.L. 2005-2017. TODOS LOS DERECHOS RESERVADOS</div>
+<footer class="w3-container w3-light-grey w3-padding-32 w3-margin-top">
+<div class="container">
+  <div class="container-fluid">
+		<div class="row" style="background-color: #E6E6E6;">
+			<div class="col-sm-4">
+				<img src="../../img/logoLargoFooter.png" class="imagenFooter">
 			</div>
-		</footer>      
+			<div class="col-sm-3">
+				<h4 style="color: green;">Informacion</h4>
+				<ul style="color: green">
+					<li>Aviso legal</li>
+					<li>Preguntas frecuentes</li>
+					<li>Trabaja con nosotros</li>
+					<li>Envios y devoluciones</li>
+				</ul>
+			</div>
+			<div class="col-sm-3">
+				<h4 style="color: green">Visita nuestro blog</h4>
+				<ul>
+					<li style="color: green">Blog</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row derechos" style="background-color: #E6E6E6;">&#169;
+			EKOthazi S.L. 2005-2017. TODOS LOS DERECHOS RESERVADOS</div>
+	</div>
+</div>
+</footer>
 
 </body>
-</html>
+</html>   
+   
+
+
