@@ -9,6 +9,8 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../../css/galeria.css"
+	media="screen" />
 <link rel="stylesheet" type="text/css" href="../../css/inicio.css"
 	media="screen" />
 <link rel="stylesheet" type="text/css" href="../../css/general.css"
@@ -78,7 +80,7 @@
 		<ul class="nav nav-tabs">
 			<li class="active"><a class="menuQuienesSomos" href="#home">Donde
 					encontrarnos</a></li>
-			<li><a class="menuQuienesSomos" href="#menu1">Ultimos proyectos</a></li>
+			<li><a class="menuQuienesSomos" href="#menu1">Últimos proyectos</a></li>
 			<li><a class="menuQuienesSomos" href="#menu2">Filosofía de empresa</a></li>
 			<li><a class="menuQuienesSomos" href="#menu3">Equipo humano</a></li>
 		</ul>
@@ -88,9 +90,72 @@
 				<p>PAGINA DE CONTACTOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO</p>
 			</div>
 			<div id="menu1" class="tab-pane fade">
-				<p>GALERIA CON IMAGENES DE ULTIMOS PROYECTOS</p>
+				<h3 style="color: green">Huertos ecologicos en Urritxe,
+					Amorebieta-Etxano</h3>
+				<div class="slideshow-container">
+
+					<div class="mySlides">
+						<div class="numbertext">1 / 3</div>
+						<img src="../../img/huerto_eco01.jpg" style="width: 100%">
+						<div class="text">huerto</div>
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">2 / 3</div>
+						<img src="../../img/huerto_eco02.jpg" style="width: 100%">
+						<div class="text">huerto2</div>
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">3 / 3</div>
+						<img src="../../img/huerto_eco03.jpg" style="width: 100%">
+						<div class="text">huerto3</div>
+					</div>
+
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a
+						class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				</div>
+				<br>
+
+				<div style="text-align: center">
+					<span class="dot" onclick="currentSlide(1)"></span> <span
+						class="dot" onclick="currentSlide(2)"></span>
+
+				</div>
+				<script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                      var i;
+                      var slides = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("dot");
+                      if (n > slides.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                          slides[i].style.display = "none";  
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                          dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                    }
+                    </script>
 			</div>
+
+
 			<div id="menu2" class="tab-pane fade">
+				<br> <br> <br>
 				<div style="margin-left: 100px;" class="container-fluid">
 					<div class="row content">
 						<div class="col-sm-5 sidenav">
@@ -125,7 +190,7 @@
 							</ul>
 						</div>
 					</div>
-
+					<br> <br> <br> <br>
 				</div>
 			</div>
 
@@ -133,9 +198,9 @@
 				<p>CURRICULUUUUUUUUUUUUUUUUUUUUUUMS</p>
 			</div>
 		</div>
+	</div>
 
-
-		<script>
+	<script>
 $(document).ready(function(){
     $(".nav-tabs a").click(function(){
         $(this).tab('show');
