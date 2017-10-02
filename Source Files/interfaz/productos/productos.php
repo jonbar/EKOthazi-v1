@@ -32,16 +32,8 @@
 						</ul>
 						<ul class="nav navbar-nav navbar-right" style="margin-top: 75px;">
 							<li><a href="../inicio/inicio.php">INICIO</a></li>
-							<li class="dropdown"><a class="dropdown-toggle"
-								data-toggle="dropdown" href="#">QUIENES SOMOS <span
-									class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Donde encontrarnos</a></li>
-									<li><a href="#">Nuestros proyectos</a></li>
-									<li><a href="#">Politica de empresa</a></li>
-									<li><a href="#">Equipo humano</a></li>
-								</ul></li>
-							<li><a href="#">NOTICIAS</a></li>
+							<li><a href="../quienes_somos/quienes_somos.php">QUIENES SOMOS </a></li>
+							<li><a href="../noticias/noticias.php">NOTICIAS</a></li>
 							<li class="active"><a href="#">PRODUCTOS</a></li>
 						</ul>
 					</div>
