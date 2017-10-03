@@ -6,3 +6,4 @@
  * and open the template in the editor.
  */
 $link = mysqli_connect('localhost', 'root', '', 'usuarios_bbdd');
+?>

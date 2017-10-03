@@ -55,8 +55,8 @@
 								<div class="modal-body">
 									<form>
 										<div class="form-group">
-											<label for="email">Dirección de correo electrónico:</label> <input
-												type="email" class="form-control" id="email">
+											<label for="email">Dirección de correo electrónico:</label>
+											<input type="email" class="form-control" id="email">
 										</div>
 										<div class="form-group">
 											<label for="pwd">Contrasña:</label> <input type="password"
@@ -90,31 +90,60 @@
 				<p>PAGINA DE CONTACTOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO</p>
 			</div>
 			<div id="menu1" class="tab-pane fade">
-				<h3 style="color: green">Huertos ecologicos en Urritxe,
-					Amorebieta-Etxano</h3>
-				<div class="slideshow-container">
+				<div>
+					<h3 style="color: green">Huertos ecologicos en Urritxe,
+						Amorebieta-Etxano</h3>
+					<div class="slideshow-container">
 
-					<div class="mySlides">
-						<div class="numbertext">1 / 3</div>
-						<img src="../../img/huerto_eco01.jpg" style="width: 100%">
-						<div class="text">huerto</div>
+						<div class="mySlides">
+							<div class="numbertext">1 / 3</div>
+							<img src="../../img/huerto_eco01.jpg" style="width: 100%">
+							<div class="text">huerto</div>
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">2 / 3</div>
+							<img src="../../img/huerto_eco02.jpg" style="width: 100%">
+							<div class="text">huerto2</div>
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">3 / 3</div>
+							<img src="../../img/huerto_eco03.jpg" style="width: 100%">
+							<div class="text">huerto3</div>
+						</div>
+
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a
+							class="next" onclick="plusSlides(1)">&#10095;</a>
+
 					</div>
+				</div>
+				<div>
+					<h3 style="color: green">Tienda ecologica en Zubiaurre, Iurreta.</h3>
+					<div class="slideshow-container">
 
-					<div class="mySlides">
-						<div class="numbertext">2 / 3</div>
-						<img src="../../img/huerto_eco02.jpg" style="width: 100%">
-						<div class="text">huerto2</div>
+						<div class="mySlides">
+							<div class="numbertext">1 / 3</div>
+							<img src="../../img/tienda_eco01.jpg" style="width: 100%">
+							<div class="text">huerto</div>
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">2 / 3</div>
+							<img src="../../img/tienda_eco02.jpg" style="width: 100%">
+							<div class="text">huerto2</div>
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">3 / 3</div>
+							<img src="../../img/tienda_eco03.jpg" style="width: 100%">
+							<div class="text">huerto3</div>
+						</div>
+
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a
+							class="next" onclick="plusSlides(1)">&#10095;</a>
+
 					</div>
-
-					<div class="mySlides">
-						<div class="numbertext">3 / 3</div>
-						<img src="../../img/huerto_eco03.jpg" style="width: 100%">
-						<div class="text">huerto3</div>
-					</div>
-
-					<a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a
-						class="next" onclick="plusSlides(1)">&#10095;</a>
-
 				</div>
 				<br>
 
