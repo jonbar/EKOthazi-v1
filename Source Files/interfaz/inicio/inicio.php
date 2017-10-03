@@ -78,7 +78,7 @@
 			<div class="col-sm-8">
 
 				<?php
-<<<<<<< HEAD
+
                 $link = mysqli_connect('localhost', 'root', '', 'ekothazi');
                 $sql = "SELECT * FROM `entrada_blog` WHERE id_entrada = ( SELECT MAX(`id_entrada`) FROM entrada_blog)";
                 mysqli_set_charset($link, "utf8"); /* Procedural approach */
@@ -94,21 +94,6 @@
                 echo '</div>';
                 mysqli_free_result($result);
                 ?>
-=======
-    $link = mysqli_connect('localhost', 'root', '', 'ekothazi');
-    $sql = "SELECT * FROM `entrada_blog` WHERE id_entrada = ( SELECT MAX(`id_entrada`) FROM entrada_blog)";
-    mysqli_set_charset($link, "utf8"); /* Procedural approach */
-    $link->set_charset("utf8");
-    $result = mysqli_query($link, $sql);  
-    
-    $row = mysqli_fetch_array($result);
-    echo $row['titulo'];
-    echo '<br>';
-    echo $row['cuerpo'];
-    
-    mysqli_free_result($result);
-    ?>
->>>>>>> branch 'master' of https://github.com/jonbar/EKOthazi.git
 
 			</div>
 			<div class="col-sm-4">
