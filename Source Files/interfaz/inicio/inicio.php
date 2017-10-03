@@ -85,8 +85,9 @@
     $result = mysqli_query($link, $sql);
     
     $row = mysqli_fetch_array($result);
-    echo $row['Titulo'];
-   
+    echo $row['titulo'];
+    echo '<br>';
+    echo $row['cuerpo'];
     
     mysqli_free_result($result);
     ?>

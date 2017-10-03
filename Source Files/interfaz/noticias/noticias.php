@@ -35,9 +35,9 @@
 							</li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right" style="margin-top: 75px;">
-							<li class="active"><a href="#">INICIO</a></li>
-							<li><a href="#">QUIENES SOMOS</a></li>
-							<li><a href="#">NOTICIAS</a></li>
+							<li ><a href="../inicio/inicio.php">INICIO</a></li>
+							<li><a href="../quienes_somos/quienes_somos.php">QUIENES SOMOS</a></li>
+							<li class="active"><a href="#">NOTICIAS</a></li>
 							<li><a href="../productos/productos.php">PRODUCTOS</a></li>
 						</ul>
 					</div>
@@ -78,7 +78,7 @@
 			<?php     
         
         $link = mysqli_connect('localhost', 'root', '', 'ekothazi');                      
-        $sql="SELECT u.nombre,e.titulo,e.cuerpo,e.fecha FROM usuarios u, entrada_blog e WHERE u.id=e.id_autor";
+        $sql="SELECT u.nombre,e.titulo,e.cuerpo,e.fecha FROM usuarios u, entrada_blog e WHERE u.id=e.id_autor ORDER BY id_entrada DESC";
         mysqli_set_charset($link, "utf8"); /* Procedural approach */
         $link->set_charset("utf8"); 
         $result=mysqli_query($link, $sql);
