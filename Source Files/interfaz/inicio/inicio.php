@@ -86,7 +86,6 @@
     
     $row = mysqli_fetch_array($result);
     echo $row['Titulo'];
-   
     
     mysqli_free_result($result);
     ?>
