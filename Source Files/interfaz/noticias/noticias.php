@@ -78,22 +78,26 @@
 			<?php     
         
         $link = mysqli_connect('localhost', 'root', '', 'ekothazi');                      
-        $sql="SELECT u.nombre,e.titulo,e.cuerpo,e.fecha FROM usuarios u, entrada_blog e WHERE u.id=e.id_autor ORDER BY id_entrada DESC";
+        $sql="SELECT u.nombre,e.titulo,e.cuerpo,e.fecha, e.imagen1 FROM usuarios u, entrada_blog e WHERE u.id=e.id_autor ORDER BY id_entrada DESC";
         mysqli_set_charset($link, "utf8"); /* Procedural approach */
         $link->set_charset("utf8"); 
         $result=mysqli_query($link, $sql);
         
         
         
-        echo "<div class='w3-col l8 s12'>";  
+        echo "<div class='container'>";  
         while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
-        	echo "<div class='w3-card-4 w3-margin w3-white'>";
-        		echo "<div class='w3-container'>";
-        			echo "<h3><b>".$row['titulo']."</b></h3>";  
+        	echo "<div class='media well' style='background-color: white'>";
+        	   echo "<h3 class='media-heading'><b>".$row['titulo']."</b></h3>"; 
+        		echo "<div class='media-body' >";
+        			 
         			echo "<h5>".$row['nombre'].", "."<span class='w3-opacity'>".$row['fecha']."</span></h5>";         			  		       		
         			echo "<p>".$row['cuerpo']."</p>";
 					echo "<br>";
 				echo "</div>";
+				echo "<div class='media-right'>";
+				echo "<img src='" . $row['imagen1'] . "' class='media-object' style='width:350px; margin-left: 25px'>";
+			    echo "</div>";
 			echo "</div>";
         }   		
         echo "</div>";

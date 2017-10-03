@@ -78,19 +78,21 @@
 			<div class="col-sm-8">
 
 				<?php
-    $link = mysqli_connect('localhost', 'root', '', 'ekothazi');
-    $sql = "SELECT * FROM `entrada_blog` WHERE id_entrada = ( SELECT MAX(`id_entrada`) FROM entrada_blog)";
-    mysqli_set_charset($link, "utf8"); /* Procedural approach */
-    $link->set_charset("utf8");
-    $result = mysqli_query($link, $sql);
-    
-    $row = mysqli_fetch_array($result);
-    echo $row['titulo'];
-    echo '<br>';
-    echo $row['cuerpo'];
-    
-    mysqli_free_result($result);
-    ?>
+                $link = mysqli_connect('localhost', 'root', '', 'ekothazi');
+                $sql = "SELECT * FROM `entrada_blog` WHERE id_entrada = ( SELECT MAX(`id_entrada`) FROM entrada_blog)";
+                mysqli_set_charset($link, "utf8"); /* Procedural approach */
+                $link->set_charset("utf8");
+                $result = mysqli_query($link, $sql);
+                
+                $row = mysqli_fetch_array($result);
+                echo '<div class="well" style="background-color: white">';
+                echo '<h3 class="media-heading"><b>' . $row['titulo'] . '</b></h3>';
+                echo '<br>';
+                echo $row['cuerpo'];
+                echo "<img src='" . $row['imagen1'] . "' class='media-object' style='width:500px; margin: auto'>";
+                echo '</div>';
+                mysqli_free_result($result);
+                ?>
 
 			</div>
 			<div class="col-sm-4">
