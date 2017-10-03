@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 	
 </head>
-<body>
+<body style="text-align: justify;">
 	<header>
 		<div class="container">
 			<nav class="navbar navbar-default">

@@ -16,7 +16,7 @@
 <!-- descarga de jquery -->
 
 </head>
-<body>
+<body style="text-align: justify;">
 	<header>
 		<div class="container">
 			<nav class="navbar navbar-default">
