@@ -5,5 +5,5 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-$link = mysqli_connect('localhost', 'root', '', 'usuarios_bbdd');
+$link = mysqli_connect('localhost', 'root', '', 'ekothazi');
 ?>
