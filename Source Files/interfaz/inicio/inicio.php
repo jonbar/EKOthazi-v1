@@ -14,7 +14,7 @@
 <link rel="stylesheet" type="text/css" href="../../css/general.css"
 	media="screen" />
 <!-- descarga de jquery -->
-<script src="jquery-3.2.1.min.js"></script>
+
 </head>
 <body>
 	<header>
