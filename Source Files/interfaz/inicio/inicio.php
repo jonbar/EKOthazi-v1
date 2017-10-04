@@ -84,7 +84,7 @@
                 $sql = "SELECT * FROM `entrada_blog` WHERE id_entrada = ( SELECT MAX(`id_entrada`) FROM entrada_blog)";
                 mysqli_set_charset($link, "utf8"); /* Procedural approach */
                 
-                $link->set_charset("utf8");
+//                 $link->set_charset("utf8");
                 echo 'hemeo';
                 $result = mysqli_query($link, $sql);
                 
