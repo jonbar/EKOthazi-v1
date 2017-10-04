@@ -59,7 +59,7 @@
 											<input type="email" class="form-control" id="email">
 										</div>
 										<div class="form-group">
-											<label for="pwd">Contrasña:</label> <input type="password"
+											<label for="pwd">Contraseña:</label> <input type="password"
 												class="form-control" id="pwd">
 										</div>
 										<div class="checkbox">
@@ -249,9 +249,94 @@
 			</div>
 
 			<div id="menu3" class="tab-pane fade">
-				<p>CURRICULUUUUUUUUUUUUUUUUUUUUUUMS</p>
+				<p>
+				<div class="row">
+    				<div class="col-sm-3">      					
+      					<a href="#foto1" data-toggle="collapse">
+        					<img src="../../img/foto1-curriculum.jpg" class="img-circle person" alt="foto1" width="150" height="150">
+      					</a>      					
+      					<div id="foto1" class="collapse">	        				
+	        				<p><strong> Me gusta el mariscoooo, odio las hortalizas </strong></p>
+	        				<p><strong> Puta vidaaa </strong></p>
+      					</div>
+    				</div>
+    				
+    				<div class="col-sm-3">      					
+      					<a href="#foto2" data-toggle="collapse">
+        					<img src="../../img/foto2-curriculum.jpg" class="img-circle person" alt="foto2" width="150" height="150">
+      					</a>      					
+      					<div id="foto2" class="collapse">	        				
+	        				<p><strong> Me gustan los hombres con pelo en pecho </strong></p>
+	        				<p><strong> Buenas tardes maricon </strong></p>
+      					</div>
+    				</div>
+    				
+    				<div class="col-sm-3">      					
+      					<a href="#foto3" data-toggle="collapse">
+        					<img src="../../img/foto3-curriculum.jpg" class="img-circle person" alt="foto3" width="150" height="150">
+      					</a>      					
+      					<div id="foto3" class="collapse">	        				
+	        				<p><strong> Tentazioneee</strong></p>
+	        				<p><strong> Look at ME ! </strong></p>
+      					</div>
+    				</div>
+    				
+    				<div class="col-sm-3">      					
+      					<a href="#foto4" data-toggle="collapse">
+        					<img src="../../img/foto4-curriculum.jpg" class="img-circle person" alt="foto4" width="150" height="150">
+      					</a>      					
+      					<div id="foto4" class="collapse">	        				
+	        				<p><strong> Lil boat </strong></p>
+	        				<p><strong> I like pizza </strong></p>
+      					</div>
+    				</div>    				
+			    </div>
+			   	
+			    <p>
+			    
+			    <div class="row">
+    				<div class="col-sm-3">      					
+      					<a href="#foto5" data-toggle="collapse">
+        					<img src="../../img/foto5-curriculum.jpg" class="img-circle person" alt="foto5" width="150" height="150">
+      					</a>      					
+      					<div id="foto5" class="collapse">	        				
+	        				<p><strong></strong></p>
+	        				<p><strong> Llevo una cebolla roja en la cabeza </strong></p>
+      					</div>
+    				</div>
+    				
+    				<div class="col-sm-3">      					
+      					<a href="#foto6" data-toggle="collapse">
+        					<img src="../../img/foto6-curriculum.jpg" class="img-circle person" alt="foto6" width="150" height="150">
+      					</a>      					
+      					<div id="foto6" class="collapse">	        				
+	        				<p><strong> 21,21,21 </strong></p>
+	        				<p><strong> ISSA knife </strong></p>
+      					</div>
+    				</div>
+    				
+    				<div class="col-sm-3">      					
+      					<a href="#foto7" data-toggle="collapse">
+        					<img src="../../img/foto7-curriculum.jpg" class="img-circle person" alt="foto7" width="150" height="150">
+      					</a>      					
+      					<div id="foto7" class="collapse">	        				
+	        				<p><strong>  </strong></p>
+	        				<p><strong> Kodak Black, BOdak Yellow </strong></p>
+      					</div>
+    				</div>
+    				
+    				<div class="col-sm-3">      					
+      					<a href="#foto8" data-toggle="collapse">
+        					<img src="../../img/foto8-curriculum.jpg" class="img-circle person" alt="foto8" width="150" height="150">
+      					</a>      					
+      					<div id="foto8" class="collapse">	        				
+	        				
+	        				<p><strong> Gang , gang </strong></p>
+      					</div>
+    				</div>    				
+			    </div>
+			    <p>
 			</div>
-		</div>
 	</div>
 
 	<script>
