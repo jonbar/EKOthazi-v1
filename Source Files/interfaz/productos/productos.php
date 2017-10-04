@@ -82,7 +82,7 @@
 		<img src="../../img/maintenanceicon.png" alt="" />
 
 		<h2 class="h1Mantenimiento">Oops... ¡Página en mantenimiento!</h2>
-		<p class="textoMantenimiento">Disculpen las molestias, estamos trabajando </br> en esta sección para que pronto podáis disfrutarla.</p>
+		<p class="textoMantenimiento">Disculpen las molestias, estamos trabajando</br>en esta sección para que pronto podáis disfrutarla.</p>
 		<p class="textoMantenimiento">¡Volvemos en breve!</p>
 	</div>
 	</div>
