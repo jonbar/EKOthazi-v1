@@ -83,7 +83,7 @@
                 echo 'hemen nago';
                 $sql = "SELECT * FROM `entrada_blog` WHERE id_entrada = ( SELECT MAX(`id_entrada`) FROM entrada_blog)";
                 mysqli_set_charset($link, "utf8"); /* Procedural approach */
-                echo 'hemen nago';
+                echo 'hemenreerreer nago';
                 $link->set_charset("utf8");
                 $result = mysqli_query($link, $sql);
                 
