@@ -57,7 +57,7 @@
 								<div class="modal-body">
 									<form>
 										<div class="form-group">
-											<label for="email">Dirección de correo electrónico:</label> <input
+											<label for="email">Correo electrónico:</label> <input
 												type="email" class="form-control" id="email">
 										</div>
 										<div class="form-group">
@@ -65,7 +65,7 @@
 												class="form-control" id="pwd">
 										</div>
 										<div class="checkbox">
-											<label><input type="checkbox"> Recordarme en esta página</label>
+											<label><input type="checkbox">Recordarme en esta página</label>
 										</div>
 										<button type="submit" class="btn btn-default">Enviar</button>
 									</form>
