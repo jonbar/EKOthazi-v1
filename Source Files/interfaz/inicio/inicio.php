@@ -22,7 +22,8 @@
 			<nav class="navbar navbar-default">
 				<div class="container-fluid">
 					<div background-color="green" class="navbar-header">
-						<img src="../../img/logo largo.png" style="height: 150px;">
+						<a href="../inicio/inicio.php"><img src="../../img/logo largo.png"
+							style="height: 150px;"></a>
 					</div>
 					<div class="container-fluid">
 
@@ -61,7 +62,7 @@
 												class="form-control" id="pwd">
 										</div>
 										<div class="checkbox">
-											<label><input type="checkbox"> Recordarme en esta página</label>
+											<label><input type="checkbox">Recordarme en esta página</label>
 										</div>
 										<button type="submit" class="btn btn-default">Enviar</button>
 									</form>
@@ -78,33 +79,30 @@
 			<div class="col-sm-8">
 
 				<?php
+    $link = mysqli_connect('localhost', 'root', '', 'ekothazi');
+    
+    $sql = "SELECT * FROM `entrada_blog` WHERE id_entrada = ( SELECT MAX(`id_entrada`) FROM entrada_blog)";
+    mysqli_set_charset($link, "utf8"); /* Procedural approach */
 
-                $link = mysqli_connect('127.0.0.1:51032', 'root', '', 'ekothazi');
-              
-                $sql = "SELECT * FROM `entrada_blog` WHERE id_entrada = ( SELECT MAX(`id_entrada`) FROM entrada_blog)";
-                mysqli_set_charset($link, "utf8"); /* Procedural approach */
-                
-//                 $link->set_charset("utf8");
-                echo 'hemeo';
-                $result = mysqli_query($link, $sql);
-                
-                $row = mysqli_fetch_array($result);
-                echo '<div class="well" style="background-color: white">';
-                echo '<h3 class="media-heading"><b>' . $row['titulo'] . '</b></h3>';
-                echo '<br>';
-                echo $row['cuerpo'];
-                echo "<img src='" . $row['imagen1'] . "' class='media-object' style='width:500px; margin: auto'>";
-                echo '</div>';
-                mysqli_free_result($result);
-                ?>
+    $result = mysqli_query($link, $sql);
+    
+    $row = mysqli_fetch_array($result);
+    echo '<div class="well" style="background-color: white">';
+    echo '<h3 class="media-heading"><b>' . $row['titulo'] . '</b></h3>';
+    echo '<br>';
+    echo $row['cuerpo'];
+    echo "<img src='" . $row['imagen1'] . "' class='media-object' style='width:500px; margin: auto'>";
+    echo '</div>';
+    mysqli_free_result($result);
+    ?>
 
 			</div>
 			<div class="col-sm-4">
 				<div class="thumbnail">
 					<button type="button" class="btn" data-toggle="modal"
-						data-target="#myModalRegistro">
-						<span class="glyphicons glyphicons-leaf"></span> Registrate en
-						nuestra p�gina
+						data-target="#myModalRegistro" style="width: 350px">
+						<span class="glyphicons glyphicons-leaf"></span><b>Regístrate en
+						nuestra página</b>
 					</button>
 					<div class="modal fade" id="myModalRegistro" role="dialog">
 						<div class="modal-dialog">
@@ -126,7 +124,7 @@
 												class="form-control" id="pwd">
 										</div>
 										<div class="checkbox">
-											<label><input type="checkbox"> Recordarme en esta página</label>
+											<label><input type="checkbox">Recordarme en esta página</label>
 										</div>
 										<button type="submit" class="btn btn-default">Enviar</button>
 									</form>
@@ -152,10 +150,10 @@
 						<td><a href="#" data-toggle="tooltip" data-placement="bottom"
 							title="Facebook"><img src="../../img/facebook_icon.png"
 								class="redSocial" /></a></td>
-						<td><a href="#" data-toggle="tooltip" data-placement="bottom"
+						<td><a href="https://twitter.com/Ecotiendagdl" data-toggle="tooltip" data-placement="bottom"
 							title="Twitter"><img src="../../img/twitter_icon.png"
 								class="redSocial" /></a></td>
-						<td><a href="#" data-toggle="tooltip" data-placement="bottom"
+						<td><a href="https://web.stagram.com/ecotiendaorganica" data-toggle="tooltip" data-placement="bottom"
 							title="Instagram"><img src="../../img/instagram_icon.png"
 								class="redSocial" /></a></td>
 					</table>
@@ -181,36 +179,38 @@ p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.create
 					</div>
 					<div class="col-sm-3">
 						<h4 style="color: 7ac043;">Información</h4>
-						<ul style="color: 7ac043">
-							<li>Aviso legal</li>
-							<li>Preguntas frecuentes</li>
-							<li>Trabaja con nosotros</li>
-							<li>Envíos y devoluciones</li>
-						</ul>
-					</div>
+					<ul style="color: 7ac043">
+						<li>Aviso legal</li>
+						<li>Preguntas frecuentes</li>
+						<li>Trabaja con nosotros</li>
+						<li>Envíos y devoluciones</li>
+					</ul>
+				</div>
 
-					<div class="col-sm-3">
-						<h4 style="color: 7ac043">Visita nuestro blog</h4>
-						<ul>
-							<li style="color: 7ac043">Blog</li>
-						</ul>
-					</div>
-					<div class="col-sm-2">
-						<table style="margin-top: 15px">
-							<tr>
-								<td colspan="2" style="text-align: center"><a href="#"
-									data-toggle="tooltip" data-placement="bottom" title="Facebook"><img
-										src="../../img/facebook_icon.png" class="redSocialFooter" /></a></td>
-							</tr>
-							<tr>
-								<td><a href="#" data-toggle="tooltip" data-placement="bottom"
-									title="Twitter"><img src="../../img/twitter_icon.png"
-										class="redSocialFooter" /></a></td>
-								<td><a href="#" data-toggle="tooltip" data-placement="bottom"
-									title="Instagram"><img src="../../img/instagram_icon.png"
-										class="redSocialFooter" /></a></td>
-							</tr>
-						</table>
+				<div class="col-sm-3">
+					<h4 style="color: 7ac043">Conócenos</h4>
+					<ul>
+						
+						<a href="../quienes_somos/quienes_somos.php" style="color: 7ac043"><li>Contacto</a></li>
+						<a href="../noticias/noticias.php" style="color: 7ac043"><li>Blog</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-2">
+					<table style="margin-top: 15px">
+						<tr>
+							<td colspan="2" style="text-align: center"><a href="https://www.facebook.com/ecotiendaorganicaynatural/"
+								data-toggle="tooltip" data-placement="bottom" title="Facebook"><img
+									src="../../img/facebook_icon.png" class="redSocialFooter" /></a></td>
+						</tr>
+						<tr>
+							<td><a href="https://twitter.com/Ecotiendagdl" data-toggle="tooltip" data-placement="bottom"
+								title="Twitter"><img src="../../img/twitter_icon.png"
+									class="redSocialFooter" /></a></td>
+							<td><a href="https://web.stagram.com/ecotiendaorganica" data-toggle="tooltip" data-placement="bottom"
+								title="Instagram"><img src="../../img/instagram_icon.png"
+									class="redSocialFooter" /></a></td>
+						</tr>
+					</table>
 					</div>
 				</div>
 				<div class="row derechos" style="background-color: #E6E6E6;">&#169;
