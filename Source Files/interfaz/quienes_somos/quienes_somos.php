@@ -76,7 +76,7 @@
 		</div>
 	</header>
 
-<div class="container">
+	<div class="container">
 		<ul class="nav nav-tabs">
 			<li class="active"><a class="menuQuienesSomos" href="#home">Donde
 					encontrarnos</a></li>
@@ -87,31 +87,43 @@
 
 		<div class="tab-content">
 			<div id="home" class="tab-pane fade in active">
-				
+
 				<br>
-				
-				<div class="col-sm-5">					
-					<p><span class="glyphicon glyphicon-map-marker"></span> Amorebieta, Vizcaya </p>
-      				<p><span class="glyphicon glyphicon-phone"></span> +94 4896532</p>
-     				<p><span class="glyphicon glyphicon-envelope"></span> ethazitalde1@gmail.com </p>
+
+				<div class="col-sm-5">
+					<p>
+						<span class="glyphicon glyphicon-map-marker"></span> Amorebieta,
+						Vizcaya
+					</p>
+					<p>
+						<span class="glyphicon glyphicon-phone"></span> +94 4896532
+					</p>
+					<p>
+						<span class="glyphicon glyphicon-envelope"></span>
+						ethazitalde1@gmail.com
+					</p>
 				</div>
-				
+
 				<div class="col-sm-7 slideanim">
-      				<div class="row">
-       					<div class="col-sm-6 form-group">
-          				<input class="form-control" id="nombre" name="nombre" placeholder="Nombre" type="text" required>
-        				</div>
-        				<div class="col-sm-6 form-group">
-          				<input class="form-control" id="email" name="email" placeholder="Correo electrónico" type="email" required>
-        				</div>
-     				</div>
-      					<textarea class="form-control" id="comments" name="comments" placeholder="Comentarios" rows="5"></textarea><br>
-     				
-     				<div class="row">
-        				<div class="col-sm-12 form-group">
-          					<button class="btn btn-default pull-right" type="submit">Enviar</button>
-        				</div>
-      				</div>
+					<div class="row">
+						<div class="col-sm-6 form-group">
+							<input class="form-control" id="nombre" name="nombre"
+								placeholder="Nombre" type="text" required>
+						</div>
+						<div class="col-sm-6 form-group">
+							<input class="form-control" id="email" name="email"
+								placeholder="Correo electrónico" type="email" required>
+						</div>
+					</div>
+					<textarea class="form-control" id="comments" name="comments"
+						placeholder="Comentarios" rows="5"></textarea>
+					<br>
+
+					<div class="row">
+						<div class="col-sm-12 form-group">
+							<button class="btn btn-default pull-right" type="submit">Enviar</button>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div id="menu1" class="tab-pane fade">
@@ -143,40 +155,6 @@
 
 					</div>
 				</div>
-				<div>
-					<h3 style="color: green">Tienda ecologica en Zubiaurre, Iurreta.</h3>
-					<div class="slideshow-container">
-
-						<div class="mySlides">
-							<div class="numbertext">1 / 3</div>
-							<img src="../../img/tienda_eco01.jpg" style="width: 100%">
-							<div class="text">huerto</div>
-						</div>
-
-						<div class="mySlides">
-							<div class="numbertext">2 / 3</div>
-							<img src="../../img/tienda_eco02.jpg" style="width: 100%">
-							<div class="text">huerto2</div>
-						</div>
-
-						<div class="mySlides">
-							<div class="numbertext">3 / 3</div>
-							<img src="../../img/tienda_eco03.jpg" style="width: 100%">
-							<div class="text">huerto3</div>
-						</div>
-
-						<a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a
-							class="next" onclick="plusSlides(1)">&#10095;</a>
-
-					</div>
-				</div>
-				<br>
-
-				<div style="text-align: center">
-					<span class="dot" onclick="currentSlide(1)"></span> <span
-						class="dot" onclick="currentSlide(2)"></span>
-
-				</div>
 				<script>
                     var slideIndex = 1;
                     showSlides(slideIndex);
@@ -205,6 +183,54 @@
                       dots[slideIndex-1].className += " active";
                     }
                     </script>
+				<div class="row">
+					<div class="column">
+						<div class="content">
+							<img src="../../img/ecoworld.jpg" alt="Mountains" style="width: 100%">
+							<h3>My Work</h3>
+							<p>Lorem ipsum dolor sit amet, tempor prodesset eos no.
+								Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem
+								ipsum dolor sit amet, tempor prodesset eos no.</p>
+						</div>
+					</div>
+					<div class="column">
+						<div class="content">
+							<img src="../../img/ecoworld.jpg" alt="Lights" style="width: 100%">
+							<h3>My Work</h3>
+							<p>Lorem ipsum dolor sit amet, tempor prodesset eos no.
+								Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem
+								ipsum dolor sit amet, tempor prodesset eos no.</p>
+						</div>
+					</div>
+					<div class="column">
+						<div class="content">
+							<img src="../../img/ecoworld.jpg" alt="Nature" style="width: 100%">
+							<h3>My Work</h3>
+							<p>Lorem ipsum dolor sit amet, tempor prodesset eos no.
+								Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem
+								ipsum dolor sit amet, tempor prodesset eos no.</p>
+						</div>
+					</div>
+					<div class="column">
+						<div class="content">
+							<img src="../../img/ecoworld.jpg" alt="Mountains" style="width: 100%">
+							<h3>My Work</h3>
+							<p>Lorem ipsum dolor sit amet, tempor prodesset eos no.
+								Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem
+								ipsum dolor sit amet, tempor prodesset eos no.</p>
+						</div>
+					</div>
+					<div class="column">
+						<div class="content">
+							<img src="../../img/ecoworld.jpg" alt="Mountains" style="width: 100%">
+							<h3>My Work</h3>
+							<p>Lorem ipsum dolor sit amet, tempor prodesset eos no.
+								Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem
+								ipsum dolor sit amet, tempor prodesset eos no.</p>
+						</div>
+					</div>
+					<!-- END GRID -->
+				</div>
 			</div>
 
 
@@ -250,95 +276,137 @@
 
 			<div id="menu3" class="tab-pane fade">
 				<p>
-				<div class="row">
-    				<div class="col-sm-3">      					
-      					<a href="#foto1" data-toggle="collapse">
-        					<img src="../../img/foto1-curriculum.jpg" class="img-circle person" alt="foto1" width="150" height="150">
-      					</a>      					
-      					<div id="foto1" class="collapse">	        				
-	        				<p><strong> Me gusta el mariscoooo, odio las hortalizas </strong></p>
-	        				<p><strong> Puta vidaaa </strong></p>
-      					</div>
-    				</div>
-    				
-    				<div class="col-sm-3">      					
-      					<a href="#foto2" data-toggle="collapse">
-        					<img src="../../img/foto2-curriculum.jpg" class="img-circle person" alt="foto2" width="150" height="150">
-      					</a>      					
-      					<div id="foto2" class="collapse">	        				
-	        				<p><strong> Me gustan los hombres con pelo en pecho </strong></p>
-	        				<p><strong> Buenas tardes maricon </strong></p>
-      					</div>
-    				</div>
-    				
-    				<div class="col-sm-3">      					
-      					<a href="#foto3" data-toggle="collapse">
-        					<img src="../../img/foto3-curriculum.jpg" class="img-circle person" alt="foto3" width="150" height="150">
-      					</a>      					
-      					<div id="foto3" class="collapse">	        				
-	        				<p><strong> Tentazioneee</strong></p>
-	        				<p><strong> Look at ME ! </strong></p>
-      					</div>
-    				</div>
-    				
-    				<div class="col-sm-3">      					
-      					<a href="#foto4" data-toggle="collapse">
-        					<img src="../../img/foto4-curriculum.jpg" class="img-circle person" alt="foto4" width="150" height="150">
-      					</a>      					
-      					<div id="foto4" class="collapse">	        				
-	        				<p><strong> Lil boat </strong></p>
-	        				<p><strong> I like pizza </strong></p>
-      					</div>
-    				</div>    				
-			    </div>
-			   	
-			    <p>
-			    
-			    <div class="row">
-    				<div class="col-sm-3">      					
-      					<a href="#foto5" data-toggle="collapse">
-        					<img src="../../img/foto5-curriculum.jpg" class="img-circle person" alt="foto5" width="150" height="150">
-      					</a>      					
-      					<div id="foto5" class="collapse">	        				
-	        				<p><strong></strong></p>
-	        				<p><strong> Llevo una cebolla roja en la cabeza </strong></p>
-      					</div>
-    				</div>
-    				
-    				<div class="col-sm-3">      					
-      					<a href="#foto6" data-toggle="collapse">
-        					<img src="../../img/foto6-curriculum.jpg" class="img-circle person" alt="foto6" width="150" height="150">
-      					</a>      					
-      					<div id="foto6" class="collapse">	        				
-	        				<p><strong> 21,21,21 </strong></p>
-	        				<p><strong> ISSA knife </strong></p>
-      					</div>
-    				</div>
-    				
-    				<div class="col-sm-3">      					
-      					<a href="#foto7" data-toggle="collapse">
-        					<img src="../../img/foto7-curriculum.jpg" class="img-circle person" alt="foto7" width="150" height="150">
-      					</a>      					
-      					<div id="foto7" class="collapse">	        				
-	        				<p><strong>  </strong></p>
-	        				<p><strong> Kodak Black, BOdak Yellow </strong></p>
-      					</div>
-    				</div>
-    				
-    				<div class="col-sm-3">      					
-      					<a href="#foto8" data-toggle="collapse">
-        					<img src="../../img/foto8-curriculum.jpg" class="img-circle person" alt="foto8" width="150" height="150">
-      					</a>      					
-      					<div id="foto8" class="collapse">	        				
-	        				
-	        				<p><strong> Gang , gang </strong></p>
-      					</div>
-    				</div>    				
-			    </div>
-			    <p>
+				
+				
+				<div class="row" style="margin-top: 50px; text-align: center">
+					<div class="col-sm-3">
+						<a href="#foto1" data-toggle="collapse"> <img
+							src="../../img/foto1-curriculum.jpg" class="img-circle person"
+							alt="foto1" width="150" height="150">
+						</a>
+						<div id="foto1" class="collapse">
+							<p>
+								<strong> Me gusta el mariscoooo, odio las hortalizas </strong>
+							</p>
+							<p>
+								<strong> Puta vidaaa </strong>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-sm-3">
+						<a href="#foto2" data-toggle="collapse"> <img
+							src="../../img/jon_vegano.jpg" class="img-circle person"
+							alt="foto2" width="150" height="150">
+						</a>
+						<div id="foto2" class="collapse">
+							<p>
+								<strong> Soy venago de nacimiento </strong>
+							</p>
+							<p>
+								<strong> beber leche = una vaca violada </strong>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-sm-3">
+						<a href="#foto3" data-toggle="collapse"> <img
+							src="../../img/foto3-curriculum.jpg" class="img-circle person"
+							alt="foto3" width="150" height="150">
+						</a>
+						<div id="foto3" class="collapse">
+							<p>
+								<strong> Tentazioneee</strong>
+							</p>
+							<p>
+								<strong> Look at ME ! </strong>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-sm-3">
+						<a href="#foto4" data-toggle="collapse"> <img
+							src="../../img/foto4-curriculum.jpg" class="img-circle person"
+							alt="foto4" width="150" height="150">
+						</a>
+						<div id="foto4" class="collapse">
+							<p>
+								<strong> Lil boat </strong>
+							</p>
+							<p>
+								<strong> I like pizza </strong>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<p>
+				
+				
+				<div class="row" style="margin-bottom: 50px; text-align: center">
+					<div class="col-sm-3">
+						<a href="#foto5" data-toggle="collapse"> <img
+							src="../../img/foto5-curriculum.jpg" class="img-circle person"
+							alt="foto5" width="150" height="150">
+						</a>
+						<div id="foto5" class="collapse">
+							<p>
+								<strong></strong>
+							</p>
+							<p>
+								<strong> Llevo una cebolla roja en la cabeza </strong>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-sm-3">
+						<a href="#foto6" data-toggle="collapse"> <img
+							src="../../img/foto6-curriculum.jpg" class="img-circle person"
+							alt="foto6" width="150" height="150">
+						</a>
+						<div id="foto6" class="collapse">
+							<p>
+								<strong> 21,21,21 </strong>
+							</p>
+							<p>
+								<strong> ISSA knife </strong>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-sm-3">
+						<a href="#foto7" data-toggle="collapse"> <img
+							src="../../img/foto7-curriculum.jpg" class="img-circle person"
+							alt="foto7" width="150" height="150">
+						</a>
+						<div id="foto7" class="collapse">
+							<p>
+								<strong> </strong>
+							</p>
+							<p>
+								<strong> Kodak Black, BOdak Yellow </strong>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-sm-3">
+						<a href="#foto8" data-toggle="collapse"> <img
+							src="../../img/foto8-curriculum.jpg" class="img-circle person"
+							alt="foto8" width="150" height="150">
+						</a>
+						<div id="foto8" class="collapse">
+
+							<p>
+								<strong> Gang , BANG </strong>
+							</p>
+						</div>
+					</div>
+				</div>
+				<p>
+			
 			</div>
+		</div>
 	</div>
-</div>
 	<script>
 $(document).ready(function(){
     $(".nav-tabs a").click(function(){
