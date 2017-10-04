@@ -76,7 +76,7 @@
 		</div>
 	</header>
 
-	<div class="container">
+<div class="container">
 		<ul class="nav nav-tabs">
 			<li class="active"><a class="menuQuienesSomos" href="#home">Donde
 					encontrarnos</a></li>
@@ -338,7 +338,7 @@
 			    <p>
 			</div>
 	</div>
-
+</div>
 	<script>
 $(document).ready(function(){
     $(".nav-tabs a").click(function(){
@@ -393,6 +393,7 @@ $(document).ready(function(){
 				EKOthazi S.L. 2005-2017. TODOS LOS DERECHOS RESERVADOS</div>
 		</div>
 	</div>
+
 </footer>
 </html>
 
