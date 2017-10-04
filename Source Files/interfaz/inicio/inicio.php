@@ -54,7 +54,7 @@
 									<form>
 										<div class="form-group">
 											<label for="email">Correo electrónico:</label> <input
-												type=class= "form-control" id="email">
+												type="email" class="form-control" id="email">
 										</div>
 										<div class="form-group">
 											<label for="pwd">Contraseña:</label> <input type="password"
@@ -80,6 +80,7 @@
 				<?php
 
                 $link = mysqli_connect('localhost', 'root', '', 'ekothazi');
+                echo 'hemen nago';
                 $sql = "SELECT * FROM `entrada_blog` WHERE id_entrada = ( SELECT MAX(`id_entrada`) FROM entrada_blog)";
                 mysqli_set_charset($link, "utf8"); /* Procedural approach */
                 $link->set_charset("utf8");
