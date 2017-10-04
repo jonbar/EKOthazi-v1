@@ -83,10 +83,10 @@
               
                 $sql = "SELECT * FROM `entrada_blog` WHERE id_entrada = ( SELECT MAX(`id_entrada`) FROM entrada_blog)";
                 mysqli_set_charset($link, "utf8"); /* Procedural approach */
-                echo 'hemenreerreer nago';
+                
                 $link->set_charset("utf8");
                 $result = mysqli_query($link, $sql);
-                
+                echo 'hemeo';
                 $row = mysqli_fetch_array($result);
                 echo '<div class="well" style="background-color: white">';
                 echo '<h3 class="media-heading"><b>' . $row['titulo'] . '</b></h3>';
