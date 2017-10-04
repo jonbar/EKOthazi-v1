@@ -79,13 +79,11 @@
 
 				<?php
 
-                $link = mysqli_connect('127.0.0.1:51032', 'root', '', 'ekothazi');
+                $link = mysqli_connect('localhost', 'root', '', 'ekothazi');
               
                 $sql = "SELECT * FROM `entrada_blog` WHERE id_entrada = ( SELECT MAX(`id_entrada`) FROM entrada_blog)";
                 mysqli_set_charset($link, "utf8"); /* Procedural approach */
-                
-//                 $link->set_charset("utf8");
-                echo 'hemeo';
+
                 $result = mysqli_query($link, $sql);
                 
                 $row = mysqli_fetch_array($result);

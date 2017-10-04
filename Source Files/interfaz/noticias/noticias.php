@@ -80,7 +80,6 @@
         $link = mysqli_connect('localhost', 'root', '', 'ekothazi');                      
         $sql="SELECT u.nombre,e.titulo,e.cuerpo,e.fecha, e.imagen1 FROM usuarios u, entrada_blog e WHERE u.id=e.id_autor ORDER BY id_entrada DESC";
         mysqli_set_charset($link, "utf8"); /* Procedural approach */
-        $link->set_charset("utf8"); 
         $result=mysqli_query($link, $sql);
         
         
