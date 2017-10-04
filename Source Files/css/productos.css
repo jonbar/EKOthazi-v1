@@ -1,20 +1,22 @@
 @charset "ISO-8859-1";
 
-
+.mantenimientoProductos {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
 /* Modifica la imagen insertada*/
 .imagenMantenimiento {
 	text-align: center;
-	padding-top: 85px;
-}
+	}
 /*Modifica el h1*/
 .h1Mantenimiento {
 	font-family: Arial, Helvetica, sans-serif;
-	color: purple;
+	color: #63a010;
 	font-size: 350%;
 	font-weight: bold;
 }
 
 /*Modificar el texto de la página en mantenimiento. */
 .textoMantenimiento {
-	font-size: 200%;
+	font-size: 180%;
 }
