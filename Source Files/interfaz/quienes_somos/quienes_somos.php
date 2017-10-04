@@ -87,7 +87,32 @@
 
 		<div class="tab-content">
 			<div id="home" class="tab-pane fade in active">
-				<p>PAGINA DE CONTACTOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO</p>
+				
+				<br>
+				
+				<div class="col-sm-5">					
+					<p><span class="glyphicon glyphicon-map-marker"></span> Amorebieta, Vizcaya </p>
+      				<p><span class="glyphicon glyphicon-phone"></span> +94 4896532</p>
+     				<p><span class="glyphicon glyphicon-envelope"></span> ethazitalde1@gmail.com </p>
+				</div>
+				
+				<div class="col-sm-7 slideanim">
+      				<div class="row">
+       					<div class="col-sm-6 form-group">
+          				<input class="form-control" id="nombre" name="nombre" placeholder="Nombre" type="text" required>
+        				</div>
+        				<div class="col-sm-6 form-group">
+          				<input class="form-control" id="email" name="email" placeholder="Correo electrónico" type="email" required>
+        				</div>
+     				</div>
+      					<textarea class="form-control" id="comments" name="comments" placeholder="Comentarios" rows="5"></textarea><br>
+     				
+     				<div class="row">
+        				<div class="col-sm-12 form-group">
+          					<button class="btn btn-default pull-right" type="submit">Enviar</button>
+        				</div>
+      				</div>
+				</div>
 			</div>
 			<div id="menu1" class="tab-pane fade">
 				<div>
