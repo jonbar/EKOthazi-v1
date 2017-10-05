@@ -15,7 +15,9 @@
 	media="screen" />
 <link rel="stylesheet" type="text/css" href="../../css/general.css"
 	media="screen" />
-
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src="https://raw.github.com/HPNeo/gmaps/master/gmaps.js"></script>
 </head>
 <body style="text-align: justify;">
 	<header>
@@ -124,6 +126,10 @@
 							<button class="btn btn-default pull-right" type="submit">Enviar</button>
 						</div>
 					</div>
+ 	
+				</div>
+				<div class="col-sm-12">
+ 	<iframe style="width:1200px; height: 500px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d726.8373684758875!2d-2.7255633800919963!3d43.22313200100819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e369c4e0d1637%3A0x78ccbf7525105ab1!2sCIFP+ZORNOTZA+LHII!5e0!3m2!1ses!2ses!4v1507189611960" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>		
 				</div>
 			</div>
 			<div id="menu1" class="tab-pane fade">
