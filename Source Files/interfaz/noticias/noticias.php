@@ -13,6 +13,8 @@
 	media="screen" />
 <link rel="stylesheet" type="text/css" href="../../css/general.css"
 	media="screen" />
+<link rel="stylesheet" type="text/css" href="../../css/noticias.css"
+	media="screen" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 	
 </head>
@@ -76,15 +78,22 @@
 	<div class="container">
 		<div class="row">
 			<?php     
-        
+			/*--
+			$link -> Conexion con la base de datos.
+			$sql -> sentencia sql.
+			*/
         $link = mysqli_connect('localhost', 'root', '', 'ekothazi');                      
         $sql="SELECT u.nombre,e.titulo,e.cuerpo,e.fecha, e.imagen1 FROM usuarios u, entrada_blog e WHERE u.id=e.id_autor ORDER BY id_entrada DESC";
-        mysqli_set_charset($link, "utf8"); /* Procedural approach */
-        $link->set_charset("utf8"); 
+        mysqli_set_charset($link, "utf8");
         $result=mysqli_query($link, $sql);
         
         
+        /*
+        - Recorre la Array de row y saca todas las noticias de la base de datos.
+        - saca un div (class = media well) por cada noticia ya con el formato dado.
         
+        row -> Array list con todas las noticias.
+        */
         echo "<div class='container'>";  
         while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
         	echo "<div class='media well' style='background-color: white'>";
@@ -96,11 +105,16 @@
 					echo "<br>";
 				echo "</div>";
 				echo "<div class='media-right'>";
-				echo "<img src='" . $row['imagen1'] . "' class='media-object' style='width:350px; margin-left: 25px'>";
+				echo "<img src='" . $row['imagen1'] . "' class='media-object imagenNoticia'>";
 			    echo "</div>";
 			echo "</div>";
         }   		
         echo "</div>";
+        /* 
+         - Liberacion $result para evitar errores.
+         
+         $result ->  ejecucion de la consulta.
+         */
         mysqli_free_result($result);
                 
       ?>

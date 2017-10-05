@@ -1,5 +1,13 @@
+
 <html lang="en">
 <head>
+<?php
+session_start();
+$link = mysqli_connect('localhost', 'root', '', 'ekothazi'); 
+if (isset($_SESSION['email'])) {
+    echo '<script>alert("ya esta")  </script>';
+}
+?>
 <title>Inicio</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,6 +15,8 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="../../javascript/main.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="../../css/inicio.css"
@@ -52,17 +62,19 @@
 									<h4 class="modal-title">Inicio de sesión</h4>
 								</div>
 								<div class="modal-body">
-									<form>
+									<form name="encuesta" action="validacion.php" method="POST"
+										onsubmit="return enviar()">
 										<div class="form-group">
-											<label for="email">Correo electrónico:</label> <input
-												type="email" class="form-control" id="email">
+											<label for="input">Cuenta de correo </label> <input
+												type="text" name="correo" id="correo"
+												onKeyPress="return comprobarArroba(event)" />
 										</div>
 										<div class="form-group">
-											<label for="pwd">Contraseña:</label> <input type="password"
-												class="form-control" id="pwd">
+											<label for="input">Introduzca clave de acceso </label><input
+												type="password" id="clave" name="clave"/>
 										</div>
 										<div class="checkbox">
-											<label><input type="checkbox">Recordarme en esta página</label>
+											<label><input type="checkbox"> Recordarme en esta página</label>
 										</div>
 										<button type="submit" class="btn btn-default">Enviar</button>
 									</form>
@@ -114,17 +126,21 @@
 									<h4 class="modal-title">Registro</h4>
 								</div>
 								<div class="modal-body">
-									<form>
+									<!-- 								e tenido que quitar la parte de boostrap en los inputs -->
+									<form name="registro" action="inicio.php"
+										onsubmit="return enviarRegistro()" method="POST">
 										<div class="form-group">
-											<label for="email">Correo electrónico:</label> <input
-												type="email" class="form-control" id="email">
+											<label for="input">Cuenta de correo </label> <input
+												type="text" name="correoRegistro"
+												onKeyPress="return comprobarArrobaRegistro(event)" />
 										</div>
 										<div class="form-group">
-											<label for="pwd">Contraseña:</label> <input type="password"
-												class="form-control" id="pwd">
+											<label for="input">Introduzca clave de acceso </label><input
+												type="password" id="clave1" /> <label for="input">Repita
+												clave de acceso </label><input type="password" id="clave2" />
 										</div>
 										<div class="checkbox">
-											<label><input type="checkbox">Recordarme en esta página</label>
+											<label><input type="checkbox"> Recordarme en esta página</label>
 										</div>
 										<button type="submit" class="btn btn-default">Enviar</button>
 									</form>
