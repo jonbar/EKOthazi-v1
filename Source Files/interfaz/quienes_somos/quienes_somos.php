@@ -22,7 +22,7 @@
 			<nav class="navbar navbar-default">
 				<div class="container-fluid">
 					<div background-color="green" class="navbar-header">
-						<img src="../../img/logo largo.png" style="height: 150px;">
+						<a href="../inicio/inicio.php"><img src="../../img/logo largo.png" style="height: 150px;"></a>
 
 					</div>
 					<div class="container-fluid">
@@ -54,7 +54,7 @@
 								<div class="modal-body">
 									<form>
 										<div class="form-group">
-											<label for="email">Dirección de correo electrónico:</label>
+											<label for="email">Correo electrónico:</label>
 											<input type="email" class="form-control" id="email">
 										</div>
 										<div class="form-group">
@@ -62,7 +62,7 @@
 												class="form-control" id="pwd">
 										</div>
 										<div class="checkbox">
-											<label><input type="checkbox"> Recordarme en esta pagina</label>
+											<label><input type="checkbox"> Recordarme en esta página</label>
 										</div>
 										<button type="submit" class="btn btn-default">Enviar</button>
 									</form>
@@ -91,10 +91,10 @@
 
 				<div class="col-sm-5">
 					<p>
-						<span class="glyphicon glyphicon-map-marker"></span> Amorebieta, Vizcaya
+						<span class="glyphicon glyphicon-map-marker"></span> Urritxe Kalea 13, Amorebieta, Vizcaya
 					</p>
 					<p>
-						<span class="glyphicon glyphicon-phone"></span> +94 4896532
+						<span class="glyphicon glyphicon-phone"></span> +946 82 94 65
 					</p>
 					<p>
 						<span class="glyphicon glyphicon-envelope"></span>
@@ -137,19 +137,19 @@
 						<div class="mySlides">
 							<div class="numbertext">1 / 3</div>
 							<img src="../../img/huerto_eco01.jpg" style="width: 100%">
-							<div class="text">huerto</div>
+							<div class="text">Terrenos para huerto</div>
 						</div>
 
 						<div class="mySlides">
 							<div class="numbertext">2 / 3</div>
 							<img src="../../img/huerto_eco02.jpg" style="width: 100%">
-							<div class="text">huerto2</div>
+							<div class="text"></div>
 						</div>
 
 						<div class="mySlides">
 							<div class="numbertext">3 / 3</div>
 							<img src="../../img/huerto_eco03.jpg" style="width: 100%">
-							<div class="text">huerto3</div>
+							<div class="text"></div>
 						</div>
 
 						<a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a
@@ -190,25 +190,25 @@
 					<div class="column">
 						<div class="content">
 							<img src="../../img/tienda_eco.jpg" alt="Mountains" style="width: 100%">
-							<h3>My Work</h3>
-							<p>Lorem ipsum dolor sit amet, tempor prodesset eos no.
-								Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem
-								ipsum dolor sit amet, tempor prodesset eos no.</p>
+							<h3>Instalaciones</h3>
+							<p>Una tienda pensada para el disfrute de sus consumidores, con unas 
+							instalaciones sencillas y un ambiente agradable para que la experiencia
+							 de compra sea óptima.</p>
 						</div>
 					</div>
 					<div class="column">
 						<div class="content">
 							<img src="../../img/tienda_eco1.jpg" alt="Lights" style="width: 100%">
-							<h3>My Work</h3>
-							<p>Lorem ipsum dolor sit amet, tempor prodesset eos no.
-								Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem
-								ipsum dolor sit amet, tempor prodesset eos no.</p>
+							<h3>Cero envases</h3>
+							<p>La idea nace de minimizar los residuos de plástico, utilizando envases como
+							 botes de cristal o cajas metálicas que podemos llevar a la tienda y rellenarlas 
+							 con los productos que compremos.</p>
 						</div>
 					</div>
 					<div class="column">
 						<div class="content">
 							<img src="../../img/tienda_eco2.jpg" alt="Nature" style="width: 100%">
-							<h3>My Work</h3>
+							<h3>Productos a granel</h3>
 							<p>Lorem ipsum dolor sit amet, tempor prodesset eos no.
 								Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem
 								ipsum dolor sit amet, tempor prodesset eos no.</p>
@@ -217,7 +217,7 @@
 					<div class="column">
 						<div class="content">
 							<img src="../../img/tienda_eco3.jpg" alt="Mountains" style="width: 100%">
-							<h3>My Work</h3>
+							<h3>Directo de la huerta</h3>
 							<p>Lorem ipsum dolor sit amet, tempor prodesset eos no.
 								Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem
 								ipsum dolor sit amet, tempor prodesset eos no.</p>
@@ -429,23 +429,35 @@ $(document).ready(function(){
 				</div>
 
 				<div class="col-sm-3">
-					<h4 style="color: 7ac043">Visita nuestro blog</h4>
+							<h4 style="color: 7ac043;">Información</h4>
+					<ul style="color: 7ac043">
+						<li>Aviso legal</li>
+						<li>Preguntas frecuentes</li>
+						<li>Trabaja con nosotros</li>
+						<li>Envíos y devoluciones</li>
+					</ul>
+				</div>
+
+				<div class="col-sm-3">
+					<h4 style="color: 7ac043">Conócenos</h4>
 					<ul>
-						<li style="color: 7ac043">Blog</li>
+						
+						<a href="../quienes_somos/quienes_somos.php" style="color: 7ac043"><li>Contacto</a></li>
+						<a href="../noticias/noticias.php" style="color: 7ac043"><li>Blog</a></li>
 					</ul>
 				</div>
 				<div class="col-sm-2">
 					<table style="margin-top: 15px">
 						<tr>
-							<td colspan="2" style="text-align: center"><a href="#"
+							<td colspan="2" style="text-align: center"><a href="https://www.facebook.com/ecotiendaorganicaynatural/"
 								data-toggle="tooltip" data-placement="bottom" title="Facebook"><img
 									src="../../img/facebook_icon.png" class="redSocialFooter" /></a></td>
 						</tr>
 						<tr>
-							<td><a href="#" data-toggle="tooltip" data-placement="bottom"
+							<td><a href="https://twitter.com/Ecotiendagdl" data-toggle="tooltip" data-placement="bottom"
 								title="Twitter"><img src="../../img/twitter_icon.png"
 									class="redSocialFooter" /></a></td>
-							<td><a href="#" data-toggle="tooltip" data-placement="bottom"
+							<td><a href="https://web.stagram.com/ecotiendaorganica" data-toggle="tooltip" data-placement="bottom"
 								title="Instagram"><img src="../../img/instagram_icon.png"
 									class="redSocialFooter" /></a></td>
 						</tr>
