@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-<title></title>
+<title>Quienes somos</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
@@ -92,8 +92,7 @@
 
 				<div class="col-sm-5">
 					<p>
-						<span class="glyphicon glyphicon-map-marker"></span> Amorebieta,
-						Vizcaya
+						<span class="glyphicon glyphicon-map-marker"></span> Amorebieta
 					</p>
 					<p>
 						<span class="glyphicon glyphicon-phone"></span> +94 4896532
@@ -183,10 +182,11 @@
                       dots[slideIndex-1].className += " active";
                     }
                     </script>
+                    <h3 style="color: green">Nueva tienda ecologica en Zubiaurre, Iurreta</h3>
 				<div class="row">
 					<div class="column">
 						<div class="content">
-							<img src="../../img/ecoworld.jpg" alt="Mountains" style="width: 100%">
+							<img src="../../img/tienda_eco.jpg" alt="Mountains" style="width: 100%">
 							<h3>My Work</h3>
 							<p>Lorem ipsum dolor sit amet, tempor prodesset eos no.
 								Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem
@@ -195,7 +195,7 @@
 					</div>
 					<div class="column">
 						<div class="content">
-							<img src="../../img/ecoworld.jpg" alt="Lights" style="width: 100%">
+							<img src="../../img/tienda_eco1.jpg" alt="Lights" style="width: 100%">
 							<h3>My Work</h3>
 							<p>Lorem ipsum dolor sit amet, tempor prodesset eos no.
 								Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem
@@ -204,7 +204,7 @@
 					</div>
 					<div class="column">
 						<div class="content">
-							<img src="../../img/ecoworld.jpg" alt="Nature" style="width: 100%">
+							<img src="../../img/tienda_eco2.jpg" alt="Nature" style="width: 100%">
 							<h3>My Work</h3>
 							<p>Lorem ipsum dolor sit amet, tempor prodesset eos no.
 								Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem
@@ -213,22 +213,14 @@
 					</div>
 					<div class="column">
 						<div class="content">
-							<img src="../../img/ecoworld.jpg" alt="Mountains" style="width: 100%">
+							<img src="../../img/tienda_eco3.jpg" alt="Mountains" style="width: 100%">
 							<h3>My Work</h3>
 							<p>Lorem ipsum dolor sit amet, tempor prodesset eos no.
 								Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem
 								ipsum dolor sit amet, tempor prodesset eos no.</p>
 						</div>
 					</div>
-					<div class="column">
-						<div class="content">
-							<img src="../../img/ecoworld.jpg" alt="Mountains" style="width: 100%">
-							<h3>My Work</h3>
-							<p>Lorem ipsum dolor sit amet, tempor prodesset eos no.
-								Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem
-								ipsum dolor sit amet, tempor prodesset eos no.</p>
-						</div>
-					</div>
+					
 					<!-- END GRID -->
 				</div>
 			</div>
