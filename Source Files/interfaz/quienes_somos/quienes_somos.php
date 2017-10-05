@@ -15,9 +15,6 @@
 	media="screen" />
 <link rel="stylesheet" type="text/css" href="../../css/general.css"
 	media="screen" />
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-<script type="text/javascript" src="https://raw.github.com/HPNeo/gmaps/master/gmaps.js"></script>
 </head>
 <body style="text-align: justify;">
 	<header>
@@ -94,7 +91,7 @@
 
 				<div class="col-sm-5">
 					<p>
-						<span class="glyphicon glyphicon-map-marker"></span> Amorebieta
+						<span class="glyphicon glyphicon-map-marker"></span> Amorebieta, Vizcaya
 					</p>
 					<p>
 						<span class="glyphicon glyphicon-phone"></span> +94 4896532
