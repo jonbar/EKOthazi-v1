@@ -1,5 +1,5 @@
 
-<html lang="en">
+<html>
 <head>
 <?php
 session_start();
@@ -23,7 +23,6 @@ if (isset($_SESSION['email'])) {
 	media="screen" />
 <link rel="stylesheet" type="text/css" href="../../css/general.css"
 	media="screen" />
-<!-- descarga de jquery -->
 
 </head>
 <body style="text-align: justify;">
@@ -33,7 +32,7 @@ if (isset($_SESSION['email'])) {
 				<div class="container-fluid">
 					<div background-color="green" class="navbar-header">
 						<a href="../inicio/inicio.php"><img src="../../img/logo largo.png"
-							style="height: 150px;"></a>
+							style="height:25%"></a>
 					</div>
 					<div class="container-fluid">
 
@@ -107,7 +106,6 @@ if (isset($_SESSION['email'])) {
     echo '</div>';
     mysqli_free_result($result);
     ?>
-
 			</div>
 			<div class="col-sm-4">
 				<div class="thumbnail">

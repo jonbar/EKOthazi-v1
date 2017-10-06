@@ -269,7 +269,7 @@
 				</div>
 			</div>
 
-			<div id="menu3" class="tab-pane fade">
+			<div id="menu3" class="tab-pane fade" >
 				<p>
 				
 				
@@ -281,10 +281,7 @@
 						</a>
 						<div id="foto1" class="collapse">
 							<p>
-								<strong> Me gusta el mariscoooo, odio las hortalizas </strong>
-							</p>
-							<p>
-								<strong> Puta vidaaa </strong>
+								<strong> Solo khlav kalash </strong>
 							</p>
 						</div>
 					</div>
@@ -319,20 +316,7 @@
 						</div>
 					</div>
 
-					<div class="col-sm-3">
-						<a href="#foto4" data-toggle="collapse"> <img
-							src="../../img/foto4-curriculum.jpg" class="img-circle person"
-							alt="foto4" width="150" height="150">
-						</a>
-						<div id="foto4" class="collapse">
-							<p>
-								<strong> Lil boat </strong>
-							</p>
-							<p>
-								<strong> I like pizza </strong>
-							</p>
-						</div>
-					</div>
+					
 				</div>
 
 				<p>
@@ -384,18 +368,6 @@
 						</div>
 					</div>
 
-					<div class="col-sm-3">
-						<a href="#foto8" data-toggle="collapse"> <img
-							src="../../img/foto8-curriculum.jpg" class="img-circle person"
-							alt="foto8" width="150" height="150">
-						</a>
-						<div id="foto8" class="collapse">
-
-							<p>
-								<strong> Gang , BANG </strong>
-							</p>
-						</div>
-					</div>
 				</div>
 				<p>
 			
