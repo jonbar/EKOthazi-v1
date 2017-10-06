@@ -1,5 +1,9 @@
 <html lang="en">
 <head>
+<?php
+session_start();
+
+?>
 <title>Quienes somos</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,18 +27,39 @@
 				<div class="container-fluid">
 					<div background-color="green" class="navbar-header">
 						<a href="../inicio/inicio.php"><img src="../../img/logo largo.png"
-							style="height: 150px;"></a>
-
+							style="height: 25%"></a>
 					</div>
 					<div class="container-fluid">
-
 						<ul class="nav navbar-nav navbar-right">
-							<li>
+						<?php
+    if ($_SESSION == true) {
+        $link = mysqli_connect('localhost', 'root', '', 'ekothazi');
+        
+        $sql = "SELECT * FROM `usuarios` WHERE email ='" . $_SESSION['username'] . "'";
+        mysqli_set_charset($link, "utf8"); /* Procedural approach */
+        
+        $result = mysqli_query($link, $sql);
+        
+        $row = mysqli_fetch_array($result);
+        echo 'Hola, ' . $row['nombre'] . ' ' . $row['apellido'];
+        ?>  
+                                <a href="../inicio/logout.php"> <span
+								class="glyphicon glyphicon-log-out"></span>
+							</a>
+
+                                <?php
+    } else {
+        ?>
+                                <li>
 								<button type="button" class="btn btn-link" data-toggle="modal"
 									data-target="#myModal">
 									<span class="glyphicon glyphicon-log-in"></span> Iniciar sesion
 								</button>
 							</li>
+                                <?php
+    }
+    ?>
+							
 						</ul>
 						<ul class="nav navbar-nav navbar-right" style="margin-top: 75px;">
 							<li><a href="../inicio/inicio.php">INICIO</a></li>
@@ -49,18 +74,22 @@
 							<!-- Modal content-->
 							<div class="modal-content">
 								<div class="modal-header">
+
 									<button type="button" class="close" data-dismiss="modal">&times;</button>
 									<h4 class="modal-title">Inicio de sesión</h4>
 								</div>
 								<div class="modal-body">
-									<form>
+									<form name="encuesta" action="../inicio/validacion.php" method="POST"
+										onsubmit="return enviar()">
 										<div class="form-group">
-											<label for="email">Correo electrónico:</label> <input
-												type="email" class="form-control" id="email">
+											<label for="input">Cuenta de correo </label> <input
+												type="text" name="correo" id="correo"
+												onKeyPress="return comprobarArroba(event)"
+												required="required" />
 										</div>
 										<div class="form-group">
-											<label for="pwd">Contraseña:</label> <input type="password"
-												class="form-control" id="pwd">
+											<label for="input">Introduzca clave de acceso </label><input
+												type="password" id="clave" name="clave" required="required" />
 										</div>
 										<div class="checkbox">
 											<label><input type="checkbox"> Recordarme en esta página</label>
@@ -210,10 +239,10 @@
 							<img src="../../img/tienda_eco1.jpg" alt="tienda_eco1"
 								style="width: 100%">
 							<h3>Cero envases</h3>
-							<p>La idea nace de minimizar los residuos de plástico, utilizando
-								envases como botes de cristal, de plástico duro o metálicos que
-								podemos llevar a la tienda y rellenarlos con los productos que
-								compremos.</p>
+							<p>La idea nace de minimizar los residuos de plástico,
+								utilizando envases como botes de cristal, de plástico duro o
+								metálicos que podemos llevar a la tienda y rellenarlos con los
+								productos que compremos.</p>
 						</div>
 					</div>
 					<div class="column">
@@ -233,9 +262,9 @@
 								style="width: 100%">
 							<h3>Directo de la huerta</h3>
 							<p>Las frutas y verduras llegan de la huerta a la tienda sin
-								conservantes ni pesticidas. La manera más sana de consumir estos
-								alimentos llenos de propiedades, sin envases de plástico ni
-								bandejas.</p>
+								conservantes ni pesticidas. La manera más sana de consumir
+								estos alimentos llenos de propiedades, sin envases de plástico
+								ni bandejas.</p>
 						</div>
 					</div>
 
@@ -299,9 +328,8 @@
 							<p>
 								<b>Jon Barrutieta</b>
 							</p>
-							<p> 1997, Iurreta. Su compromiso por un mundo ecológico ha hecho de un jovenzuelo, todo un HOMBRE.
-								
-							</p>
+							<p>1997, Iurreta. Su compromiso por un mundo ecológico ha hecho
+								de un jovenzuelo, todo un HOMBRE.</p>
 						</div>
 					</div>
 
@@ -314,9 +342,8 @@
 							<p>
 								<b>Leire Blanco</b>
 							</p>
-							<p>
-								1994, Durango. Durante mucho tiempo ha luchado por una vida ecológica en su entorno.
-							</p>
+							<p>1994, Durango. Durante mucho tiempo ha luchado por una vida
+								ecológica en su entorno.</p>
 						</div>
 					</div>
 
@@ -329,9 +356,7 @@
 							<p>
 								<b> </b>
 							</p>
-							<p>
-								
-							</p>
+							<p></p>
 						</div>
 					</div>
 
@@ -344,9 +369,7 @@
 							<p>
 								<b> </b>
 							</p>
-							<p>
-							
-							</p>
+							<p></p>
 						</div>
 					</div>
 
@@ -365,9 +388,7 @@
 							<p>
 								<b></b>
 							</p>
-							<p>
-								
-							</p>
+							<p></p>
 						</div>
 					</div>
 
@@ -380,9 +401,7 @@
 							<p>
 								<b> </b>
 							</p>
-							<p>
-							
-							</p>
+							<p></p>
 						</div>
 					</div>
 

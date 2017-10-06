@@ -1,5 +1,9 @@
 <html lang="en">
 <head>
+<?php
+session_start();
+
+?>
 <title>Noticias</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,27 +23,51 @@
 	
 </head>
 <body style="text-align: justify;">
-	<header>
+		<header>
 		<div class="container">
 			<nav class="navbar navbar-default">
 				<div class="container-fluid">
 					<div background-color="green" class="navbar-header">
-						<a href="../inicio/inicio.php"><img src="../../img/logo largo.png" style="height: 150px;"></a>
+						<a href="../inicio/inicio.php"><img src="../../img/logo largo.png"
+							style="height: 25%"></a>
 					</div>
 					<div class="container-fluid">
-
 						<ul class="nav navbar-nav navbar-right">
-							<li>
+						<?php
+                            if ($_SESSION == true) {
+                                $link = mysqli_connect('localhost', 'root', '', 'ekothazi');
+                                
+                                $sql = "SELECT * FROM `usuarios` WHERE email ='" . $_SESSION['username'] . "'";
+                                mysqli_set_charset($link, "utf8"); /* Procedural approach */
+                                
+                                $result = mysqli_query($link, $sql);
+                                
+                                $row = mysqli_fetch_array($result);
+                                echo 'Hola, ' . $row['nombre'] . ' ' . $row['apellido'];
+                                ?>
+                                <a href="../inicio/logout.php">
+                                    <span class="glyphicon glyphicon-log-out"></span>
+                                </a>
+                                
+                               
+                                <?php 
+                            } else {
+                                ?>
+                                <li>
 								<button type="button" class="btn btn-link" data-toggle="modal"
 									data-target="#myModal">
-									<span class="glyphicon glyphicon-log-in"></span>Iniciar sesión
+									<span class="glyphicon glyphicon-log-in"></span> Iniciar sesion
 								</button>
 							</li>
+                                <?php 
+                            }
+                           ?>
+							
 						</ul>
 						<ul class="nav navbar-nav navbar-right" style="margin-top: 75px;">
 							<li ><a href="../inicio/inicio.php">INICIO</a></li>
 							<li><a href="../quienes_somos/quienes_somos.php">QUIENES SOMOS</a></li>
-							<li class="active"><a href="#">NOTICIAS</a></li>
+							<li class="active"><a href="../noticias/noticias.php">NOTICIAS</a></li>
 							<li><a href="../productos/productos.php">PRODUCTOS</a></li>
 						</ul>
 					</div>
@@ -49,21 +77,25 @@
 							<!-- Modal content-->
 							<div class="modal-content">
 								<div class="modal-header">
+
 									<button type="button" class="close" data-dismiss="modal">&times;</button>
 									<h4 class="modal-title">Inicio de sesión</h4>
 								</div>
 								<div class="modal-body">
-									<form>
+									<form name="encuesta" action="../inicio/validacion.php" method="POST"
+										onsubmit="return enviar()">
 										<div class="form-group">
-											<label for="email">Correo electrónico:</label> <input
-												type="email" class="form-control" id="email">
+											<label for="input">Cuenta de correo </label> <input
+												type="text" name="correo" id="correo"
+												onKeyPress="return comprobarArroba(event)"
+												required="required" />
 										</div>
 										<div class="form-group">
-											<label for="pwd">Contraseña:</label> <input
-												type="password" class="form-control" id="pwd">
+											<label for="input">Introduzca clave de acceso </label><input
+												type="password" id="clave" name="clave" required="required" />
 										</div>
 										<div class="checkbox">
-											<label><input type="checkbox">Recordarme en esta página</label>
+											<label><input type="checkbox"> Recordarme en esta página</label>
 										</div>
 										<button type="submit" class="btn btn-default">Enviar</button>
 									</form>
