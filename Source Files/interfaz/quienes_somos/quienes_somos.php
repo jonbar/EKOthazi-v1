@@ -281,22 +281,22 @@
 						</a>
 						<div id="foto1" class="collapse">
 							<p>
-								<strong> Solo khlav kalash </strong>
+								<strong>  </strong>
 							</p>
 						</div>
 					</div>
 
 					<div class="col-sm-3">
 						<a href="#foto2" data-toggle="collapse"> <img
-							src="../../img/jon_vegano.jpg" class="img-circle person"
+							src="../../img/foto2-curriculum.jpg" class="img-circle person"
 							alt="foto2" width="150" height="150">
 						</a>
 						<div id="foto2" class="collapse">
 							<p>
-								<strong> Soy venago de nacimiento </strong>
+								<strong> </strong>
 							</p>
 							<p>
-								<strong> beber leche = una vaca violada </strong>
+								<strong>  </strong>
 							</p>
 						</div>
 					</div>
@@ -308,14 +308,28 @@
 						</a>
 						<div id="foto3" class="collapse">
 							<p>
-								<strong> Tentazioneee</strong>
+								<strong> </strong>
 							</p>
 							<p>
-								<strong> Look at ME ! </strong>
+								<strong> </strong>
 							</p>
 						</div>
 					</div>
-
+					
+					<div class="col-sm-3">
+						<a href="#foto4" data-toggle="collapse"> <img
+							src="../../img/foto4-curriculum.jpg" class="img-circle person"
+							alt="foto4" width="150" height="150">
+						</a>
+						<div id="foto4" class="collapse">
+							<p>
+								<strong> </strong>
+							</p>
+							<p>
+								<strong> </strong>
+							</p>
+						</div>
+					</div>	
 					
 				</div>
 
@@ -333,7 +347,7 @@
 								<strong></strong>
 							</p>
 							<p>
-								<strong> Llevo una cebolla roja en la cabeza </strong>
+								<strong>  </strong>
 							</p>
 						</div>
 					</div>
@@ -345,10 +359,10 @@
 						</a>
 						<div id="foto6" class="collapse">
 							<p>
-								<strong> 21,21,21 </strong>
+								<strong>  </strong>
 							</p>
 							<p>
-								<strong> ISSA knife </strong>
+								<strong>  </strong>
 							</p>
 						</div>
 					</div>
@@ -363,7 +377,22 @@
 								<strong> </strong>
 							</p>
 							<p>
-								<strong> Kodak Black, BOdak Yellow </strong>
+								<strong>  </strong>
+							</p>
+						</div>
+					</div>
+					
+					<div class="col-sm-3">
+						<a href="#foto8" data-toggle="collapse"> <img
+							src="../../img/foto8-curriculum.jpg" class="img-circle person"
+							alt="foto8" width="150" height="150">
+						</a>
+						<div id="foto8" class="collapse">
+							<p>
+								<strong> </strong>
+							</p>
+							<p>
+								<strong>  </strong>
 							</p>
 						</div>
 					</div>
