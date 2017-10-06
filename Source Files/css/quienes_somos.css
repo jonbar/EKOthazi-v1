@@ -1,0 +1,11 @@
+@charset "ISO-8859-1";
+
+#map {
+	height: 75%;
+	width: 50%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+	height: 100%;
+	margin: 0;
+}

@@ -1,4 +1,18 @@
 @charset "ISO-8859-1";
-.redSocialFooter{
+
+* {
+	box-sizing: border-box
+}
+
+body {
+	font-family: Verdana;
+	margin: 0
+}
+
+.mySlides {
+	display: none
+}
+
+.redSocialFooter {
 	height: 50px;
 }

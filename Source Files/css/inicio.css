@@ -1,23 +1,39 @@
 @charset "ISO-8859-1";
-.redSocial{
+
+* {
+	box-sizing: border-box
+}
+
+body {
+	font-family: Verdana;
+	margin: 0
+}
+
+.mySlides {
+	display: none
+}
+
+.redSocial {
 	height: 50px;
 	margin-left: 50px;
 	margin-bottom: 25px;
 	margin-top: 25px;
 }
-.imagenFooter{
+
+.imagenFooter {
 	height: 150px;
 }
 
-.derechos{
+.derechos {
 	color: gray;
 	font-size: 10px;
 }
 
-.menuQuienesSomos{
-	color:green;
+.menuQuienesSomos {
+	color: green;
 }
-.formularioRegistro{
+
+.formularioRegistro {
 	border-radius: 5px;
 	height: 30px;
 }

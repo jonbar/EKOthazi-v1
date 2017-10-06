@@ -12,10 +12,6 @@ session_start();
 <link rel="stylesheet" href="../../css/general.css">
 <link rel="stylesheet" href="../../css/inicio.css">
 
-<link rel="stylesheet" href="../../css/productos.css" />
-<link rel="stylesheet" href="../../css/general.css" />
-<link rel="stylesheet" href="../../css/inicio.css" />
-
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script
@@ -34,7 +30,7 @@ session_start();
 							style="height: 25%"></a>
 					</div>
 					<div class="container-fluid">
-						<ul class="nav navbar-nav navbar-right">
+						<ul class="nav navbar-nav navbar-right" style="font-family: verdana">
 						<?php
     if ($_SESSION == true) {
         $link = mysqli_connect('localhost', 'root', '', 'ekothazi');
@@ -57,7 +53,7 @@ session_start();
         ?>
                                 <li>
 								<button type="button" class="btn btn-link" data-toggle="modal"
-									data-target="#myModal">
+									data-target="#myModal" style="font-family: verdana">
 									<span class="glyphicon glyphicon-log-in"></span> Iniciar sesion
 								</button>
 							</li>
@@ -66,7 +62,7 @@ session_start();
     ?>
 							
 						</ul>
-						<ul class="nav navbar-nav navbar-right" style="margin-top: 75px;">
+						<ul class="nav navbar-nav navbar-right" style="margin-top: 75px; font-family: verdana">
 							<li><a href="../inicio/inicio.php">INICIO</a></li>
 							<li><a href="../quienes_somos/quienes_somos.php">QUIENES SOMOS</a></li>
 							<li ><a href="../noticias/noticias.php">NOTICIAS</a></li>

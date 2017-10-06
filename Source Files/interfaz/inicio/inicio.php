@@ -131,42 +131,51 @@ session_start();
 			</div>
 			<div class="col-sm-4">
 				<div class="thumbnail">
-					<button type="button" class="btn" data-toggle="modal"
-						data-target="#myModalRegistro" style="width: 100%">
-						<span class="glyphicons glyphicons-leaf"></span><b>Reg√≠strate en
-							nuestra p√°gina</b>
-					</button>
-					<div class="modal fade" id="myModalRegistro" role="dialog">
-						<div class="modal-dialog">
+				
+				<button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModalRegistro" style="width: 100%; background-color: #01DF74">
+                  <span class="glyphicon glyphicon-leaf"></span> <b>Reg√≠strate en nuestra p√°gina</b>
+                </button>
+                <!-- Trigger the modal with a button -->
 
-							<!-- Modal content-->
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal">&times;</button>
-									<h4 class="modal-title">Registro</h4>
-								</div>
-								<div class="modal-body">
-									<!-- e tenido que quitar la parte de boostrap en los inputs -->
-									<form name="encuestaRegistro" action="validacion.php"
-										method="POST" onsubmit="return enviar()">
-										<div class="form-group">
-											<label for="input">Cuenta de correo </label> <input
-												type="text" name="correo" id="correo"
-												onKeyPress="return comprobarArrobaa(event)" />
-										</div>
-										<div class="form-group">
-											<label for="input">Introduzca clave de acceso </label><input
-												type="password" id="clave" name="clave" />
-										</div>
-										<div class="checkbox">
-											<label><input type="checkbox"> Recordarme en esta p√°gina</label>
-										</div>
-										<button type="submit" class="btn btn-default">Enviar</button>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
+<!-- Modal -->
+<div id="myModalRegistro" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Formulario de registro</h4>
+      </div>
+      <div class="modal-body">
+        <form action="registro.php" method="POST">
+          <div class="form-group">
+            <label for="email">Nombre:</label>
+            <input type="text" class="form-control" name="nombre" id="nombre" required="required"/>
+          </div>
+          <div class="form-group">
+            <label for="email">Apellido:</label>
+            <input type="text" class="form-control" name="apellido" id="apellido" required="required"/>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo:</label>
+            <input type="email" class="form-control" name="email" id="email" required="required"/>
+          </div>
+          <div class="form-group">
+            <label for="pwd">ContraseÒa:</label>
+            <input type="password" class="form-control" name="contrasena" id="contraseÒa" required="required"/>
+          </div>
+          <div class="form-group">
+            <label for="pwd">Repite la contraseÒa:</label>
+            <input type="password" class="form-control" name="contrasenaComprobacion" id="contraseÒaComprobacion" required="required"/>
+          </div>
+          <button type="submit" class="btn btn-default">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
 				</div>
 				<div class="thumbnail">
 					<script>

@@ -1,11 +1,23 @@
 @charset "ISO-8859-1";
 
-body,h1,h2,h3,h4,h5 {	
-	font-family: "Raleway", sans-serif
-}
-	
-.imagenNoticia{
-	width:350px; 
-	margin-left: 25px;
+* {
+	box-sizing: border-box
 }
 
+body {
+	font-family: Verdana;
+	margin: 0
+}
+
+.mySlides {
+	display: none
+}
+
+body, h1, h2, h3, h4, h5 {
+	font-family: Verdana;
+}
+
+.imagenNoticia {
+	width: 350px;
+	margin-left: 25px;
+}

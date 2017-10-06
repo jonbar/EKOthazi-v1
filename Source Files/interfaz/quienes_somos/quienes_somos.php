@@ -19,6 +19,9 @@ session_start();
 	media="screen" />
 <link rel="stylesheet" type="text/css" href="../../css/general.css"
 	media="screen" />
+<link rel="stylesheet" type="text/css" href="../../css/quienes_somos.css"
+	media="screen" />
+	<script src="../../javascript/quienes_somos.js"></script>
 </head>
 <body style="text-align: justify;">
 	<header>
@@ -155,12 +158,11 @@ session_start();
 					</div>
 
 				</div>
-				<div class="col-sm-12">
-					<iframe style="width: 1200px; height: 500px;"
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d726.8373684758875!2d-2.7255633800919963!3d43.22313200100819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e369c4e0d1637%3A0x78ccbf7525105ab1!2sCIFP+ZORNOTZA+LHII!5e0!3m2!1ses!2ses!4v1507189611960"
-						width="600" height="450" frameborder="0" style="border:0"
-						allowfullscreen></iframe>
-				</div>
+				<div id="map"></div>
+                 <!-- Replace the value of the key parameter with your own API key. -->
+                <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&callback=initMap">
+                </script>
 			</div>
 			<div id="menu1" class="tab-pane fade">
 				<div>
@@ -422,66 +424,55 @@ $(document).ready(function(){
 </body>
 <footer>
 	<div class="container">
-		<div class="container-fluid">
-			<div class="row" style="background-color: #E6E6E6;">
-				<div class="col-sm-4">
-					<img src="../../img/logoLargoFooter.png" class="imagenFooter">
-				</div>
-				<div class="col-sm-3">
-					<h4 style="color: 7ac043;">Información</h4>
-					<ul style="color: 7ac043">
-						<li>Aviso legal</li>
-						<li>Preguntas frecuentes</li>
-						<li>Trabaja con nosotros</li>
-						<li>Envíos y devoluciones</li>
-					</ul>
-				</div>
+			<div class="container-fluid">
+				<div class="row" style="background-color: #E6E6E6;">
+					<div class="col-sm-4">
+						<img src="../../img/logoLargoFooter.png" class="imagenFooter">
+					</div>
+					<div class="col-sm-3">
+						<h4 style="color: 7ac043;">Información</h4>
+						<ul style="color: 7ac043">
+							<li>Aviso legal</li>
+							<li>Preguntas frecuentes</li>
+							<li>Trabaja con nosotros</li>
+							<li>Envíos y devoluciones</li>
+						</ul>
+					</div>
 
-				<div class="col-sm-3">
-					<h4 style="color: 7ac043;">Información</h4>
-					<ul style="color: 7ac043">
-						<li>Aviso legal</li>
-						<li>Preguntas frecuentes</li>
-						<li>Trabaja con nosotros</li>
-						<li>Envíos y devoluciones</li>
-					</ul>
-				</div>
+					<div class="col-sm-3">
+						<h4 style="color: 7ac043">Conócenos</h4>
+						<ul>
 
-				<div class="col-sm-3">
-					<h4 style="color: 7ac043">Conócenos</h4>
-					<ul>
-
-						<a href="../quienes_somos/quienes_somos.php" style="color: 7ac043"><li>Contacto</a>
-						</li>
-						<a href="../noticias/noticias.php" style="color: 7ac043"><li>Blog</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-sm-2">
-					<table style="margin-top: 15px">
-						<tr>
-							<td colspan="2" style="text-align: center"><a
-								href="https://www.facebook.com/ecotiendaorganicaynatural/"
-								data-toggle="tooltip" data-placement="bottom" title="Facebook"><img
-									src="../../img/facebook_icon.png" class="redSocialFooter" /></a></td>
-						</tr>
-						<tr>
-							<td><a href="https://twitter.com/Ecotiendagdl"
-								data-toggle="tooltip" data-placement="bottom" title="Twitter"><img
-									src="../../img/twitter_icon.png" class="redSocialFooter" /></a></td>
-							<td><a href="https://web.stagram.com/ecotiendaorganica"
-								data-toggle="tooltip" data-placement="bottom" title="Instagram"><img
-									src="../../img/instagram_icon.png" class="redSocialFooter" /></a></td>
-						</tr>
-					</table>
-				</div>
+							<li><a href="../quienes_somos/quienes_somos.php" style="color: 7ac043">Contacto</a></li>
+							<li><a href="../noticias/noticias.php" style="color: 7ac043">Blog</a></li>
+							
+						</ul>
+					</div>
+					<div class="col-sm-2">
+						<table style="margin-top: 15px">
+							<tr>
+								<td colspan="2" style="text-align: center"><a
+									href="https://www.facebook.com/ecotiendaorganicaynatural/"
+									data-toggle="tooltip" data-placement="bottom" title="Facebook"><img
+										src="../../img/facebook_icon.png" class="redSocialFooter" /></a></td>
+							</tr>
+							<tr>
+								<td><a href="https://twitter.com/Ecotiendagdl"
+									data-toggle="tooltip" data-placement="bottom" title="Twitter"><img
+										src="../../img/twitter_icon.png" class="redSocialFooter" /></a></td>
+								<td><a href="https://web.stagram.com/ecotiendaorganica"
+									data-toggle="tooltip" data-placement="bottom" title="Instagram"><img
+										src="../../img/instagram_icon.png" class="redSocialFooter" /></a></td>
+							</tr>
+						</table>
+					</div>
+					<div class=" derechos col-sm-12" style="background-color: #E6E6E6;">&#169;
+					EKOthazi S.L. 2005-2017. TODOS LOS DERECHOS RESERVADOS</div>
 			</div>
-			<div class="row derechos" style="background-color: #E6E6E6;">&#169;
-				EKOthazi S.L. 2005-2017. TODOS LOS DERECHOS RESERVADOS</div>
-		</div>
-	</div>
-
-</footer>
+				</div>
+				
+			</div>
+		</footer>
 </html>
 
 
