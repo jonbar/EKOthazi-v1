@@ -109,7 +109,51 @@ session_start();
 	</header>
 	<div class="container">
 		<div class="row">
-			<?php     
+			<?php   
+			
+			if ($_SESSION == true) {
+			    $link = mysqli_connect('localhost', 'root', '', 'ekothazi');
+			    
+			    $sql = "SELECT * FROM `usuarios` WHERE email ='" . $_SESSION['username'] . "'";
+			    mysqli_set_charset($link, "utf8"); /* Procedural approach */
+			    
+			    $result = mysqli_query($link, $sql);
+			    
+			    $row = mysqli_fetch_array($result);
+			    if($row['rol'] == 'admin'){
+			        ?>
+			        <div class="container">
+			        <div class='media well' style='background-color: white; text-align: center'>
+			        	<input type="button" id="creacionEntrada" name="creacionEntrada" value="Crear una nueva entrada"/>
+			        	<select name="comboEntrada"> 
+			        	<?php 
+			        	$link = mysqli_connect('localhost', 'root', '', 'ekothazi');
+			        	$sql="SELECT * FROM entrada_blog ";
+			        	mysqli_set_charset($link, "utf8");
+			        	$result=mysqli_query($link, $sql);
+			        	
+			        	while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
+			        	    echo '<option value="' . $row['id_entrada'] . '">' . $row['titulo'] . '</option>'; 
+			        	}
+                        ?>
+                        </select> 
+                        <input type="button" name="borrar" id="borrar" value="Borrar">
+                    </div>
+			        </div>
+			        <?php 
+			    }elseif ($row['rol'] == 'user'){
+			        ?>
+			        <div class='media well' style='background-color: white; text-align: center'>
+			        <div class="container">
+			        	<input type="button" id="creacionEntrada" name="creacionEntrada" style="border-radius: 5px" value="Crear una nueva entrada"/>
+			        </div>
+			        </div>
+			        <?php 
+			    }
+			}
+
+			
+			
 			/*--
 			$link -> Conexion con la base de datos.
 			$sql -> sentencia sql.
