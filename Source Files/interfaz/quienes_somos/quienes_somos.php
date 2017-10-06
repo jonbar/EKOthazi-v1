@@ -22,7 +22,8 @@
 			<nav class="navbar navbar-default">
 				<div class="container-fluid">
 					<div background-color="green" class="navbar-header">
-						<a href="../inicio/inicio.php"><img src="../../img/logo largo.png" style="height: 150px;"></a>
+						<a href="../inicio/inicio.php"><img src="../../img/logo largo.png"
+							style="height: 150px;"></a>
 
 					</div>
 					<div class="container-fluid">
@@ -54,8 +55,8 @@
 								<div class="modal-body">
 									<form>
 										<div class="form-group">
-											<label for="email">Correo electrónico:</label>
-											<input type="email" class="form-control" id="email">
+											<label for="email">Correo electrónico:</label> <input
+												type="email" class="form-control" id="email">
 										</div>
 										<div class="form-group">
 											<label for="pwd">Contraseña:</label> <input type="password"
@@ -91,7 +92,8 @@
 
 				<div class="col-sm-5">
 					<p>
-						<span class="glyphicon glyphicon-map-marker"></span> Urritxe Kalea 13, Amorebieta, Vizcaya
+						<span class="glyphicon glyphicon-map-marker"></span> Urritxe Kalea
+						13, Amorebieta, Vizcaya
 					</p>
 					<p>
 						<span class="glyphicon glyphicon-phone"></span> +946 82 94 65
@@ -122,34 +124,39 @@
 							<button class="btn btn-default pull-right" type="submit">Enviar</button>
 						</div>
 					</div>
- 	
+
 				</div>
 				<div class="col-sm-12">
- 	<iframe style="width:1200px; height: 500px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d726.8373684758875!2d-2.7255633800919963!3d43.22313200100819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e369c4e0d1637%3A0x78ccbf7525105ab1!2sCIFP+ZORNOTZA+LHII!5e0!3m2!1ses!2ses!4v1507189611960" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>		
+					<iframe style="width: 1200px; height: 500px;"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d726.8373684758875!2d-2.7255633800919963!3d43.22313200100819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e369c4e0d1637%3A0x78ccbf7525105ab1!2sCIFP+ZORNOTZA+LHII!5e0!3m2!1ses!2ses!4v1507189611960"
+						width="600" height="450" frameborder="0" style="border:0"
+						allowfullscreen></iframe>
 				</div>
 			</div>
 			<div id="menu1" class="tab-pane fade">
 				<div>
-					<h3 style="color: green">Huertos ecologicos en Urritxe,
+					<h3 style="color: green">Huertos ecológicos en Urritxe,
 						Amorebieta-Etxano</h3>
 					<div class="slideshow-container">
 
 						<div class="mySlides">
 							<div class="numbertext">1 / 3</div>
 							<img src="../../img/huerto_eco01.jpg" style="width: 100%">
-							<div class="text">Terrenos para huerto</div>
+							<div class="text">Terrenos individuales para los vecinos de
+								Urritxe.</div>
 						</div>
 
 						<div class="mySlides">
 							<div class="numbertext">2 / 3</div>
 							<img src="../../img/huerto_eco02.jpg" style="width: 100%">
-							<div class="text"></div>
+							<div class="text">Algunas de las verduras cosechadas el último
+								año.</div>
 						</div>
 
 						<div class="mySlides">
 							<div class="numbertext">3 / 3</div>
 							<img src="../../img/huerto_eco03.jpg" style="width: 100%">
-							<div class="text"></div>
+							<div class="text">Huerto del vecino Iñaki, lechugas, coles..</div>
 						</div>
 
 						<a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a
@@ -185,53 +192,62 @@
                       dots[slideIndex-1].className += " active";
                     }
                     </script>
-                    <h3 style="color: green">Nueva tienda ecologica en Zubiaurre, Iurreta</h3>
+				<h3 style="color: green">Nueva tienda ecológica en Zubiaurre,
+					Iurreta</h3>
 				<div class="row">
 					<div class="column">
 						<div class="content">
-							<img src="../../img/tienda_eco.jpg" alt="Mountains" style="width: 100%">
+							<img src="../../img/tienda_eco.jpg" alt="tienda_eco"
+								style="width: 100%">
 							<h3>Instalaciones</h3>
-							<p>Una tienda pensada para el disfrute de sus consumidores, con unas 
-							instalaciones sencillas y un ambiente agradable para que la experiencia
-							 de compra sea óptima.</p>
+							<p>Una tienda pensada para el disfrute de sus consumidores, con
+								unas instalaciones sencillas y luminosas, un ambiente agradable
+								para que la experiencia de compra sea óptima.</p>
 						</div>
 					</div>
 					<div class="column">
 						<div class="content">
-							<img src="../../img/tienda_eco1.jpg" alt="Lights" style="width: 100%">
+							<img src="../../img/tienda_eco1.jpg" alt="tienda_eco1"
+								style="width: 100%">
 							<h3>Cero envases</h3>
-							<p>La idea nace de minimizar los residuos de plástico, utilizando envases como
-							 botes de cristal o cajas metálicas que podemos llevar a la tienda y rellenarlas 
-							 con los productos que compremos.</p>
+							<p>La idea nace de minimizar los residuos de plástico, utilizando
+								envases como botes de cristal, de plástico duro o metálicos que
+								podemos llevar a la tienda y rellenarlos con los productos que
+								compremos.</p>
 						</div>
 					</div>
 					<div class="column">
 						<div class="content">
-							<img src="../../img/tienda_eco2.jpg" alt="Nature" style="width: 100%">
+							<img src="../../img/tienda_eco2.jpg" alt="tienda_eco2"
+								style="width: 100%">
 							<h3>Productos a granel</h3>
-							<p>Lorem ipsum dolor sit amet, tempor prodesset eos no.
-								Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem
-								ipsum dolor sit amet, tempor prodesset eos no.</p>
+							<p>Un espacio pensado para traer un bote y rellenarlo de pasta,
+								legumbres, frutos secos, cereales, especias... la sección de
+								alimentos a granel que hace de la tienda un espacio llamativo e
+								innovador.</p>
 						</div>
 					</div>
 					<div class="column">
 						<div class="content">
-							<img src="../../img/tienda_eco3.jpg" alt="Mountains" style="width: 100%">
+							<img src="../../img/tienda_eco3.jpg" alt="tienda_eco3"
+								style="width: 100%">
 							<h3>Directo de la huerta</h3>
-							<p>Lorem ipsum dolor sit amet, tempor prodesset eos no.
-								Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem
-								ipsum dolor sit amet, tempor prodesset eos no.</p>
+							<p>Las frutas y verduras llegan de la huerta a la tienda sin
+								conservantes ni pesticidas. La manera más sana de consumir estos
+								alimentos llenos de propiedades, sin envases de plástico ni
+								bandejas.</p>
 						</div>
 					</div>
-					
+
 					<!-- END GRID -->
 				</div>
 			</div>
 
 
 			<div id="menu2" class="tab-pane fade">
-				<br> <br> <br>
-				<div style="margin-left: 100px;" class="container-fluid">
+
+				<div style="margin-left: 100px; margin-bottom: 130px;"
+					class="container-fluid">
 					<div class="row content">
 						<div class="col-sm-5 sidenav">
 							<h3>Quienes somos</h3>
@@ -265,11 +281,11 @@
 							</ul>
 						</div>
 					</div>
-					<br> <br> <br> <br>
+
 				</div>
 			</div>
 
-			<div id="menu3" class="tab-pane fade" >
+			<div id="menu3" class="tab-pane fade">
 				<p>
 				
 				
@@ -281,22 +297,25 @@
 						</a>
 						<div id="foto1" class="collapse">
 							<p>
-								<strong> Solo khlav kalash </strong>
+								<b>Jon Barrutieta</b>
+							</p>
+							<p> 1997, Iurreta. Su compromiso por un mundo ecológico ha hecho de un jovenzuelo, todo un HOMBRE.
+								
 							</p>
 						</div>
 					</div>
 
 					<div class="col-sm-3">
 						<a href="#foto2" data-toggle="collapse"> <img
-							src="../../img/jon_vegano.jpg" class="img-circle person"
+							src="../../img/foto2-curriculum.jpg" class="img-circle person"
 							alt="foto2" width="150" height="150">
 						</a>
 						<div id="foto2" class="collapse">
 							<p>
-								<strong> Soy venago de nacimiento </strong>
+								<b>Leire Blanco</b>
 							</p>
 							<p>
-								<strong> beber leche = una vaca violada </strong>
+								1994, Durango. Durante mucho tiempo ha luchado por una vida ecológica en su entorno.
 							</p>
 						</div>
 					</div>
@@ -308,15 +327,29 @@
 						</a>
 						<div id="foto3" class="collapse">
 							<p>
-								<strong> Tentazioneee</strong>
+								<b> </b>
 							</p>
 							<p>
-								<strong> Look at ME ! </strong>
+								
 							</p>
 						</div>
 					</div>
 
-					
+					<div class="col-sm-3">
+						<a href="#foto4" data-toggle="collapse"> <img
+							src="../../img/foto4-curriculum.jpg" class="img-circle person"
+							alt="foto4" width="150" height="150">
+						</a>
+						<div id="foto4" class="collapse">
+							<p>
+								<b> </b>
+							</p>
+							<p>
+							
+							</p>
+						</div>
+					</div>
+
 				</div>
 
 				<p>
@@ -330,10 +363,10 @@
 						</a>
 						<div id="foto5" class="collapse">
 							<p>
-								<strong></strong>
+								<b></b>
 							</p>
 							<p>
-								<strong> Llevo una cebolla roja en la cabeza </strong>
+								
 							</p>
 						</div>
 					</div>
@@ -345,25 +378,10 @@
 						</a>
 						<div id="foto6" class="collapse">
 							<p>
-								<strong> 21,21,21 </strong>
+								<b> </b>
 							</p>
 							<p>
-								<strong> ISSA knife </strong>
-							</p>
-						</div>
-					</div>
-
-					<div class="col-sm-3">
-						<a href="#foto7" data-toggle="collapse"> <img
-							src="../../img/foto7-curriculum.jpg" class="img-circle person"
-							alt="foto7" width="150" height="150">
-						</a>
-						<div id="foto7" class="collapse">
-							<p>
-								<strong> </strong>
-							</p>
-							<p>
-								<strong> Kodak Black, BOdak Yellow </strong>
+							
 							</p>
 						</div>
 					</div>
@@ -401,7 +419,7 @@ $(document).ready(function(){
 				</div>
 
 				<div class="col-sm-3">
-							<h4 style="color: 7ac043;">Información</h4>
+					<h4 style="color: 7ac043;">Información</h4>
 					<ul style="color: 7ac043">
 						<li>Aviso legal</li>
 						<li>Preguntas frecuentes</li>
@@ -413,25 +431,28 @@ $(document).ready(function(){
 				<div class="col-sm-3">
 					<h4 style="color: 7ac043">Conócenos</h4>
 					<ul>
-						
-						<a href="../quienes_somos/quienes_somos.php" style="color: 7ac043"><li>Contacto</a></li>
-						<a href="../noticias/noticias.php" style="color: 7ac043"><li>Blog</a></li>
+
+						<a href="../quienes_somos/quienes_somos.php" style="color: 7ac043"><li>Contacto</a>
+						</li>
+						<a href="../noticias/noticias.php" style="color: 7ac043"><li>Blog</a>
+						</li>
 					</ul>
 				</div>
 				<div class="col-sm-2">
 					<table style="margin-top: 15px">
 						<tr>
-							<td colspan="2" style="text-align: center"><a href="https://www.facebook.com/ecotiendaorganicaynatural/"
+							<td colspan="2" style="text-align: center"><a
+								href="https://www.facebook.com/ecotiendaorganicaynatural/"
 								data-toggle="tooltip" data-placement="bottom" title="Facebook"><img
 									src="../../img/facebook_icon.png" class="redSocialFooter" /></a></td>
 						</tr>
 						<tr>
-							<td><a href="https://twitter.com/Ecotiendagdl" data-toggle="tooltip" data-placement="bottom"
-								title="Twitter"><img src="../../img/twitter_icon.png"
-									class="redSocialFooter" /></a></td>
-							<td><a href="https://web.stagram.com/ecotiendaorganica" data-toggle="tooltip" data-placement="bottom"
-								title="Instagram"><img src="../../img/instagram_icon.png"
-									class="redSocialFooter" /></a></td>
+							<td><a href="https://twitter.com/Ecotiendagdl"
+								data-toggle="tooltip" data-placement="bottom" title="Twitter"><img
+									src="../../img/twitter_icon.png" class="redSocialFooter" /></a></td>
+							<td><a href="https://web.stagram.com/ecotiendaorganica"
+								data-toggle="tooltip" data-placement="bottom" title="Instagram"><img
+									src="../../img/instagram_icon.png" class="redSocialFooter" /></a></td>
 						</tr>
 					</table>
 				</div>
