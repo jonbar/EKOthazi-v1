@@ -35,7 +35,22 @@ session_start();
 						<ul class="nav navbar-nav navbar-right">
 						<?php
                             if ($_SESSION == true) {
-                                echo 'Bienvenido ' . $_SESSION['username'];
+                                $link = mysqli_connect('localhost', 'root', '', 'ekothazi');
+                                
+                                $sql = "SELECT * FROM `usuarios` WHERE email ='" . $_SESSION['username'] . "'";
+                                mysqli_set_charset($link, "utf8"); /* Procedural approach */
+                                
+                                $result = mysqli_query($link, $sql);
+                                
+                                $row = mysqli_fetch_array($result);
+                                echo 'Hola, ' . $row['nombre'] . ' ' . $row['apellido'];
+                                ?>
+                                <a href="logout.php">
+                                    <span class="glyphicon glyphicon-log-out"></span>
+                                </a>
+                                
+                               
+                                <?php 
                             } else {
                                 ?>
                                 <li>
