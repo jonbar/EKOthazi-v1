@@ -1,42 +1,47 @@
 <?php
-/*session_start();
-
-if (isset($_POST['correo'])) {
-    $link = mysqli_connect('localhost', 'root', '', 'ekothazi');
-    $usuario = $_POST['correo'];
-    $contraseña = $_POST['clave'];
-    $log = "SELECT * FROM usuarios WHERE email='".$usuario."' AND contraseña='".$contraseña."'";
-    $result = mysqli_query($link, $log);
-    echo $log;
-    echo $result;
-    if (mysql_num_rows($result) > 0) {
-        $row = mysql_fetch_array($log);
-        $_SESSION["email"] = $row['email'];
-        echo 'Iniciando sesión para ' . $_SESSION['email'] . ' <p>';
-    } else {
-        echo '<script> alert("Usuario o contraseña incorrectos.");</script>';
-        echo '<script> window.location="index.php"; </script>';
-    }
-}
-*/
-$link = mysqli_connect('localhost', 'root', '', 'ekothazi');
-$usuario = $_POST['correo'];
-$contraseña = $_POST['clave'];
-$consulta = "SELECT * FROM usuarios WHERE email='".$usuario."' AND contraseña='".$contraseña."'";
-$resultado = mysql_query( $link, $consulta ) or die( mysql_error() );
-$datos = mysql_fetch_array( $resultado );
-
-if($datos['email'] != $usuario or $datos['contraseña'] != $contraseña)
-{
-	echo "datos incorrectos";
-	exit();
-}
-else
-{
-	// Inicias la sesion
-	session_start();
-	$_SESSION['email'] = $datos['email'];
-	echo 'Iniciando sesión para ' . $_SESSION['email'] . ' <p>';
-	// Muestras el contenido de la pagina
-}  
+session_start();
 ?>
+
+<?php
+
+$host_db = "localhost";
+$user_db = "root";
+$pass_db = "";
+$db_name = "ekothazi";
+$tbl_name = "usuarios";
+
+$conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
+
+if ($conexion->connect_error) {
+ die("La conexion falló: " . $conexion->connect_error);
+}
+
+$correo = $_POST['correo'];
+$contrasena = $_POST['clave'];
+ 
+$sql = "SELECT * FROM $tbl_name WHERE email = '$correo'";
+
+$result = $conexion->query($sql);
+
+
+if ($result->num_rows > 0) {     
+ }
+ $row = $result->fetch_array(MYSQLI_ASSOC);
+ if ($contrasena === $row['clave']) { 
+ 
+    $_SESSION['loggedin'] = true;
+    $_SESSION['username'] = $correo;
+    $_SESSION['start'] = time();
+    $_SESSION['expire'] = $_SESSION['start'] + (30 * 60);
+
+    echo "Bienvenido! " . $_SESSION['username'];
+    echo "<br><br><a href=panel-control.php>Panel de Control</a>"; 
+
+ } else { 
+   echo "Username o Password estan incorrectos.";
+
+   echo "<br><a href='login.html'>Volver a Intentarlo</a>";
+ }
+ mysqli_close($conexion); 
+ header('Location: inicio.php');
+ ?>
