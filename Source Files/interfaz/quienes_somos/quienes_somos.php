@@ -19,9 +19,9 @@ session_start();
 	media="screen" />
 <link rel="stylesheet" type="text/css" href="../../css/general.css"
 	media="screen" />
-<link rel="stylesheet" type="text/css" href="../../css/quienes_somos.css"
-	media="screen" />
-	<script src="../../javascript/quienes_somos.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="../../css/quienes_somos.css" media="screen" />
+<script src="../../javascript/quienes_somos.js"></script>
 </head>
 <body style="text-align: justify;">
 	<header>
@@ -82,8 +82,8 @@ session_start();
 									<h4 class="modal-title">Inicio de sesión</h4>
 								</div>
 								<div class="modal-body">
-									<form name="encuesta" action="../inicio/validacion.php" method="POST"
-										onsubmit="return enviar()">
+									<form name="encuesta" action="../inicio/validacion.php"
+										method="POST" onsubmit="return enviar()">
 										<div class="form-group">
 											<label for="input">Cuenta de correo </label> <input
 												type="text" name="correo" id="correo"
@@ -158,11 +158,20 @@ session_start();
 					</div>
 
 				</div>
-				<div id="map"></div>
-                 <!-- Replace the value of the key parameter with your own API key. -->
-                <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&callback=initMap">
-                </script>
+				<div id="googleMap" style="width: 100%; height: 400px;"></div>
+
+				<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+				<script
+					src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 			</div>
 			<div id="menu1" class="tab-pane fade">
 				<div>
@@ -241,10 +250,10 @@ session_start();
 							<img src="../../img/tienda_eco1.jpg" alt="tienda_eco1"
 								style="width: 100%">
 							<h3>Cero envases</h3>
-							<p>La idea nace de minimizar los residuos de plástico,
-								utilizando envases como botes de cristal, de plástico duro o
-								metálicos que podemos llevar a la tienda y rellenarlos con los
-								productos que compremos.</p>
+							<p>La idea nace de minimizar los residuos de plástico, utilizando
+								envases como botes de cristal, de plástico duro o metálicos que
+								podemos llevar a la tienda y rellenarlos con los productos que
+								compremos.</p>
 						</div>
 					</div>
 					<div class="column">
@@ -264,9 +273,9 @@ session_start();
 								style="width: 100%">
 							<h3>Directo de la huerta</h3>
 							<p>Las frutas y verduras llegan de la huerta a la tienda sin
-								conservantes ni pesticidas. La manera más sana de consumir
-								estos alimentos llenos de propiedades, sin envases de plástico
-								ni bandejas.</p>
+								conservantes ni pesticidas. La manera más sana de consumir estos
+								alimentos llenos de propiedades, sin envases de plástico ni
+								bandejas.</p>
 						</div>
 					</div>
 
@@ -330,8 +339,7 @@ session_start();
 							<p>
 								<b>Jon Barrutieta</b>
 							</p>
-							<p>1997, Iurreta. Su compromiso por un mundo ecológico ha hecho
-								de un jovenzuelo, todo un HOMBRE.</p>
+							<p></p>
 						</div>
 					</div>
 
@@ -344,8 +352,7 @@ session_start();
 							<p>
 								<b>Leire Blanco</b>
 							</p>
-							<p>1994, Durango. Durante mucho tiempo ha luchado por una vida
-								ecológica en su entorno.</p>
+							<p></p>
 						</div>
 					</div>
 
@@ -356,11 +363,19 @@ session_start();
 						</a>
 						<div id="foto3" class="collapse">
 							<p>
-								<b> </b>
+								<b>Gorka Cañon</b>
 							</p>
 							<p></p>
 						</div>
 					</div>
+
+
+				</div>
+
+				<p>
+				
+				
+				<div class="row" style="margin-bottom: 50px; text-align: center">
 
 					<div class="col-sm-3">
 						<a href="#foto4" data-toggle="collapse"> <img
@@ -369,18 +384,13 @@ session_start();
 						</a>
 						<div id="foto4" class="collapse">
 							<p>
-								<b> </b>
+								<b>Iker Larrea</b>
 							</p>
 							<p></p>
 						</div>
 					</div>
 
-				</div>
 
-				<p>
-				
-				
-				<div class="row" style="margin-bottom: 50px; text-align: center">
 					<div class="col-sm-3">
 						<a href="#foto5" data-toggle="collapse"> <img
 							src="../../img/foto5-curriculum.jpg" class="img-circle person"
@@ -388,7 +398,7 @@ session_start();
 						</a>
 						<div id="foto5" class="collapse">
 							<p>
-								<b></b>
+								<b>Nerea Unzueta</b>
 							</p>
 							<p></p>
 						</div>
@@ -401,7 +411,7 @@ session_start();
 						</a>
 						<div id="foto6" class="collapse">
 							<p>
-								<b> </b>
+								<b>Endika Basabe</b>
 							</p>
 							<p></p>
 						</div>
@@ -424,55 +434,56 @@ $(document).ready(function(){
 </body>
 <footer>
 	<div class="container">
-			<div class="container-fluid">
-				<div class="row" style="background-color: #E6E6E6;">
-					<div class="col-sm-4">
-						<img src="../../img/logoLargoFooter.png" class="imagenFooter">
-					</div>
-					<div class="col-sm-3">
-						<h4 style="color: 7ac043;">Información</h4>
-						<ul style="color: 7ac043">
-							<li>Aviso legal</li>
-							<li>Preguntas frecuentes</li>
-							<li>Trabaja con nosotros</li>
-							<li>Envíos y devoluciones</li>
-						</ul>
-					</div>
+		<div class="container-fluid">
+			<div class="row" style="background-color: #E6E6E6;">
+				<div class="col-sm-4">
+					<img src="../../img/logoLargoFooter.png" class="imagenFooter">
+				</div>
+				<div class="col-sm-3">
+					<h4 style="color: 7ac043;">Información</h4>
+					<ul style="color: 7ac043">
+						<li>Aviso legal</li>
+						<li>Preguntas frecuentes</li>
+						<li>Trabaja con nosotros</li>
+						<li>Envíos y devoluciones</li>
+					</ul>
+				</div>
 
-					<div class="col-sm-3">
-						<h4 style="color: 7ac043">Conócenos</h4>
-						<ul>
+				<div class="col-sm-3">
+					<h4 style="color: 7ac043">Conócenos</h4>
+					<ul>
 
-							<li><a href="../quienes_somos/quienes_somos.php" style="color: 7ac043">Contacto</a></li>
-							<li><a href="../noticias/noticias.php" style="color: 7ac043">Blog</a></li>
-							
-						</ul>
-					</div>
-					<div class="col-sm-2">
-						<table style="margin-top: 15px">
-							<tr>
-								<td colspan="2" style="text-align: center"><a
-									href="https://www.facebook.com/ecotiendaorganicaynatural/"
-									data-toggle="tooltip" data-placement="bottom" title="Facebook"><img
-										src="../../img/facebook_icon.png" class="redSocialFooter" /></a></td>
-							</tr>
-							<tr>
-								<td><a href="https://twitter.com/Ecotiendagdl"
-									data-toggle="tooltip" data-placement="bottom" title="Twitter"><img
-										src="../../img/twitter_icon.png" class="redSocialFooter" /></a></td>
-								<td><a href="https://web.stagram.com/ecotiendaorganica"
-									data-toggle="tooltip" data-placement="bottom" title="Instagram"><img
-										src="../../img/instagram_icon.png" class="redSocialFooter" /></a></td>
-							</tr>
-						</table>
-					</div>
-					<div class=" derechos col-sm-12" style="background-color: #E6E6E6;">&#169;
+						<li><a href="../quienes_somos/quienes_somos.php"
+							style="color: 7ac043">Contacto</a></li>
+						<li><a href="../noticias/noticias.php" style="color: 7ac043">Blog</a></li>
+
+					</ul>
+				</div>
+				<div class="col-sm-2">
+					<table style="margin-top: 15px">
+						<tr>
+							<td colspan="2" style="text-align: center"><a
+								href="https://www.facebook.com/ecotiendaorganicaynatural/"
+								data-toggle="tooltip" data-placement="bottom" title="Facebook"><img
+									src="../../img/facebook_icon.png" class="redSocialFooter" /></a></td>
+						</tr>
+						<tr>
+							<td><a href="https://twitter.com/Ecotiendagdl"
+								data-toggle="tooltip" data-placement="bottom" title="Twitter"><img
+									src="../../img/twitter_icon.png" class="redSocialFooter" /></a></td>
+							<td><a href="https://web.stagram.com/ecotiendaorganica"
+								data-toggle="tooltip" data-placement="bottom" title="Instagram"><img
+									src="../../img/instagram_icon.png" class="redSocialFooter" /></a></td>
+						</tr>
+					</table>
+				</div>
+				<div class=" derechos col-sm-12" style="background-color: #E6E6E6;">&#169;
 					EKOthazi S.L. 2005-2017. TODOS LOS DERECHOS RESERVADOS</div>
 			</div>
-				</div>
-				
-			</div>
-		</footer>
+		</div>
+
+	</div>
+</footer>
 </html>
 
 
