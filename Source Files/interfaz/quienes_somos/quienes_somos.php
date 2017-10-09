@@ -138,6 +138,7 @@ session_start();
 
 				<div class="col-sm-7 slideanim">
 					<div class="row">
+					<form action="envio_mensaje.php" method="POST">
 						<div class="col-sm-6 form-group">
 							<input class="form-control" id="nombre" name="nombre"
 								placeholder="Nombre" type="text" required>
@@ -146,8 +147,8 @@ session_start();
 							<input class="form-control" id="email" name="email"
 								placeholder="Correo electrónico" type="email" required>
 						</div>
-					</div>
-					<textarea class="form-control" id="comments" name="comments"
+					
+					<textarea class="form-control" id="comentario" name="comentario"
 						placeholder="Comentarios" rows="5"></textarea>
 					<br>
 
@@ -156,7 +157,8 @@ session_start();
 							<button class="btn btn-default pull-right" type="submit">Enviar</button>
 						</div>
 					</div>
-
+					</form>
+					</div>
 				</div>
 				<div id="googleMap" style="width: 100%; height: 400px;"></div>
 

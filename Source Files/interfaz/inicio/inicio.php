@@ -162,12 +162,12 @@ session_start();
             <input type="email" class="form-control" name="email" id="email" required="required"/>
           </div>
           <div class="form-group">
-            <label for="pwd">Contraseña:</label>
-            <input type="password" class="form-control" name="contrasena" id="contraseña" required="required"/>
+            <label for="pwd">ContraseÃ±a:</label>
+            <input type="password" class="form-control" name="contrasena" id="contraseï¿½a" required="required"/>
           </div>
           <div class="form-group">
-            <label for="pwd">Repite la contraseña:</label>
-            <input type="password" class="form-control" name="contrasenaComprobacion" id="contraseñaComprobacion" required="required"/>
+            <label for="pwd">Repite la contraseÃ±a:</label>
+            <input type="password" class="form-control" name="contrasenaComprobacion" id="contraseï¿½aComprobacion" required="required"/>
           </div>
           <button type="submit" class="btn btn-default">Enviar</button>
         </form>
