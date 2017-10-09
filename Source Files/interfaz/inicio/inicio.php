@@ -132,7 +132,7 @@ session_start();
 			<div class="col-sm-4">
 				<div class="thumbnail">
 				
-				<button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModalRegistro" style="width: 100%; background-color: #01DF74">
+				<button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModalRegistro" style="width: 100%; background-color: #5FB404">
                   <span class="glyphicon glyphicon-leaf"></span> <b>Regístrate en nuestra página</b>
                 </button>
                 <!-- Trigger the modal with a button -->
