@@ -26,8 +26,8 @@ session_start();
 		<header>
 		<div class="container">
 			<nav class="navbar navbar-default">
-				<div class="container-fluid">
-					<div background-color="green" class="navbar-header">
+
+					<div class="navbar-header">
 						<a href="../inicio/inicio.php"><img src="../../img/logo largo.png"
 							style="height: 25%"></a>
 					</div>
@@ -48,8 +48,6 @@ session_start();
                                 <a href="../inicio/logout.php">
                                     <span class="glyphicon glyphicon-log-out"></span>
                                 </a>
-                                
-                               
                                 <?php 
                             } else {
                                 ?>
@@ -103,7 +101,7 @@ session_start();
 							</div>
 						</div>
 					</div>
-				</div>
+
 			</nav>
 		</div>
 	</header>
