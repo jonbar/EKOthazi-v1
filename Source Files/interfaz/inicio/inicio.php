@@ -45,12 +45,9 @@ session_start();
         $row = mysqli_fetch_array($result);
         echo 'Hola, ' . $row['nombre'] . ' ' . $row['apellido'];
         ?>
-                                <a href="logout.php"> <span
-								class="glyphicon glyphicon-log-out"></span>
-							</a>
-                                
-                               
-                                <?php
+                            	<a href="logout.php"> <span
+								class="glyphicon glyphicon-log-out"></span></a>
+               				<?php
     } else {
         ?>
                                 <li>
@@ -59,9 +56,7 @@ session_start();
 									<span class="glyphicon glyphicon-log-in"></span> Iniciar sesion
 								</button>
 							</li>
-                                <?php
-    }
-    ?>
+                        <?php } ?>
 							
 						</ul>
 						<ul class="nav navbar-nav navbar-right" style="margin-top: 75px;">
@@ -84,25 +79,14 @@ session_start();
 								<div class="modal-body">
 									<form name="encuesta" action="validacion.php" method="POST"
 										onsubmit="return enviar()">
-										<table>
-											<tr>
-												<td><label for="input">Correo electronico</label></td>
-												<td><input type="text" name="correo" id="correo"
-													onKeyPress="return comprobarArroba(event)"
-													required="required" /></td>
-											</tr>
-											<tr>
-												<td><label for="input">Introduzca clave de acceso </label></td>
+										<label for="input">Correo electronico:</label><br> 
+										<input type="text" class="form-control" name="correo" id="correo"
+											onKeyPress="return comprobarArroba(event)"
+											required="required" /><br> 
+										<label for="input">Conraseña: </label><br>
+										<input type="password" class="form-control" id="clave" name="clave"
+											required="required"/>
 
-												<input type="password" id="clave" name="clave"
-													required="required" />
-												</td>
-												
-												
-											
-											
-											</tr>
-										</table>
 										<div class="checkbox">
 											<label><input type="checkbox"> Recordarme en esta página</label>
 										</div>
@@ -286,8 +270,6 @@ p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.create
 		<!--  -->
 		<script type="text/javascript" src="jquery.js"></script>
 		<script type="text/javascript" src="main.js"></script>
-
-
 
 </body>
 </html>
