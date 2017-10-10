@@ -160,20 +160,34 @@ session_start();
 					</form>
 					</div>
 				</div>
-				<div id="googleMap" style="width: 100%; height: 400px;"></div>
+				<div class="col-sm-7" id="googleMap" width="600px"; height="450px;">
 
-				<script>
-function myMap() {
-var mapProp= {
-    center:new google.maps.LatLng(51.508742,-0.120850),
-    zoom:5,
-};
-var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-}
-</script>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d181.70960499705856!2d-2.7253561794540224!3d43.22304380391802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e369c4e0d1637%3A0x78ccbf7525105ab1!2sCIFP+ZORNOTZA+LHII!5e0!3m2!1ses!2ses!4v1507547631781" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				<h3 style="margin-left:50px; color:green">Contacta con nosotros</h3>
+				<div class="col-sm-12 slideanim">
+					<div class="row">
+						<div class="col-sm-6 form-group">
+							<input class="form-control" id="nombre" name="nombre"
+								placeholder="Nombre" type="text" required>
+						</div>
+						<div class="col-sm-6 form-group">
+							<input class="form-control" id="email" name="email"
+								placeholder="Correo electrónico" type="email" required>
+						</div>
+					</div>
+					<textarea class="form-control" id="comments" name="comments"
+						placeholder="Comentarios" rows="5"></textarea>
+					<br>
 
-				<script
-					src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+					<div class="row">
+						<div class="col-sm-12 form-group">
+							<button class="btn btn-default pull-right" type="submit">Enviar</button>
+						</div>
+					</div>
+
+				</div>
+				
 			</div>
 			<div id="menu1" class="tab-pane fade">
 				<div>
