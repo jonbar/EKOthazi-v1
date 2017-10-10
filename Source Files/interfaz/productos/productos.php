@@ -82,16 +82,13 @@ session_start();
 								<div class="modal-body">
 									<form name="encuesta" action="../inicio/validacion.php"
 										method="POST" onsubmit="return enviar()">
-										<div class="form-group">
-											<label for="input">Cuenta de correo </label> <input
-												type="text" name="correo" id="correo"
-												onKeyPress="return comprobarArroba(event)"
-												required="required" />
-										</div>
-										<div class="form-group">
-											<label for="input">Introduzca clave de acceso </label><input
-												type="password" id="clave" name="clave" required="required" />
-										</div>
+										<label for="input">Correo electronico:</label><br> 
+										<input type="text" class="form-control" name="correo" id="correo"
+											onKeyPress="return comprobarArroba(event)"
+											required="required" /><br> 
+										<label for="input">Conraseña: </label><br>
+										<input type="password" class="form-control" id="clave" name="clave"
+											required="required"/>
 										<div class="checkbox">
 											<label><input type="checkbox"> Recordarme en esta página</label>
 										</div>
