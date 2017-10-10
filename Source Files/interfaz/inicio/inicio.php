@@ -84,24 +84,23 @@ session_start();
 								<div class="modal-body">
 									<form name="encuesta" action="validacion.php" method="POST"
 										onsubmit="return enviar()">
-										<table >
+										<table>
 											<tr>
-												<td>
-												<label for="input">Correo electronico</label> 
-												</td>
-												<td>
-												<input
-													type="text" name="correo" id="correo"
+												<td><label for="input">Correo electronico</label></td>
+												<td><input type="text" name="correo" id="correo"
 													onKeyPress="return comprobarArroba(event)"
 													required="required" /></td>
 											</tr>
 											<tr>
-												<td>
-													<label for="input">Introduzca clave de acceso </label> 
+												<td><label for="input">Introduzca clave de acceso </label></td>
+
+												<input type="password" id="clave" name="clave"
+													required="required" />
 												</td>
-												<td>
-													<input type="password" id="clave" name="clave" required="required" />
-												</td>
+												
+												
+											
+											
 											</tr>
 										</table>
 										<div class="checkbox">
@@ -287,6 +286,8 @@ p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.create
 		<!--  -->
 		<script type="text/javascript" src="jquery.js"></script>
 		<script type="text/javascript" src="main.js"></script>
+
+
 
 </body>
 </html>
