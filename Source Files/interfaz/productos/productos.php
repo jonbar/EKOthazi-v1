@@ -134,7 +134,6 @@ session_start();
 					<div class="col-sm-3">
 						<h4 style="color: 7ac043">Conócenos</h4>
 						<ul>
-
 							<a href="../quienes_somos/quienes_somos.php"
 								style="color: 7ac043"><li>Contacto</a>
 							</li>

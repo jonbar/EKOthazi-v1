@@ -124,13 +124,18 @@ session_start();
 			</div>
 			<div class="col-sm-4">
 				<div class="thumbnail">
-
+						<?php 
+						if ($_SESSION == false) {
+						?>
 					<button type="button" class="btn btn-info btn-sm"
 						data-toggle="modal" data-target="#myModalRegistro"
 						style="width: 100%; background-color: #5FB404">
+						
 						<span class="glyphicon glyphicon-leaf"></span> <b>Regístrate en
 							nuestra página</b>
+						
 					</button>
+					
 					<!-- Trigger the modal with a button -->
 
 					<!-- Modal -->
@@ -178,7 +183,12 @@ session_start();
 
 						</div>
 					</div>
+					
+					<?php 
+						}
+						?>
 				</div>
+				
 				<div class="thumbnail">
 					<script>
                     $(document).ready(function(){
@@ -186,7 +196,7 @@ session_start();
                     });
                     </script>
 
-					<a href="../productos/productos.php" target="_blank"
+					<a href="../productos/productos.php" 
 						data-toggle="tooltip" title="Ver tienda"> <img
 						src="../../img/ecomarket.png" style="width: 50%">
 					</a>
@@ -221,6 +231,7 @@ p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.create
 		</div>
 		</div>
 		<footer>
+			<div class="container">
 			<div class="container-fluid">
 				<div class="row" style="background-color: #E6E6E6;">
 					<div class="col-sm-4">
@@ -268,6 +279,7 @@ p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.create
 				</div>
 				<div class="row derechos" style="background-color: #E6E6E6;">&#169;
 					EKOthazi S.L. 2005-2017. TODOS LOS DERECHOS RESERVADOS</div>
+			</div>
 			</div>
 		</footer>
 		<!--  -->
