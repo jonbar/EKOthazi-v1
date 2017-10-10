@@ -122,10 +122,10 @@ session_start();
 
 				<br>
 
-				<div class="col-sm-5">
+				<div class="col-sm-5" style="margin-top: 30px">
 					<p>
 						<span class="glyphicon glyphicon-map-marker"></span> Urritxe Kalea
-						13, Amorebieta, Vizcaya
+						13,<br> 48340 Amorebieta-Etxano, Vizcaya.
 					</p>
 					<p>
 						<span class="glyphicon glyphicon-phone"></span> +946 82 94 65
@@ -134,60 +134,53 @@ session_start();
 						<span class="glyphicon glyphicon-envelope"></span>
 						ethazitalde1@gmail.com
 					</p>
-				</div>
+					<p>
+						<span class="glyphicon glyphicon-time"></span></br>
+						</br> - Lunes a Viernes: 9:00 a 14:30 y 16:30 a 20:30 </br> -
+						Sábado: 9:00 a 14:00
+					</p>
 
-				<div class="col-sm-7 slideanim">
-					<div class="row">
-					<form action="envio_mensaje.php" method="POST">
-						<div class="col-sm-6 form-group">
-							<input class="form-control" id="nombre" name="nombre"
-								placeholder="Nombre" type="text" required>
-						</div>
-						<div class="col-sm-6 form-group">
-							<input class="form-control" id="email" name="email"
-								placeholder="Correo electrónico" type="email" required>
-						</div>
-					
-					<textarea class="form-control" id="comentario" name="comentario"
-						placeholder="Comentarios" rows="5"></textarea>
-					<br>
+					<h4 style="margin-top: 35px; color: green">Contacta con nosotros</h4>
 
 					<div class="row">
-						<div class="col-sm-12 form-group">
-							<button class="btn btn-default pull-right" type="submit">Enviar</button>
-						</div>
-					</div>
-					</form>
-					</div>
-				</div>
-				<div class="col-sm-7" id="googleMap" width="600px"; height="450px;">
+						<form action="envio_mensaje.php" method="POST">
+							<div class="col-sm-5 form-group">
+								<input class="form-control" id="nombre" name="nombre"
+									placeholder="Nombre" type="text" required>
+							</div>
+							<div class="col-sm-7 form-group">
+								<input class="form-control" id="email" name="email"
+									placeholder="Correo electrónico" type="email" required>
+							</div>
 
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d181.70960499705856!2d-2.7253561794540224!3d43.22304380391802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e369c4e0d1637%3A0x78ccbf7525105ab1!2sCIFP+ZORNOTZA+LHII!5e0!3m2!1ses!2ses!4v1507547631781" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-				</div>
-				<h3 style="margin-left:50px; color:green">Contacta con nosotros</h3>
-				<div class="col-sm-12 slideanim">
-					<div class="row">
-						<div class="col-sm-6 form-group">
-							<input class="form-control" id="nombre" name="nombre"
-								placeholder="Nombre" type="text" required>
-						</div>
-						<div class="col-sm-6 form-group">
-							<input class="form-control" id="email" name="email"
-								placeholder="Correo electrónico" type="email" required>
-						</div>
-					</div>
-					<textarea class="form-control" id="comments" name="comments"
-						placeholder="Comentarios" rows="5"></textarea>
-					<br>
+							<textarea class="form-control" id="comentario"
+								style="resize: none" name="comentario"
+								placeholder="Comentario..." rows="5"></textarea>
 
-					<div class="row">
-						<div class="col-sm-12 form-group">
-							<button class="btn btn-default pull-right" type="submit">Enviar</button>
-						</div>
+
+							<div class="row">
+								<div class="col-sm-12 form-group">
+									<button class="btn btn-default pull-right" type="submit">Enviar</button>
+								</div>
+							</div>
+						</form>
 					</div>
 
 				</div>
-				
+
+
+				<div class="col-sm-7" id="googleMap" ; width="500px"
+					; height="400px;">
+
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d181.70960499705856!2d-2.7253561794540224!3d43.22304380391802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e369c4e0d1637%3A0x78ccbf7525105ab1!2sCIFP+ZORNOTZA+LHII!5e0!3m2!1ses!2ses!4v1507547631781"
+						width="600" height="450" frameborder="0" style="border: 0"
+						allowfullscreen></iframe>
+				</div>
+
+
+
+
 			</div>
 			<div id="menu1" class="tab-pane fade">
 				<div>
@@ -355,7 +348,9 @@ session_start();
 							<p>
 								<b>Jon Barrutieta</b>
 							</p>
-							<p></p>
+							<p>Siento que nuestro progreso espiritual demanda que se detenga
+								la matanza de nuestro prójimo animal para la satisfacción de
+								nuestros deseos corporales.</p>
 						</div>
 					</div>
 
@@ -368,7 +363,9 @@ session_start();
 							<p>
 								<b>Leire Blanco</b>
 							</p>
-							<p></p>
+							<p>Nutricionista y dietista en Durango. "Mens sana in corpore
+								sano", es su lema. Dice que desde que ha cambiado los hábitos
+								alimenticios, se siente mejor consigo misma.</p>
 						</div>
 					</div>
 
@@ -381,7 +378,9 @@ session_start();
 							<p>
 								<b>Gorka Cañon</b>
 							</p>
-							<p></p>
+							<p>Cuando el último árbol se ha cortado, el último río sea
+								envenenado, el último pez pescado, sólo entonces el hombre
+								descubrirá que el dinero no se come.</p>
 						</div>
 					</div>
 
@@ -402,7 +401,8 @@ session_start();
 							<p>
 								<b>Iker Larrea</b>
 							</p>
-							<p></p>
+							<p>Una sociedad se define no sólo por lo que crea, sino por lo que se niega 
+							a destruir. Si no reciclas, reusa. Si no reusas, recicla.</p>
 						</div>
 					</div>
 
@@ -416,7 +416,8 @@ session_start();
 							<p>
 								<b>Nerea Unzueta</b>
 							</p>
-							<p></p>
+							<p>Máster en energías renovables. La verdadera riqueza consiste en saber 
+							prescindir de las cosas superfluas.</p>
 						</div>
 					</div>
 
@@ -429,7 +430,9 @@ session_start();
 							<p>
 								<b>Endika Basabe</b>
 							</p>
-							<p></p>
+							<p>Biologo profesional, con experiencia en el sector de los
+								productos ecológicos preparado para ofrecer la información
+								necesaria a los clientes.</p>
 						</div>
 					</div>
 
