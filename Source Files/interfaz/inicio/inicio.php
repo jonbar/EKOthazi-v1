@@ -193,6 +193,7 @@ session_start();
 				</div>
 				<div>
 					<table>
+					<tr>
 						<td><a href="#" data-toggle="tooltip" data-placement="bottom"
 							title="Facebook"><img src="../../img/facebook_icon.png"
 								class="redSocial" /></a></td>
@@ -202,6 +203,7 @@ session_start();
 						<td><a href="https://web.stagram.com/ecotiendaorganica"
 							data-toggle="tooltip" data-placement="bottom" title="Instagram"><img
 								src="../../img/instagram_icon.png" class="redSocial" /></a></td>
+					</tr>
 					</table>
 				</div>
 				<div class="row">
@@ -216,6 +218,7 @@ p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.create
 					</div>
 				</div>
 			</div>
+		</div>
 		</div>
 		<footer>
 			<div class="container-fluid">
