@@ -18,12 +18,8 @@ if ($conexion->connect_error) {
 
 $correo = $_POST['correo'];
 $contrasena = $_POST['clave'];
- 
-echo $correo . $contrasena;
 
 $sql = "SELECT * FROM $tbl_name WHERE email = '$correo'";
-
-echo $sql;
 
 $result = $conexion->query($sql);
 
