@@ -20,7 +20,7 @@ $row = mysqli_fetch_array($result);
 
 
  $row = $result->fetch_array(MYSQLI_ASSOC);
- if ($contrasena === $row['clave']) { 
+ if ($contrasena == $row['clave']) { 
     $_SESSION['loggedin'] = true;
     $_SESSION['username'] = $correo;
     $_SESSION['start'] = time();
