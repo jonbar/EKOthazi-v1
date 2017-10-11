@@ -11,7 +11,7 @@ if ($link->connect_error) {
 }
 
 $correo = $_POST['correo'];
-$contrasena = md5($_POST['clave']);
+$contrasena = $_POST['clave'];
  
 $sql = "SELECT * FROM $tbl_name WHERE email = '$correo'";
 

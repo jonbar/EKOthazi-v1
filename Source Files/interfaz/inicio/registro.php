@@ -27,7 +27,7 @@ if ((mysqli_query($link, $sql)) >= 1) {
     <meta http-equiv="refresh" content="0; url=inicio.php">
     <?php
 } else {
-    $contrasena = md5($contrasena);
+
     $sqlDos = "INSERT INTO `usuarios`(`nombre`, `apellido`, `email`, `clave`, `rol`) VALUES ('$nombre','$apellido','$email', '$contrasena', '$rol')";
     mysqli_set_charset($link, "utf8");
     mysqli_query($link, $sqlDos);
