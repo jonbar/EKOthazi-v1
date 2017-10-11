@@ -21,7 +21,6 @@ $row = mysqli_fetch_array($result);
 
  $row = $result->fetch_array(MYSQLI_ASSOC);
  if (password_verify($contrasena, $row['clave'])) { 
-echo 'jelou';
     $_SESSION['loggedin'] = true;
     $_SESSION['username'] = $correo;
     $_SESSION['start'] = time();
