@@ -17,8 +17,9 @@ $sql = "SELECT * FROM $tbl_name WHERE email = '$correo'";
 
 $result = $link->query($sql);
 $row = mysqli_fetch_array($result);
-echo 'hola';
-if ($result->num_rows > 0) {     
+
+if ($result->num_rows > 0) {    
+    echo 'hola';
  }
  $row = $result->fetch_array(MYSQLI_ASSOC);
  if (password_verify($contrasena, $row['clave'])) { 
