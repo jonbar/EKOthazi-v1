@@ -107,7 +107,7 @@ session_start();
 			<?php
 
 if ($_SESSION == true) {
-    $link = mysqli_connect('127.0.0.1:51032', 'talde1', 'admin', 'ekothazi');
+    $link = mysqli('127.0.0.1:51032', 'talde1', 'admin', 'ekothazi');
     
     $sql = "SELECT * FROM `usuarios` WHERE email ='" . $_SESSION['username'] . "'";
     mysqli_set_charset($link, "utf8"); /* Procedural approach */
@@ -132,7 +132,7 @@ if ($_SESSION == true) {
 							<div class="modal-content" style="text-align: left;">
 								<div class="modal-header">
 									<button type="button" class="close" data-dismiss="modal">&times;</button>
-									<h4 class="modal-title">Crear nuevo registro</h4>
+									<h4 class="modal-title">Crear una nueva entrada</h4>
 								</div>
 
 								<div class="modal-body">
@@ -153,7 +153,7 @@ if ($_SESSION == true) {
 					<select name="comboEntrada"> 
 			        	<?php
 	   $link = mysqli_connect('127.0.0.1:51032', 'talde1', 'admin', 'ekothazi');
-        $sql = "SELECT * FROM entrada_blog ";
+        $sql = "SELECT * FROM entrada_blog";
         mysqli_set_charset($link, "utf8");
         $result = mysqli_query($link, $sql);
         
