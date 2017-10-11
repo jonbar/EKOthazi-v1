@@ -205,7 +205,9 @@ while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
     echo "<br>";
     echo "</div>";
     echo "<div class='media-right'>";
-    echo "<img src='" . $row['imagen1'] . "' class='media-object imagenNoticia'>";
+    if($row['imagen1'] != NULL){
+        echo "<img src='" . $row['imagen1'] . "' class='media-object imagenNoticia'>";
+    }
     echo "</div>";
     echo "</div>";
 }
