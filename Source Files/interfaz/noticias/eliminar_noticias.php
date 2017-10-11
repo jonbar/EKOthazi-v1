@@ -1,5 +1,5 @@
 <?php
-$link = mysqli_connect('localhost', 'root', '', 'ekothazi');
+$link = mysqli_connect('127.0.0.1:51032', 'talde1', 'admin', 'ekothazi');
 
 $id_entrada = $_POST['comboEntrada'];
 echo $id_entrada;
