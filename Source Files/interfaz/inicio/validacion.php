@@ -4,40 +4,44 @@ session_start();
 
 <?php
 
-$link = new mysqli('127.0.0.1:51032', 'talde1', 'admin', 'ekothazi');
+$host_db = "127.0.0.1:51032";
+$user_db = "talde1";
+$pass_db = "admin";
+$db_name = "ekothazi";
+$tbl_name = "usuarios";
 
-if ($link->connect_error) {
- die("La conexion falló: " . $link->connect_error);
+$conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
+
+if ($conexion->connect_error) {
+ die("La conexion falló: " . $conexion->connect_error);
 }
 
 $correo = $_POST['correo'];
 $contrasena = $_POST['clave'];
  
-$sql = "SELECT * FROM 'usuarios' WHERE email = '$correo'";
+$sql = "SELECT * FROM $tbl_name WHERE email = '$correo'";
 
-$result = $link->query($sql);
-$row = mysqli_fetch_array($result);
+$result = $conexion->query($sql);
 
-if($result->num_rows > 0){  
-}
+
+if ($result->num_rows > 0) {     
+ }
  $row = $result->fetch_array(MYSQLI_ASSOC);
  if ($contrasena === $row['clave']) { 
+ 
     $_SESSION['loggedin'] = true;
     $_SESSION['username'] = $correo;
     $_SESSION['start'] = time();
     $_SESSION['expire'] = $_SESSION['start'] + (30 * 60);
 
-    
-    
     echo "Bienvenido! " . $_SESSION['username'];
     echo "<br><br><a href=panel-control.php>Panel de Control</a>"; 
 
  } else { 
    echo "Username o Password estan incorrectos.";
 
-   echo "<br><a href='inicio.php'>Volver a Intentarlo</a>";
+   echo "<br><a href='login.html'>Volver a Intentarlo</a>";
  }
- mysqli_close($link); 
-
+ mysqli_close($conexion); 
+ header('Location: inicio.php');
  ?>
-    <meta http-equiv="refresh" content="0; url=inicio.php">
