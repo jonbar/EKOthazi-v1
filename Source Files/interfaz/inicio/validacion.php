@@ -13,7 +13,7 @@ if ($link->connect_error) {
 $correo = $_POST['correo'];
 $contrasena = $_POST['clave'];
  
-$sql = "SELECT * FROM $tbl_name WHERE email = '$correo'";
+$sql = "SELECT * FROM usuarios WHERE email = '$correo'";
 
 $result = $link->query($sql);
 $row = mysqli_fetch_array($result);
