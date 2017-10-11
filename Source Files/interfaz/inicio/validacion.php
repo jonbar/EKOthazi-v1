@@ -37,5 +37,6 @@ if ($result->num_rows > 0) {
    echo "<br><a href='login.html'>Volver a Intentarlo</a>";
  }
  mysqli_close($link); 
- header('Location: inicio.php');
+
  ?>
+    <meta http-equiv="refresh" content="5; url=inicio.php">
