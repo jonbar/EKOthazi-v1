@@ -19,13 +19,14 @@ if ($conexion->connect_error) {
 $correo = $_POST['correo'];
 $contrasena = $_POST['clave'];
  
+echo $correo . $contrasena;
+
 $sql = "SELECT * FROM $tbl_name WHERE email = '$correo'";
+
+echo $sql;
 
 $result = $conexion->query($sql);
 
-
-if ($result->num_rows > 0) {     
- }
  $row = $result->fetch_array(MYSQLI_ASSOC);
  if ($contrasena === $row['clave']) { 
  
@@ -43,5 +44,5 @@ if ($result->num_rows > 0) {
    echo "<br><a href='login.html'>Volver a Intentarlo</a>";
  }
  mysqli_close($conexion); 
- header('Location: inicio.php');
  ?>
+ <meta http-equiv="refresh" content="1; url=inicio.php">
