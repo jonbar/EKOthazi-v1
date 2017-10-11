@@ -18,17 +18,17 @@ $sql = "SELECT * FROM $tbl_name WHERE email = '$correo'";
 $result = $link->query($sql);
 $row = mysqli_fetch_array($result);
 
-if ($result->num_rows > 0) {    
-    echo 'hola';
- }
+
  $row = $result->fetch_array(MYSQLI_ASSOC);
  if (password_verify($contrasena, $row['clave'])) { 
- 
+echo 'jelou';
     $_SESSION['loggedin'] = true;
     $_SESSION['username'] = $correo;
     $_SESSION['start'] = time();
     $_SESSION['expire'] = $_SESSION['start'] + (30 * 60);
 
+    
+    
     echo "Bienvenido! " . $_SESSION['username'];
     echo "<br><br><a href=panel-control.php>Panel de Control</a>"; 
 
