@@ -83,7 +83,7 @@ session_start();
 										<input type="text" class="form-control" name="correo" id="correo"
 											onKeyPress="return comprobarArroba(event)"
 											required="required" /><br> 
-										<label for="input">Conraseña: </label><br>
+										<label for="input">Contraseña: </label><br>
 										<input type="password" class="form-control" id="clave" name="clave"
 											required="required"/>
 

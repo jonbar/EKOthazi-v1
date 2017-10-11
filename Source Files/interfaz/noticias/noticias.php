@@ -107,9 +107,9 @@ session_start();
 			<?php
 
 if ($_SESSION == true) {
-    $link = mysqli('127.0.0.1:51032', 'talde1', 'admin', 'ekothazi');
+    $link = mysqli_connect('127.0.0.1:51032', 'talde1', 'admin', 'ekothazi');
     
-    $sql = "SELECT * FROM `usuarios` WHERE email ='" . $_SESSION['username'] . "'";
+    $sql = "SELECT * FROM 'usuarios' WHERE email='" . $_SESSION['username'] . "'";
     mysqli_set_charset($link, "utf8"); /* Procedural approach */
     
     $result = mysqli_query($link, $sql);
