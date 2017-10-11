@@ -4,7 +4,7 @@ session_start();
 
 <?php
 
-$link = mysqli_connect('127.0.0.1:51032', 'talde1', 'admin', 'ekothazi');
+$link = new mysqli('127.0.0.1:51032', 'talde1', 'admin', 'ekothazi');
 
 if ($link->connect_error) {
  die("La conexion falló: " . $link->connect_error);
@@ -13,14 +13,15 @@ if ($link->connect_error) {
 $correo = $_POST['correo'];
 $contrasena = $_POST['clave'];
  
-$sql = "SELECT * FROM usuarios WHERE email = '$correo'";
+$sql = "SELECT * FROM 'usuarios' WHERE email = '$correo'";
 
 $result = $link->query($sql);
 $row = mysqli_fetch_array($result);
 
-
+if($result->num_rows > 0){  
+}
  $row = $result->fetch_array(MYSQLI_ASSOC);
- if ($contrasena == $row['clave']) { 
+ if ($contrasena === $row['clave']) { 
     $_SESSION['loggedin'] = true;
     $_SESSION['username'] = $correo;
     $_SESSION['start'] = time();
@@ -34,9 +35,9 @@ $row = mysqli_fetch_array($result);
  } else { 
    echo "Username o Password estan incorrectos.";
 
-   echo "<br><a href='login.html'>Volver a Intentarlo</a>";
+   echo "<br><a href='inicio.php'>Volver a Intentarlo</a>";
  }
  mysqli_close($link); 
 
  ?>
-    <meta http-equiv="refresh" content="5; url=inicio.php">
+    <meta http-equiv="refresh" content="0; url=inicio.php">
