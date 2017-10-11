@@ -1,7 +1,7 @@
 <?php
 session_start();
 ?>
-<html>
+
 <?php
 $titulo = $_POST['titulo'];
 $cuerpo = $_POST['textoNoticia'];
@@ -24,7 +24,4 @@ VALUES ('$id_autor','$titulo','$cuerpo','$fecha')";
 mysqli_query($link, $sqlDos);
 ?>
 
-<head>
 <meta http-equiv="refresh" content="0; url=noticias.php"/>
-</head>
-</html>
