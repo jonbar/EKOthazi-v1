@@ -9,7 +9,7 @@ $email = $_POST['email'];
 $contrasena = $_POST['contrasena'];
 $contrasenaComprobacion = $_POST['contrasenaComprobacion'];
 $rol = 'user';
-$link = mysqli_connect('localhost', 'root', '', 'ekothazi');
+$link = mysqli_connect('127.0.0.1:51032', 'talde1', 'admin', 'ekothazi');
 
 if ($contrasena != $contrasenaComprobacion) {
     echo '<script>alert("Las contraseñas no coinciden");</script>';

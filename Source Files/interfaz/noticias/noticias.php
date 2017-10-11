@@ -36,7 +36,7 @@ session_start();
 					<ul class="nav navbar-nav navbar-right">
 						<?php
     if ($_SESSION == true) {
-        $link = mysqli_connect('localhost', 'root', '', 'ekothazi');
+        $link = mysqli_connect('127.0.0.1:51032', 'talde1', 'admin', 'ekothazi');
         
         $sql = "SELECT * FROM `usuarios` WHERE email ='" . $_SESSION['username'] . "'";
         mysqli_set_charset($link, "utf8"); /* Procedural approach */
@@ -107,7 +107,7 @@ session_start();
 			<?php
 
 if ($_SESSION == true) {
-    $link = mysqli_connect('localhost', 'root', '', 'ekothazi');
+    $link = mysqli_connect('127.0.0.1:51032', 'talde1', 'admin', 'ekothazi');
     
     $sql = "SELECT * FROM `usuarios` WHERE email ='" . $_SESSION['username'] . "'";
     mysqli_set_charset($link, "utf8"); /* Procedural approach */
@@ -152,7 +152,7 @@ if ($_SESSION == true) {
 					<form action="eliminar_noticias.php" method="POST">
 					<select name="comboEntrada"> 
 			        	<?php
-        $link = mysqli_connect('localhost', 'root', '', 'ekothazi');
+	   $link = mysqli_connect('127.0.0.1:51032', 'talde1', 'admin', 'ekothazi');
         $sql = "SELECT * FROM entrada_blog ";
         mysqli_set_charset($link, "utf8");
         $result = mysqli_query($link, $sql);
@@ -185,7 +185,7 @@ if ($_SESSION == true) {
  * $link -> Conexion con la base de datos.
  * $sql -> sentencia sql.
  */
-$link = mysqli_connect('localhost', 'root', '', 'ekothazi');
+$link = mysqli_connect('127.0.0.1:51032', 'talde1', 'admin', 'ekothazi');
 $sql = "SELECT u.nombre,e.titulo,e.cuerpo,e.fecha, e.imagen1 FROM usuarios u, entrada_blog e WHERE u.id=e.id_autor ORDER BY id_entrada DESC";
 mysqli_set_charset($link, "utf8");
 $result = mysqli_query($link, $sql);

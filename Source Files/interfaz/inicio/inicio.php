@@ -105,7 +105,7 @@ session_start();
 			<div class="col-sm-8">
 
 				<?php
-    $link = mysqli_connect('localhost', 'root', '', 'ekothazi');
+	$link = mysqli_connect('127.0.0.1:51032', 'talde1', 'admin', 'ekothazi');
     
     $sql = "SELECT * FROM `entrada_blog` WHERE id_entrada = ( SELECT MAX(`id_entrada`) FROM entrada_blog)";
     mysqli_set_charset($link, "utf8"); /* Procedural approach */
