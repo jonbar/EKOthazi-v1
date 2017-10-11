@@ -4,16 +4,10 @@ session_start();
 
 <?php
 
-$host_db = "localhost";
-$user_db = "root";
-$pass_db = "";
-$db_name = "ekothazi";
-$tbl_name = "usuarios";
+$link = mysqli_connect('127.0.0.1:51032', 'talde1', 'admin', 'ekothazi');
 
-$conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
-
-if ($conexion->connect_error) {
- die("La conexion falló: " . $conexion->connect_error);
+if ($link->connect_error) {
+ die("La conexion fallÃ³: " . $link->connect_error);
 }
 
 $correo = $_POST['correo'];
@@ -21,7 +15,7 @@ $contrasena = md5($_POST['clave']);
  
 $sql = "SELECT * FROM $tbl_name WHERE email = '$correo'";
 
-$result = $conexion->query($sql);
+$result = $link->query($sql);
 
 
 if ($result->num_rows > 0) {     
@@ -42,6 +36,6 @@ if ($result->num_rows > 0) {
 
    echo "<br><a href='login.html'>Volver a Intentarlo</a>";
  }
- mysqli_close($conexion); 
+ mysqli_close($link); 
  header('Location: inicio.php');
  ?>
