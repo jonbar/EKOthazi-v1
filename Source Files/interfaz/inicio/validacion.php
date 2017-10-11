@@ -41,4 +41,4 @@ $result = $conexion->query($sql);
  }
  mysqli_close($conexion); 
  ?>
- <meta http-equiv="refresh" content="20; url=inicio.php">
+ <meta http-equiv="refresh" content="0; url=inicio.php">
