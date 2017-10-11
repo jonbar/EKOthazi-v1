@@ -122,7 +122,7 @@ if ($_SESSION == true) {
 					style='background-color: white; text-align: center'>
 					<!-- Trigger the modal with a button -->
 					<button type="button" class="btn btn-info btn-sm"
-						data-toggle="modal" data-target="#myModalEntrada">Open Modal</button>
+						data-toggle="modal" data-target="#myModalEntrada" style="background-color: #5FB404; width: 25%">Crea una entrada</button>
 
 					<!-- Modal -->
 					<div id="myModalEntrada" class="modal fade" role="dialog">
@@ -138,8 +138,8 @@ if ($_SESSION == true) {
 								<div class="modal-body">
 									<form action="enviar_noticias.php" method="POST">
 										<label for="titulo">Titulo:</label> <input type="text"
-											class="form-control" id="titulo" name="titulo"> <label for="comment">Cuerpo:</label>
-										<textarea class="form-control" rows="10" id="textoNoticia" name="textoNoticia"></textarea>
+											class="form-control" id="titulo" name="titulo" required="required"> <label for="comment">Cuerpo:</label>
+										<textarea class="form-control" rows="10" id="textoNoticia" name="textoNoticia" required="required"></textarea>
 
 										<button type="submit" class="btn btn-default">Enviar</button>
 									</form>
@@ -149,6 +149,7 @@ if ($_SESSION == true) {
 
 						</div>
 					</div>
+					<form action="eliminar_noticias.php" method="POST">
 					<select name="comboEntrada"> 
 			        	<?php
         $link = mysqli_connect('localhost', 'root', '', 'ekothazi');
@@ -160,8 +161,9 @@ if ($_SESSION == true) {
             echo '<option value="' . $row['id_entrada'] . '">' . $row['titulo'] . '</option>';
         }
         ?>
-                        </select> <input type="button" name="borrar"
-						id="borrar" value="Borrar">
+                     </select> 
+                     <input type="submit" name="borrar" id="borrar" value="Borrar">
+                     </form>
 				</div>
 			</div>
 			        <?php
