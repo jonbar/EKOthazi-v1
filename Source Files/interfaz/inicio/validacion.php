@@ -16,12 +16,12 @@ $contrasena = md5($_POST['clave']);
 $sql = "SELECT * FROM $tbl_name WHERE email = '$correo'";
 
 $result = $link->query($sql);
-
+$row = mysqli_fetch_array($result);
 
 if ($result->num_rows > 0) {     
  }
  $row = $result->fetch_array(MYSQLI_ASSOC);
- if ($contrasena === $row['clave']) { 
+ if (password_verify($contrasena, $row['clave'])) { 
  
     $_SESSION['loggedin'] = true;
     $_SESSION['username'] = $correo;
