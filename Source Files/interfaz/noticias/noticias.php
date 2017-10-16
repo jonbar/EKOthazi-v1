@@ -220,7 +220,7 @@ $result = mysqli_query($link, $sql);
  */
 echo "<div class='container'>";
 while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
-    echo "<div class='media well' name='ficha'>";
+    echo "<div class='media well' name='ficha' style='background-color: white'>";
     echo "<h3 class='media-heading'><b>" . $row['titulo'] . "</b></h3>";
     echo "<div class='media-body' >";
     
