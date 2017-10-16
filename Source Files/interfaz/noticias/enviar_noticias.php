@@ -5,9 +5,9 @@ session_start();
 <?php
 $titulo = $_POST['titulo'];
 $cuerpo = $_POST['textoNoticia'];
-
+echo $_SESSION['username'] . $titulo . $cuerpo;
 $link = mysqli('127.0.0.1:51032', 'talde1', 'admin', 'ekothazi');
-echo $_SESSION['username'];
+
 $sql = "SELECT * FROM `usuarios` WHERE email ='" . $_SESSION['username'] . "'";
 mysqli_set_charset($link, "utf8"); /* Procedural approach */
 
