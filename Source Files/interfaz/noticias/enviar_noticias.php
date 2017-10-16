@@ -6,6 +6,8 @@ session_start();
 $titulo = $_POST['titulo'];
 $cuerpo = $_POST['textoNoticia'];
 
+echo $titulo . $cuerpo;
+
 $link = mysqli('127.0.0.1:51032', 'talde1', 'admin', 'ekothazi');
 
 $sql = "SELECT * FROM `usuarios` WHERE email='" . $_SESSION['username'] . "'";
