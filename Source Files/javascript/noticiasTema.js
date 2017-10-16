@@ -1,9 +1,8 @@
 var fichas = document.getElementsByName('ficha');
-//aa
 		var color = 'black';
-		var colorDos = 'white';
+//		var colorDos = 'white';
 
 		for (var i = 0; i < fichas.length; i++){
 			fichas[i].style.backgroundColor = color;
-			fichas[i].style.Color = colorDos;
+//			fichas[i].style.Color = colorDos;
 }
