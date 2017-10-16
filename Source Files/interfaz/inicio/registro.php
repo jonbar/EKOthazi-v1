@@ -18,11 +18,12 @@ if ($contrasena != $contrasenaComprobacion) {
     <?php
 }
 
-$sql = "SELECT email FROM 'usuarios' WHERE email = '$email'";
+$sql = "SELECT email FROM 'usuarios' WHERE email ='" . $email . "'";
 mysqli_set_charset($link, "utf8");
+$row = mysqli_fetch_assoc($sql);
 
-if ((mysqli_query($link, $sql)) >= 1) {
-    echo '<script>alert("El email ya esta registrado");</script>';
+if ($row >= 1) {
+    echo '<script>alert("El email ya esta registrado.");</script>';
     ?>
     <meta http-equiv="refresh" content="0; url=inicio.php">
     <?php
