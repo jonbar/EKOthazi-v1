@@ -5,7 +5,6 @@ session_start();
 <?php
 $titulo = $_POST['titulo'];
 $cuerpo = $_POST['textoNoticia'];
-echo $_SESSION['username'] . $titulo . $cuerpo;
 
 $link = mysqli_connect('127.0.0.1:51032', 'talde1', 'admin', 'ekothazi');
 
@@ -22,7 +21,6 @@ $fecha = date("Y-m-d");
 
 $sqlDos="INSERT INTO `entrada_blog` (`id_autor`, `titulo`, `cuerpo`, `fecha`, `imagen1`) 
 VALUES ('$id_autor','$titulo','$cuerpo','$fecha', 'NULL')";
-echo $sqlDos;
 mysqli_query($link, $sqlDos);
 ?>
 

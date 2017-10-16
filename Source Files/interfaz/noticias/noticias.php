@@ -164,8 +164,35 @@ if ($_SESSION == true) {
 			        <div class='media well'
 				style='background-color: white; text-align: center'>
 				<div class="container">
-					<input type="button" id="creacionEntrada" name="creacionEntrada"
-						style="border-radius: 5px" value="Crear una nueva entrada" />
+					<!-- Trigger the modal with a button -->
+					<button type="button" class="btn btn-info btn-sm"
+						data-toggle="modal" data-target="#myModalEntradaUser" style="background-color: #5FB404; width: 25%">Crea una entrada</button>
+
+					<!-- Modal -->
+					<div id="myModalEntradaUser" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+
+							<!-- Modal content-->
+							<div class="modal-content" style="text-align: left;">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">Crear una nueva entrada</h4>
+								</div>
+
+								<div class="modal-body">
+									<form action="enviar_noticias.php" method="POST">
+										<label for="titulo">Titulo:</label> <input type="text"
+											class="form-control" id="titulo" name="titulo" required="required"> <label for="comment">Cuerpo:</label>
+										<textarea class="form-control" rows="10" id="textoNoticia" name="textoNoticia" required="required"></textarea>
+
+										<button type="submit" class="btn btn-default">Enviar</button>
+									</form>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
 				</div>
 			</div>
 			        <?php
