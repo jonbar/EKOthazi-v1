@@ -20,8 +20,8 @@ $id_autor = $row['id'];
 
 $fecha = date("Y-m-d");
 
-$sqlDos="INSERT INTO `entrada_blog`(`id_autor`, `titulo`, `cuerpo`, `fecha`) 
-VALUES ('$id_autor','$titulo','$cuerpo','$fecha')";
+$sqlDos="INSERT INTO `entrada_blog` (`id_autor`, `titulo`, `cuerpo`, `fecha`, `imagen1`) 
+VALUES ('$id_autor','$titulo','$cuerpo','$fecha', 'NULL')";
 echo $sqlDos;
 mysqli_query($link, $sqlDos);
 ?>
