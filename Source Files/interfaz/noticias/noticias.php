@@ -104,7 +104,7 @@ session_start();
 	</header>
 	<div class="container">
 		<div class="row">
-		<div class='media well' style='text-align: center'>
+		<div class='media well' style='background-color: white; text-align: center'>
 			<button onclick="cambioNocturno()">Modo Nocturno</button>
  			<button onclick="cambioNormal()" >Modo normal</button>
 		</div>
@@ -220,7 +220,7 @@ $result = mysqli_query($link, $sql);
  */
 echo "<div class='container'>";
 while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
-    echo "<div class='media well' name='ficha' style='background-color: white'>";
+    echo "<div class='media well' name='ficha'>";
     echo "<h3 class='media-heading'><b>" . $row['titulo'] . "</b></h3>";
     echo "<div class='media-body' >";
     
