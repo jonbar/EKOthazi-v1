@@ -84,13 +84,12 @@ session_start();
 								<div class="modal-body">
 									<form name="encuesta" action="../inicio/validacion.php"
 										method="POST" onsubmit="return enviar()">
-										<label for="input">Correo electronico:</label><br> 
-										<input type="text" class="form-control" name="correo" id="correo"
+										<label for="input">Correo electronico:</label><br> <input
+											type="text" class="form-control" name="correo" id="correo"
 											onKeyPress="return comprobarArroba(event)"
-											required="required" /><br> 
-										<label for="input">Conraseña: </label><br>
-										<input type="password" class="form-control" id="clave" name="clave"
-											required="required"/>
+											required="required" /><br> <label for="input">Conraseña: </label><br>
+										<input type="password" class="form-control" id="clave"
+											name="clave" required="required" />
 										<div class="checkbox">
 											<label><input type="checkbox"> Recordarme en esta página</label>
 										</div>
@@ -132,9 +131,9 @@ session_start();
 						ethazitalde1@gmail.com
 					</p>
 					<p>
-						<span class="glyphicon glyphicon-time"></span></br>
-						</br> - Lunes a Viernes: 9:00 a 14:30 y 16:30 a 20:30 </br> -
-						Sábado: 9:00 a 14:00
+						<span class="glyphicon glyphicon-time"></span></br> </br> - Lunes
+						a Viernes: 9:00 a 14:30 y 16:30 a 20:30 </br> - Sábado: 9:00 a
+						14:00
 					</p>
 
 					<h4 style="margin-top: 35px; color: green">Contacta con nosotros</h4>
@@ -166,11 +165,13 @@ session_start();
 				</div>
 
 
-				<div  id="googleMap" ; width="500px" ; height="400px;">
+				<div id="googleMap" ; width="500px" ; height="400px;">
 
 					<div class="google-maps">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7098.94326104394!2d78.0430654485247!3d27.172909818538997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1385710909804" width="600" height="450" frameborder="0" style="border:0"></iframe>
-</div>
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7098.94326104394!2d78.0430654485247!3d27.172909818538997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1385710909804"
+							width="600" height="450" frameborder="0" style="border: 0"></iframe>
+					</div>
 				</div>
 
 
@@ -283,7 +284,7 @@ session_start();
 						</div>
 					</div>
 
-					
+
 				</div>
 			</div>
 
@@ -396,8 +397,9 @@ session_start();
 							<p>
 								<b>Iker Larrea</b>
 							</p>
-							<p>Una sociedad se define no sólo por lo que crea, sino por lo que se niega 
-							a destruir. Si no reciclas, reusa. Si no reusas, recicla.</p>
+							<p>Una sociedad se define no sólo por lo que crea, sino por lo
+								que se niega a destruir. Si no reciclas, reusa. Si no reusas,
+								recicla.</p>
 						</div>
 					</div>
 
@@ -411,8 +413,8 @@ session_start();
 							<p>
 								<b>Nerea Unzueta</b>
 							</p>
-							<p>Máster en energías renovables. La verdadera riqueza consiste en saber 
-							prescindir de las cosas superfluas.</p>
+							<p>Máster en energías renovables. La verdadera riqueza consiste
+								en saber prescindir de las cosas superfluas.</p>
 						</div>
 					</div>
 

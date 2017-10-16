@@ -4,7 +4,7 @@
 
  .google-maps {
         position: relative;
-        padding-bottom: 75%; // This is the aspect ratio
+        padding-bottom: 100%; // This is the aspect ratio
         height: 0;
         overflow: hidden;
     }
@@ -12,7 +12,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 100% !important;
+        width: auto;
         height: 100% !important;
     }
 /* Optional: Makes the sample page fill the window. */
