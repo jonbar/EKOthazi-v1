@@ -153,9 +153,9 @@ if ($_SESSION == true) {
 					<select name="comboEntrada"> 
 			        	<?php
 	   $link = mysqli_connect('127.0.0.1:51032', 'talde1', 'admin', 'ekothazi');
-        $sql = "SELECT * FROM entrada_blog";
+        $sqlDos = "SELECT * FROM entrada_blog";
         mysqli_set_charset($link, "utf8");
-        $result = mysqli_query($link, $sql);
+        $result = mysqli_query($link, $sqlDos);
         
         while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
             echo '<option value="' . $row['id_entrada'] . '">' . $row['titulo'] . '</option>';
