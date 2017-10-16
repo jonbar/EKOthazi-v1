@@ -22,7 +22,7 @@ session_start();
 <link rel="stylesheet"
 	href="https://fonts.googleapis.com/css?family=Raleway">
 <script type="text/javascript" src="../../javascript/noticiasTema.js"></script>
-<script src="../../javascript/quienes_somos.js"></script>
+<script src="../../javascript/main.js"></script>
 </head>
 <body style="text-align: justify;">
 	<header>
@@ -107,7 +107,7 @@ session_start();
 		<div class="row">
 		<div class='media well' style='background-color: white; text-align: center'>
 			<button onclick="colorNocturno()">Modo Nocturno</button>
- 			<button onclick="colorNormal()" >Modo normal</button>
+ 			<button onclick="alerta()" >Modo normal</button>
 		</div>
 			<?php
 if ($_SESSION == true) {
