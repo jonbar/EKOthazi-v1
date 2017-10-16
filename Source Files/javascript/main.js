@@ -88,3 +88,6 @@ function comprobarArroba(e) {
         }
     } 
  }
+function alerta(){
+	alert('hola');
+}
