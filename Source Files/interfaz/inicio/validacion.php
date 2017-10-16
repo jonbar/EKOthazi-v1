@@ -31,13 +31,9 @@ $result = $conexion->query($sql);
     $_SESSION['start'] = time();
     $_SESSION['expire'] = $_SESSION['start'] + (30 * 60);
 
-    echo "Bienvenido! " . $_SESSION['username'];
-    echo "<br><br><a href=panel-control.php>Panel de Control</a>"; 
-
  } else { 
-   echo "Username o Password estan incorrectos.";
+   echo "<script>alert('Username o Password están incorrectos.');</script>";
 
-   echo "<br><a href='login.html'>Volver a Intentarlo</a>";
  }
  mysqli_close($conexion); 
  ?>
