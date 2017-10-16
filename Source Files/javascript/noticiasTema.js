@@ -1,4 +1,5 @@
 var fichas = document.getElementsByName('ficha');
+//aa
 		var color = 'black';
 		var colorDos = 'white';
 
