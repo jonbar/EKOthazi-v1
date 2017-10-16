@@ -166,13 +166,11 @@ session_start();
 				</div>
 
 
-				<div class="col-sm-7" id="googleMap" ; width="500px"
-					; height="400px;">
+				<div  id="googleMap" ; width="500px" ; height="400px;">
 
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d181.70960499705856!2d-2.7253561794540224!3d43.22304380391802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e369c4e0d1637%3A0x78ccbf7525105ab1!2sCIFP+ZORNOTZA+LHII!5e0!3m2!1ses!2ses!4v1507547631781"
-						width="600" height="450" frameborder="0" style="border: 0"
-						allowfullscreen></iframe>
+					<div class="google-maps">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7098.94326104394!2d78.0430654485247!3d27.172909818538997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1385710909804" width="600" height="450" frameborder="0" style="border:0"></iframe>
+</div>
 				</div>
 
 
