@@ -1,8 +1,6 @@
 <?php
 session_start();
-?>
 
-<?php
 $titulo = $_POST['titulo'];
 $cuerpo = $_POST['textoNoticia'];
 
@@ -22,6 +20,6 @@ $fecha = date("Y-m-d");
 $sqlDos="INSERT INTO `entrada_blog`(`id_autor`, `titulo`, `cuerpo`, `fecha`) 
 VALUES ('$id_autor','$titulo','$cuerpo','$fecha')";
 mysqli_query($link, $sqlDos);
-?>
 
-<meta http-equiv="refresh" content="0; url=noticias.php"/>
+header('Location: noticias.php');
+?>
