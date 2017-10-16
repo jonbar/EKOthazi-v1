@@ -21,7 +21,7 @@ if ($contrasena != $contrasenaComprobacion) {
 $sql = "SELECT * FROM 'usuarios' WHERE email ='" . $email . "'";
 mysqli_set_charset($link, "utf8");
 $row = mysqli_fetch_assoc($sql);
-//ECHOS
+//ECHOS comprobaciones
 echo $sql;
 echo $row;
 if ($row >= 1) {
