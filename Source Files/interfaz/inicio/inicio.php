@@ -117,7 +117,9 @@ session_start();
     echo '<h3 class="media-heading"><b>' . $row['titulo'] . '</b></h3>';
     echo '<br>';
     echo $row['cuerpo'];
-    echo "<img src='" . $row['imagen1'] . "' class='media-object' style='width:500px; margin: auto'>";
+    if($row['imagen1'] != 'NULL'){
+        echo "<img src='" . $row['imagen1'] . "' class='media-object imagenNoticia' style='width: 500px; margin: auto'>";
+    }
     echo '</div>';
     mysqli_free_result($result);
     ?>

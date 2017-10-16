@@ -24,4 +24,4 @@ VALUES ('$id_autor','$titulo','$cuerpo','$fecha', 'NULL')";
 mysqli_query($link, $sqlDos);
 ?>
 
-<meta http-equiv="refresh" content="5; url=noticias.php"/>
+<meta http-equiv="refresh" content="0; url=noticias.php"/>
