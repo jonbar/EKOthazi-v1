@@ -15,14 +15,15 @@ mysqli_set_charset($link, "utf8"); /* Procedural approach */
 $result = mysqli_query($link, $sql);
 
 $row = mysqli_fetch_array($result);
-echo $sql;
+
 $id_autor = $row['id'];
 
 $fecha = date("Y-m-d");
 
 $sqlDos="INSERT INTO `entrada_blog`(`id_autor`, `titulo`, `cuerpo`, `fecha`) 
 VALUES ('$id_autor','$titulo','$cuerpo','$fecha')";
+echo $sqlDos;
 mysqli_query($link, $sqlDos);
 ?>
 
-<meta http-equiv="refresh" content="0; url=noticias.php"/>
+<meta http-equiv="refresh" content="5; url=noticias.php"/>
