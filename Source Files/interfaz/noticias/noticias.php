@@ -104,7 +104,7 @@ session_start();
 	</header>
 	<div class="container">
 		<div class="row">
-		<div class='media well' style='background-color: white; text-align: center'>
+		<div class='media well' style='text-align: center'>
 			<button onclick="cambioNocturno()">Modo Nocturno</button>
  			<button onclick="cambioNormal()" >Modo normal</button>
 		</div>
