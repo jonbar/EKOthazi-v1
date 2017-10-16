@@ -21,7 +21,8 @@ session_start();
 	media="screen" />
 <link rel="stylesheet"
 	href="https://fonts.googleapis.com/css?family=Raleway">
-<script src="../../javascript/noticiasTema.js"></script>
+<script type="text/javascript" src="../../javascript/noticiasTema.js"></script>
+<script src="../../javascript/quienes_somos.js"></script>
 </head>
 <body style="text-align: justify;">
 	<header>
