@@ -1,3 +1,4 @@
+alert('asdasd');
 function colorNocturno(){
 	alert('dfsd');
 	var fichas = document.getElementsByName('ficha');
