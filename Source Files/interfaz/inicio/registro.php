@@ -22,7 +22,7 @@ $sql = "SELECT * FROM 'usuarios' WHERE email='" . $email . "'";
 mysqli_set_charset($link, "utf8");
 $query = mysqli_query($link, $sql);
 $row = mysqli_fetch_assoc($query);
-//ECHOS comprobaciones
+//ECHOS comprobaciones dgsgd
 echo $sql; 
 echo $row;
 if ($row >= 1) {
