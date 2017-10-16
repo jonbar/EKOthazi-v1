@@ -16,22 +16,21 @@ if ($contrasena != $contrasenaComprobacion) {
     ?>
     <meta http-equiv="refresh" content="0; url=inicio.php">
     <?php
-
+}
 
 $sql = "SELECT * FROM 'usuarios' WHERE email='" . $email . "'";
 mysqli_set_charset($link, "utf8");
-$result= $link ->query($sql);
-
-if($result -> num_rows > 0){
-}
-$row = $result -> fetch_array(MYSQLI_ASSOC);
-if($email === $row['email']){
+$query = mysqli_query($link, $sql);
+$row = mysqli_fetch_assoc($query);
+//ECHOS comprobaciones dgsgd
+echo $sql; 
+echo $row;
+if ($row >= 1) {
     echo '<script>alert("El email ya esta registrado.");</script>';
-
     ?>
     <meta http-equiv="refresh" content="0; url=inicio.php">
     <?php
-}else {
+} else {
 
     $sqlDos = "INSERT INTO `usuarios`(`nombre`, `apellido`, `email`, `clave`, `rol`) VALUES ('$nombre','$apellido','$email', '$contrasena', '$rol')";
     mysqli_set_charset($link, "utf8");
