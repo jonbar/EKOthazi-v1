@@ -116,7 +116,7 @@ if ($_SESSION == true) {
         ?>
 			        <div class="container">
 				<div class='media well'
-					style='background-color: white; text-align: center'>
+					style='background-color: white; text-align: center' id="divBotonAdmin">
 					<!-- Trigger the modal with a button -->
 					<button type="button" class="btn btn-info btn-sm"
 						data-toggle="modal" data-target="#myModalEntrada" style="background-color: #5FB404; width: 25%">Crea una entrada</button>
@@ -168,7 +168,7 @@ if ($_SESSION == true) {
         ?>
 			        <div class='media well'
 				style='background-color: white; text-align: center'>
-				<div class="container">
+				<div class="container" id="divBotonUser">
 					<!-- Trigger the modal with a button -->
 					<button type="button" class="btn btn-info btn-sm"
 						data-toggle="modal" data-target="#myModalEntradaUser" style="background-color: #5FB404; width: 25%">Crea una entrada</button>
