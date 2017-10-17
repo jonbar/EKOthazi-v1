@@ -24,7 +24,7 @@ session_start();
 <script type="text/javascript" src="../../javascript/noticiasTema.js"></script>
 <script src="../../javascript/main.js"></script>
 </head>
-<body style="text-align: justify;">
+<body style="text-align: justify;" id='body'>
 	<header>
 		<div class="container">
 			<nav class="navbar navbar-default">
@@ -106,8 +106,10 @@ session_start();
 	<div class="container">
 		<div class="row">
 		<div class='media well' style='background-color: white; text-align: center'>
+			<div class='container'>
 			<button onclick="colorNocturno()">Modo Nocturno</button>
- 			<button onclick="alerta()" >Modo normal</button>
+ 			<button onclick="colorNormal()" >Modo normal</button>
+ 			</div>
 		</div>
 			<?php
 if ($_SESSION == true) {
