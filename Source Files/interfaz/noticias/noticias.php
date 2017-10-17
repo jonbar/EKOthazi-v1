@@ -232,7 +232,7 @@ while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
     echo "</div>";
     echo "<div class='media-right'>";
     if($row['imagen1'] != 'NULL'){
-        echo "<img src='" . $row['imagen1'] . "' class='media-object imagenNoticia'>";
+        echo "<img src='" . $row['imagen1'] . "' class='imagenNoticia'>";
     }
     echo "</div>";
     echo "</div>";

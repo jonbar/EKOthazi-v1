@@ -18,7 +18,7 @@ body, h1, h2, h3, h4, h5 {
 }
 
 .imagenNoticia {
-	width: 100%;
-	max-width: 900px;
+	width:100%;
+    max-width:400px;
 	margin-left: 25px;
 }
