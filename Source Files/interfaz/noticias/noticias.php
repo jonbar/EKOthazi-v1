@@ -28,11 +28,10 @@ session_start();
 	<header>
 		<div class="container">
 			<nav class="navbar navbar-default">
-
-				<div class="navbar-header">
-					<a href="../inicio/inicio.php"><img src="../../img/logo largo.png"
-						style="height: 25%"></a>
-				</div>
+					<div class="col-sm-6">
+						<a href="../inicio/inicio.php"><img src="../../img/logo largo.png"
+							class="imgLogo"></a>
+					</div>
 				<div class="container-fluid">
 					<ul class="nav navbar-nav navbar-right">
 						<?php
