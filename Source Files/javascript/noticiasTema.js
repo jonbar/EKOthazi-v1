@@ -22,8 +22,8 @@ function colorNormal(){
 	var divBotonAdmin =  document.getElementById('divBotonAdmin');
 	var divBotonUser =  document.getElementById('divBotonUser');
 	for (var j = 0; j < fichasNormal.length; j++){
-		fichasNormal[i].style.backgroundColor = 'white';
-		fichasNormal[i].style.color = 'black';
+		fichasNormal[j].style.backgroundColor = 'white';
+		fichasNormal[j].style.color = 'black';
 	}
 	body.style.backgroundColor = 'white';
 	divBotones.style.backgroundColor = 'white';
