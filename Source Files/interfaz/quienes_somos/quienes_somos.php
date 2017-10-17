@@ -435,7 +435,7 @@ session_start();
 			</div>
 		</div>
 	</div>
-<!-- Script para abrir texto y cerrarlo por cada imagen -->
+<!-- Script para cambiar por clicks el submenú -->
 <script>
 $(document).ready(function(){
     $(".nav-tabs a").click(function(){
