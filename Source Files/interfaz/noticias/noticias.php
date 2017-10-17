@@ -24,7 +24,7 @@ session_start();
 <script type="text/javascript" src="../../javascript/noticiasTema.js"></script>
 <script src="../../javascript/main.js"></script>
 </head>
-<body style="text-align: justify;">
+<body style="text-align: justify;" id='body'>
 	<header>
 		<div class="container">
 			<nav class="navbar navbar-default">
