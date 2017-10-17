@@ -53,7 +53,7 @@ session_start();
                                 <li>
 								<button type="button" class="btn btn-link" data-toggle="modal"
 									data-target="#myModal">
-									<span class="glyphicon glyphicon-log-in"></span> Iniciar sesion
+									<span class="glyphicon glyphicon-log-in"></span> Iniciar sesión
 								</button>
 							</li>
                         <?php } ?>
@@ -79,7 +79,7 @@ session_start();
 								<div class="modal-body">
 									<form name="encuesta" action="validacion.php" method="POST"
 										onsubmit="return enviar()">
-										<label for="input">Correo electronico:</label><br> <input
+										<label for="input">Correo electrónico:</label><br> <input
 											type="text" class="form-control" name="correo" id="correo"
 											onKeyPress="return comprobarArroba(event)"
 											required="required" /><br> <label for="input">Contraseña: </label><br>

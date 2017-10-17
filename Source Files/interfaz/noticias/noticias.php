@@ -56,7 +56,7 @@ session_start();
                                 <li>
 							<button type="button" class="btn btn-link" data-toggle="modal"
 								data-target="#myModal">
-								<span class="glyphicon glyphicon-log-in"></span> Iniciar sesion
+								<span class="glyphicon glyphicon-log-in"></span> Iniciar sesión
 							</button>
 						</li>
                                 <?php
@@ -84,10 +84,10 @@ session_start();
 							<div class="modal-body">
 								<form name="encuesta" action="../inicio/validacion.php"
 									method="POST" onsubmit="return enviar()">
-									<label for="input">Correo electronico:</label><br> <input
+									<label for="input">Correo electrónico:</label><br> <input
 										type="text" class="form-control" name="correo" id="correo"
 										onKeyPress="return comprobarArroba(event)" required="required" /><br>
-									<label for="input">Conraseña: </label><br> <input
+									<label for="input">Contraseña: </label><br> <input
 										type="password" class="form-control" id="clave" name="clave"
 										required="required" />
 									<div class="checkbox">
@@ -133,7 +133,7 @@ if ($_SESSION == true) {
 
 								<div class="modal-body">
 									<form action="enviar_noticias.php" method="POST">
-										<label for="titulo">Titulo:</label> <input type="text"
+										<label for="titulo">Título:</label> <input type="text"
 											class="form-control" id="titulo" name="titulo" required="required"> <label for="comment">Cuerpo:</label>
 										<textarea class="form-control" rows="10" id="textoNoticia" name="textoNoticia" required="required"></textarea>
 
@@ -185,7 +185,7 @@ if ($_SESSION == true) {
 
 								<div class="modal-body">
 									<form action="enviar_noticias.php" method="POST">
-										<label for="titulo">Titulo:</label> <input type="text"
+										<label for="titulo">Título:</label> <input type="text"
 											class="form-control" id="titulo" name="titulo" required="required"> <label for="comment">Cuerpo:</label>
 										<textarea class="form-control" rows="10" id="textoNoticia" name="textoNoticia" required="required"></textarea>
 

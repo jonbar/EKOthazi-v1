@@ -57,7 +57,7 @@ session_start();
                                 <li>
 								<button type="button" class="btn btn-link" data-toggle="modal"
 									data-target="#myModal">
-									<span class="glyphicon glyphicon-log-in"></span> Iniciar sesion
+									<span class="glyphicon glyphicon-log-in"></span> Iniciar sesión
 								</button>
 							</li>
                                 <?php
@@ -85,10 +85,10 @@ session_start();
 								<div class="modal-body">
 									<form name="encuesta" action="../inicio/validacion.php"
 										method="POST" onsubmit="return enviar()">
-										<label for="input">Correo electronico:</label><br> <input
+										<label for="input">Correo electrónico:</label><br> <input
 											type="text" class="form-control" name="correo" id="correo"
 											onKeyPress="return comprobarArroba(event)"
-											required="required" /><br> <label for="input">Conraseña: </label><br>
+											required="required" /><br> <label for="input">Contraseña: </label><br>
 										<input type="password" class="form-control" id="clave"
 											name="clave" required="required" />
 										<div class="checkbox">
@@ -170,8 +170,9 @@ session_start();
 
 					<div class="google-maps">
 						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7098.94326104394!2d78.0430654485247!3d27.172909818538997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1385710909804"
-							width="600" height="450" frameborder="0" style="border: 0"></iframe>
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.3181663370765!2d-2.7279985846537653!3d43.223788488109605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e369c89e00435%3A0xd2362248821fbd45!2sIES+Urritxe+BHI!5e0!3m2!1ses!2ses!4v1508223368251"
+							width="600" height="450" frameborder="0" style="border: 0"
+							allowfullscreen></iframe>
 					</div>
 				</div>
 
@@ -375,7 +376,7 @@ session_start();
 							<p>
 								<b>Gorka Cañon</b>
 							</p>
-							<p>Cuando el último árbol se ha cortado, el último río sea
+							<p>Cuando el último árbol sea cortado, el último río sea
 								envenenado, el último pez pescado, sólo entonces el hombre
 								descubrirá que el dinero no se come.</p>
 						</div>
