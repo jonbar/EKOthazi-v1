@@ -117,7 +117,7 @@ session_start();
     echo '<br>';
     echo $row['cuerpo'];
     if ($row['imagen1'] != 'NULL') {
-        echo "<img src='" . $row['imagen1'] . "' class='media-object imagenNoticia' style='width: 500px; margin: auto'>";
+        echo "<img src='" . $row['imagen1'] . "' class='media-object imgInicio' style='width: 500px; margin: auto'>";
     }
     echo '</div>';
     mysqli_free_result($result);
