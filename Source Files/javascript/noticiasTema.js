@@ -17,7 +17,7 @@ function colorNocturno(){
 	}
 function colorNormal(){
 	var body = document.getElementById('body');
-	var fichas = document.getElementsByName('ficha');
+	var fichasNormal = document.getElementsByName('ficha');
 	var divBotones =  document.getElementById('divBotones');
 	var divBotonAdmin =  document.getElementById('divBotonAdmin');
 	var divBotonUser =  document.getElementById('divBotonUser');
@@ -27,8 +27,8 @@ function colorNormal(){
 	divBotonAdmin.style.backgroundColor = 'white';
 	divBotonUser.style.backgroundColor = 'white';
 	
-	for (var j = 0; j < fichas.length; j++){
-		fichas[i].style.backgroundColor = 'white';
-		fichas[i].style.color = 'black';
+	for (var j = 0; j < fichasNormal.length; j++){
+		fichasNormal[i].style.backgroundColor = 'white';
+		fichasNormal[i].style.color = 'black';
 	}
 }
