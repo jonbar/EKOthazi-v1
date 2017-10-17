@@ -455,7 +455,8 @@ $(document).ready(function(){
 		<div class="container-fluid">
 			<div class="row" style="background-color: #E6E6E6;">
 				<div class="col-sm-4">
-					<img src="../../img/logoLargoFooter.png" class="imagenFooter">
+					<img src="../../img/logoLargoFooter.png" class="imgLogoFooter" style="width:100%;
+    max-width:300px;">
 				</div>
 				<div class="col-sm-3">
 					<h4 style="color: 7ac043;">Información</h4>
