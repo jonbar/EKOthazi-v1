@@ -102,12 +102,13 @@ session_start();
 			</nav>
 		</div>
 	</header>
-	<div class="container">
+	
 		<div class="row">
+		<div class="container">
 		<div class='media well' style='background-color: white; text-align: center'>
 			<div class='container'>
-			<button onclick="colorNocturno()">Modo Nocturno</button>
- 			<button onclick="colorNormal()" >Modo normal</button>
+				<button onclick="colorNocturno()">Modo Nocturno</button>
+ 				<button onclick="colorNormal()" >Modo normal</button>
  			</div>
 		</div>
 			<?php
