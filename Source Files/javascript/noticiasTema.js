@@ -6,11 +6,12 @@ function colorNocturno(){
 		var divBotonUser =  document.getElementById('divBotonUser');
 
 		for (var i = 0; i < fichas.length; i++){
+			fichas[i].style.backgroundColor = 'black';
 			body.style.backgroundColor = 'gray';
 			divBotones.style.backgroundColor = 'gray';
 			divBotonAdmin.style.backgroundColor = 'gray';
 			divBotonUser.style.backgroundColor = 'gray';
-			fichas[i].style.backgroundColor = 'black';
+			
 			fichas[i].style.color = 'white';
 		}
 	}
