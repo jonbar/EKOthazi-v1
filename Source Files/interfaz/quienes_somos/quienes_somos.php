@@ -2,29 +2,25 @@
 <head>
 <?php
 session_start();
-
 ?>
 <title>Quienes somos</title>
-<meta charset="utf-8">
 
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="../../css/galeria.css"
-	media="screen" />
-<link rel="stylesheet" type="text/css" href="../../css/inicio.css"
-	media="screen" />
-<link rel="stylesheet" type="text/css" href="../../css/general.css"
-	media="screen" />
-<link rel="stylesheet" type="text/css"
-	href="../../css/quienes_somos.css" media="screen" />
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../../css/galeria.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="../../css/inicio.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="../../css/general.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="../../css/quienes_somos.css" media="screen" />
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="../../javascript/quienes_somos.js"></script>
 </head>
+
 <body style="text-align: justify;">
+
 	<header>
 		<div class="container">
 			<nav class="navbar navbar-default">
@@ -36,6 +32,9 @@ session_start();
 					<div class="container-fluid">
 						<ul class="nav navbar-nav navbar-right">
 						<?php
+	/*
+	 * Comprobación de sesión iniciada
+	 */
     if ($_SESSION == true) {
         $link = mysqli_connect('127.0.0.1:51032', 'talde1', 'admin', 'ekothazi');
         
@@ -47,32 +46,32 @@ session_start();
         $row = mysqli_fetch_array($result);
         echo 'Hola, ' . $row['nombre'] . ' ' . $row['apellido'];
         ?>  
-                                <a href="../inicio/logout.php"> <span
-								class="glyphicon glyphicon-log-out"></span>
-							</a>
+        <a href="../inicio/logout.php">
+        <span class="glyphicon glyphicon-log-out"></span>
+		</a>
 
-                                <?php
+	<?php
     } else {
         ?>
-                                <li>
-								<button type="button" class="btn btn-link" data-toggle="modal"
-									data-target="#myModal">
-									<span class="glyphicon glyphicon-log-in"></span> Iniciar sesión
-								</button>
-							</li>
-                                <?php
+         <li>
+			<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">
+				<span class="glyphicon glyphicon-log-in"></span> Iniciar sesión
+			</button>
+		</li>
+ 	 <?php
     }
-    ?>
+        ?>
 							
-						</ul>
-						<ul class="nav navbar-nav navbar-right" style="margin-top: 75px;">
-							<li><a href="../inicio/inicio.php">INICIO</a></li>
-							<li class="active"><a href="#">QUIENES SOMOS</a></li>
-							<li><a href="../noticias/noticias.php">NOTICIAS</a></li>
-							<li><a href="../productos/productos.php">PRODUCTOS</a></li>
-						</ul>
-					</div>
-					<div class="modal fade" id="myModal" role="dialog">
+		</ul>
+		<ul class="nav navbar-nav navbar-right" style="margin-top: 75px;">
+			<li><a href="../inicio/inicio.php">INICIO</a></li>
+			<li class="active"><a href="#">QUIENES SOMOS</a></li>
+			<li><a href="../noticias/noticias.php">NOTICIAS</a></li>
+			<li><a href="../productos/productos.php">PRODUCTOS</a></li>
+		</ul>
+		</div>
+		
+		<div class="modal fade" id="myModal" role="dialog">
 						<div class="modal-dialog">
 
 							<!-- Modal content-->
@@ -105,6 +104,7 @@ session_start();
 		</div>
 	</header>
 
+    <!-- Cuerpo que se divide en 4 apartados, por defecto "Donde encontrarnos" el activo -->
 	<div class="container">
 		<ul class="nav nav-tabs">
 			<li class="active"><a class="menuQuienesSomos" href="#home">Donde
@@ -115,28 +115,33 @@ session_start();
 		</ul>
 
 		<div class="tab-content">
+		
+		<!-- DONDE ENCONTRARNOS -->
 			<div id="home" class="tab-pane fade in active">
-
 				<br>
-
+				
+				<!-- Info de la tienda -->
 				<div class="col-sm-5" style="margin-top: 30px">
 					<p>
 						<span class="glyphicon glyphicon-map-marker"></span> Urritxe Kalea
 						13,<br> 48340 Amorebieta-Etxano, Vizcaya.
 					</p>
+					
 					<p>
 						<span class="glyphicon glyphicon-phone"></span> +946 82 94 65
 					</p>
+					
 					<p>
 						<span class="glyphicon glyphicon-envelope"></span>
 						ethazitalde1@gmail.com
 					</p>
+					
 					<p>
 						<span class="glyphicon glyphicon-time"></span></br> </br> - Lunes
 						a Viernes: 9:00 a 14:30 y 16:30 a 20:30 </br> - Sábado: 9:00 a
 						14:00
 					</p>
-
+                <!-- Formulario de contacto -->
 					<h4 style="margin-top: 35px; color: green">Contacta con nosotros</h4>
 
 					<div class="row">
@@ -164,10 +169,7 @@ session_start();
 					</div>
 
 				</div>
-
-
-				
-
+                <!-- Widget de Google maps -->
 					<div class="google-maps">
 						<iframe
 							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.3181663370765!2d-2.7279985846537653!3d43.223788488109605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e369c89e00435%3A0xd2362248821fbd45!2sIES+Urritxe+BHI!5e0!3m2!1ses!2ses!4v1508223368251"
@@ -175,13 +177,12 @@ session_start();
 							allowfullscreen></iframe>
 					</div>
 				
-
-
-
-
 			</div>
+			
+				<!-- ÚLTIMOS PROYECTOS -->
 			<div id="menu1" class="tab-pane fade">
 				<div>
+					<!-- 1º Proyecto, insertado slideshow con 3 imágenes -->
 					<h3 style="color: green">Huertos ecológicos en Urritxe,
 						Amorebieta-Etxano</h3>
 					<div class="slideshow-container">
@@ -211,6 +212,7 @@ session_start();
 
 					</div>
 				</div>
+				<!-- Script del slider, transiciones -->
 				<script>
                     var slideIndex = 1;
                     showSlides(slideIndex);
@@ -239,8 +241,8 @@ session_start();
                       dots[slideIndex-1].className += " active";
                     }
                     </script>
-				<h3 style="color: green">Nueva tienda ecológica en Zubiaurre,
-					Iurreta</h3>
+                 <!-- 2º Proyecto, insertados 4 apartados texto e imagen -->
+				<h3 style="color: green">Nueva tienda ecológica en Zubiaurre, Iurreta</h3>
 				<div class="row">
 					<div class="column">
 						<div class="content">
@@ -285,14 +287,12 @@ session_start();
 								bandejas.</p>
 						</div>
 					</div>
-
-
 				</div>
 			</div>
 
-
+        <!-- FILOSOFÍA DE EMPRESA -->
 			<div id="menu2" class="tab-pane fade">
-
+    	<!-- Texto plano, 3 párrafos -->
 				<div style="margin-left: 100px; margin-bottom: 130px;"
 					class="container-fluid">
 					<div class="row content">
@@ -328,18 +328,17 @@ session_start();
 							</ul>
 						</div>
 					</div>
-
 				</div>
 			</div>
-
+			
+            <!-- EQUIPO HUMANO -->
 			<div id="menu3" class="tab-pane fade">
 				<p>
-				
-				
+				<!-- 1º línea de 3 imágenes y parrafos de equipo -->
 				<div class="row" style="margin-top: 50px; text-align: center;">
 					<div class="col-sm-3">
-						<a href="#foto1" data-toggle="collapse"> <img
-							src="../../img/foto1-curriculum.jpg" class="img-circle person"
+						<a href="#foto1" data-toggle="collapse">
+						<img src="../../img/foto1-curriculum.jpg" class="img-circle person"
 							alt="foto1" width="150" height="150">
 						</a>
 						<div id="foto1" class="collapse">
@@ -381,13 +380,10 @@ session_start();
 								descubrirá que el dinero no se come.</p>
 						</div>
 					</div>
-
-
 				</div>
-
 				<p>
 				
-				
+				<!-- 2º línea de 3 imágenes y parrafos de equipo -->
 				<div class="row" style="margin-bottom: 50px; text-align: center">
 
 					<div class="col-sm-3">
@@ -404,7 +400,6 @@ session_start();
 								recicla.</p>
 						</div>
 					</div>
-
 
 					<div class="col-sm-3">
 						<a href="#foto5" data-toggle="collapse"> <img
@@ -429,19 +424,19 @@ session_start();
 							<p>
 								<b>Endika Basabe</b>
 							</p>
-							<p>Biologo profesional, con experiencia en el sector de los
+							<p>Biólogo profesional, con experiencia en el sector de los
 								productos ecológicos preparado para ofrecer la información
 								necesaria a los clientes.</p>
 						</div>
 					</div>
-
 				</div>
 				<p>
 			
 			</div>
 		</div>
 	</div>
-	<script>
+<!-- Script para abrir texto y cerrarlo por cada imagen -->
+<script>
 $(document).ready(function(){
     $(".nav-tabs a").click(function(){
         $(this).tab('show');
@@ -450,13 +445,14 @@ $(document).ready(function(){
 </script>
 
 </body>
+
 <footer>
 	<div class="container">
 		<div class="container-fluid">
 			<div class="row" style="background-color: #E6E6E6;">
 				<div class="col-sm-4">
 					<img src="../../img/logoLargoFooter.png" class="imgLogoFooter" style="width:100%;
-    max-width:300px;">
+                         max-width:300px;">
 				</div>
 				<div class="col-sm-3">
 					<h4 style="color: 7ac043;">Información</h4>
@@ -500,9 +496,6 @@ $(document).ready(function(){
 					EKOthazi S.L. 2005-2017. TODOS LOS DERECHOS RESERVADOS</div>
 			</div>
 		</div>
-
 	</div>
 </footer>
 </html>
-
-
