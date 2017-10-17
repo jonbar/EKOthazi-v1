@@ -1,5 +1,4 @@
 function colorNocturno(){
-	alert('Entra');
 		var body = document.getElementById('body');
 		var fichas = document.getElementsByName('ficha');
 		var color = 'black';
@@ -10,3 +9,13 @@ function colorNocturno(){
 			fichas[i].style.color = 'white';
 		}
 	}
+function colorNormal(){
+	var body = document.getElementById('body');
+	var fichas = document.getElementsByName('ficha');
+
+	for (var i = 0; i < fichas.length; i++){
+		body.style.backgroundColor = 'white';
+		fichas[i].style.backgroundColor = 'white';
+		fichas[i].style.color = 'black';
+	}
+}

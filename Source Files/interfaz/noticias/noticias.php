@@ -108,7 +108,7 @@ session_start();
 		<div class='media well' style='background-color: white; text-align: center'>
 			<div class='container'>
 			<button onclick="colorNocturno()">Modo Nocturno</button>
- 			<button onclick="alerta()" >Modo normal</button>
+ 			<button onclick="colorNormal()" >Modo normal</button>
  			</div>
 		</div>
 			<?php
