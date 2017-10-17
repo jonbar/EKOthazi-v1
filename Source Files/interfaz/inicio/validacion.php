@@ -18,7 +18,9 @@ if ($conexion->connect_error) {
 
 $correo = $_POST['correo'];
 $contrasena = $_POST['clave'];
-
+/*
+ * Se recoge usuario que coincida contraseña y email en BBDD
+ */
 $sql = "SELECT * FROM $tbl_name WHERE email = '$correo'";
 
 $result = $conexion->query($sql);
