@@ -104,8 +104,8 @@ session_start();
 	</header>
 	<div class="container">
 		<div class="row">
-		<div class='media well' style='background-color: white; text-align: center'>
-			<div class='container'>
+		<div class='container'>
+			<div class='media well' style='background-color: white; text-align: center' id="divBotones">
 				<button onclick="colorNocturno()">Modo Nocturno</button>
  				<button onclick="colorNormal()" >Modo normal</button>
  			</div>
