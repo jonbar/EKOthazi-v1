@@ -1,11 +1,11 @@
 <html>
-
 <head>
 <?php
 session_start();
-
 ?>
+
 <title>Productos</title>
+
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 
 <link rel="stylesheet" href="../../css/productos.css">
@@ -28,8 +28,10 @@ session_start();
 					</div>
 					<div class="container-fluid">
 						<ul class="nav navbar-nav navbar-right" style="font-family: verdana">
-						<?php
-	
+<?php
+	/*
+	 * Comprobación de sesión iniciada
+	 */
     if ($_SESSION == true) {
         $link = mysqli_connect('127.0.0.1:51032', 'talde1', 'admin', 'ekothazi');
         
@@ -40,34 +42,34 @@ session_start();
         
         $row = mysqli_fetch_array($result);
         echo 'Hola, ' . $row['nombre'] . ' ' . $row['apellido'];
-        ?>
-                                <a href="../inicio/logout.php"> <span
-								class="glyphicon glyphicon-log-out"></span>
-							</a>
+?>
+        <a href="../inicio/logout.php">
+			<span class="glyphicon glyphicon-log-out"></span>
+		</a>
                                 
-                               
-                                <?php
+ <?php
     } else {
-        ?>
-                                <li>
-								<button type="button" class="btn btn-link" data-toggle="modal"
-									data-target="#myModal" style="font-family: verdana">
-									<span class="glyphicon glyphicon-log-in"></span> Iniciar sesión
-								</button>
-							</li>
-                                <?php
+ ?>
+        <li>
+			<button type="button" class="btn btn-link" data-toggle="modal"
+					data-target="#myModal" style="font-family: verdana">
+			<span class="glyphicon glyphicon-log-in"></span> Iniciar sesión
+			</button>
+		</li>
+ <?php
     }
-    ?>
+?>
 							
-						</ul>
-						<ul class="nav navbar-nav navbar-right" style="margin-top: 75px; font-family: verdana">
-							<li><a href="../inicio/inicio.php">INICIO</a></li>
-							<li><a href="../quienes_somos/quienes_somos.php">QUIENES SOMOS</a></li>
-							<li ><a href="../noticias/noticias.php">NOTICIAS</a></li>
-							<li class="active"><a href="#">PRODUCTOS</a></li>
-						</ul>
-					</div>
-					<div class="modal fade" id="myModal" role="dialog">
+		</ul>
+		<ul class="nav navbar-nav navbar-right" style="margin-top: 75px; font-family: verdana">
+			<li><a href="../inicio/inicio.php">INICIO</a></li>
+			<li><a href="../quienes_somos/quienes_somos.php">QUIENES SOMOS</a></li>
+			<li ><a href="../noticias/noticias.php">NOTICIAS</a></li>
+			<li class="active"><a href="#">PRODUCTOS</a></li>
+		</ul>
+	</div>
+	
+	<div class="modal fade" id="myModal" role="dialog">
 						<div class="modal-dialog">
 
 							<!-- Modal content-->
@@ -100,6 +102,7 @@ session_start();
 			</nav>
 		</div>
 	</header>
+	
 	<div class="container mantenimientoProductos">
 		<div class="imagenMantenimiento">
 			<img src="../../img/maintenanceicon.png" alt="" />
@@ -112,6 +115,7 @@ session_start();
 			<p class="textoMantenimiento">¡Volvemos en breve!</p>
 		</div>
 	</div>
+
 	<footer>
 		<div class="container">
 			<div class="container-fluid">
@@ -132,10 +136,11 @@ session_start();
 					<div class="col-sm-3">
 						<h4 style="color: 7ac043">Conócenos</h4>
 						<ul>
-							<a href="../quienes_somos/quienes_somos.php"
-								style="color: 7ac043"><li>Contacto</a>
+							<li>
+							<a href="../quienes_somos/quienes_somos.php" style="color: 7ac043">Contacto</a>
 							</li>
-							<a href="../noticias/noticias.php" style="color: 7ac043"><li>Blog</a>
+							<li>
+							<a href="../noticias/noticias.php" style="color: 7ac043">Blog</a>
 							</li>
 						</ul>
 					</div>
