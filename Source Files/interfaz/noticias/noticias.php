@@ -105,9 +105,11 @@ session_start();
 	</header>
 	<div class="container">
 		<div class="row">
-		<div class='container' style='background-color: white; text-align: center'>
+		<div class='media well' style='background-color: white; text-align: center'>
+			<div class='container'>
 			<button onclick="colorNocturno()">Modo Nocturno</button>
  			<button onclick="alerta()" >Modo normal</button>
+ 			</div>
 		</div>
 			<?php
 if ($_SESSION == true) {
