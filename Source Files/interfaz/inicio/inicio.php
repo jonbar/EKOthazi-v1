@@ -27,7 +27,7 @@ session_start();
 		<div class="container">
 			<nav class="navbar navbar-default">
 				<div class="container-fluid">
-					<div class="col-sm-7" style="background-color: red">
+					<div class="col-sm-6" style="background-color: red">
 						<a href="../inicio/inicio.php"><img src="../../img/logo largo.png"
 							style="width: 100%; max-width: 400px"></a>
 					</div>
