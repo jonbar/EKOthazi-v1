@@ -145,14 +145,14 @@ session_start();
 					<h4 style="margin-top: 35px; color: green">Contacta con nosotros</h4>
 
 					<div class="row">
-						<form action="envio_mensaje.php" method="POST">
+						<form action="envio_mensaje.php" method="POST" onsubmit="return enviar()">
 							<div class="col-sm-5 form-group">
 								<input class="form-control" id="nombre" name="nombre"
 									placeholder="Nombre" type="text" required>
 							</div>
 							<div class="col-sm-7 form-group">
 								<input class="form-control" id="email" name="email"
-									placeholder="Correo electrónico" type="email" required>
+									placeholder="Correo electrónico" type="email" onKeyPress="return comprobarArroba(event)" required>
 							</div>
 
 							<textarea class="form-control" id="comentario"

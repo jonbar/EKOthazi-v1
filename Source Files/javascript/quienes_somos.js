@@ -40,3 +40,44 @@ function initMap() {
     infowindow.open(map, marker);
   });
 }
+
+
+//validacion 
+function enviar() {
+
+	if (validarEmail() && comprobarArroba()) {
+		return true;
+	} else {
+		return false;
+	}
+}
+function validarEmail() {
+	var email = document.quienes_somos.email.value;
+	if (/\w+@\w+.\w+/.test(email)) {
+		// alert("La dirección de email " + email + " es correcta.");
+		return true;
+	} else {
+		alert("La dirección de email es incorrecta.");
+		return false;
+	}
+}
+function comprobarArroba(e) {
+    var caracterTecla;
+    var codigoTecla;
+
+    if (window.event){ //IE8 and earlier
+        codigoTecla = e.keyCode;
+    }else if (e.which){ // IE9/Firefox/Chrome/Opera/Safari
+        codigoTecla = e.which;
+        }
+    
+    caracterTecla = String.fromCharCode(codigoTecla);
+
+    if (caracterTecla == "@") {              //Solo una @
+        if (document.quienes_somos.email.value.indexOf('@') >= 0) {
+            return false;
+        }else{
+        	return true;
+        }
+    } 
+ }
