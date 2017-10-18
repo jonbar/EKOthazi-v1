@@ -87,7 +87,7 @@ session_start();
 										method="POST" onsubmit="return enviar()">
 										<label for="input">Correo electrónico:</label><br> <input
 											type="text" class="form-control" name="correo" id="correo"
-											onKeyPress="return comprobarArrobaComentario(event)"
+											onKeyPress="return comprobarArroba(event)"
 											required="required" /><br> <label for="input">Contraseña: </label><br>
 										<input type="password" class="form-control" id="clave"
 											name="clave" required="required" />

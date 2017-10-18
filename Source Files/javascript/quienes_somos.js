@@ -61,7 +61,7 @@ function validarEmail() {
 		return false;
 	}
 }
-function comprobarArrobaComentario(e) {
+function comprobarArroba(e) {
     var caracterTecla;
     var codigoTecla;
 
