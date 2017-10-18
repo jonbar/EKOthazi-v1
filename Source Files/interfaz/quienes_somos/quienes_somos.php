@@ -86,7 +86,7 @@ session_start();
 									<form name="encuesta" action="../inicio/validacion.php"
 										method="POST" onsubmit="return enviar()">
 										<label for="input">Correo electrónico:</label><br> <input
-											type="email" class="form-control" name="correo" id="correo"
+											type="text" class="form-control" name="correo" id="correo" onKeyPress="return comprobarArroba(event)"
 											required="required" /><br> <label for="input">Contraseña: </label><br>
 										<input type="password" class="form-control" id="clave"
 											name="clave" required="required" />
@@ -152,7 +152,7 @@ session_start();
 							</div>
 							<div class="col-sm-7 form-group">
 								<input class="form-control" id="email" name="email"
-									placeholder="Correo electrónico" type="text" onKeyPress="return comprobarArroba(event)" required>
+									placeholder="Correo electrónico" type="email"  required>
 							</div>
 
 							<textarea class="form-control" id="comentario"
