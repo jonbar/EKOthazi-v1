@@ -152,7 +152,7 @@ session_start();
 							</div>
 							<div class="col-sm-7 form-group">
 								<input class="form-control" id="email" name="email"
-									placeholder="Correo electrónico" type="email" onKeyPress="return comprobarArroba(event)" required>
+									placeholder="Correo electrónico" type="text" onKeyPress="return comprobarArroba(event)" required>
 							</div>
 
 							<textarea class="form-control" id="comentario"
