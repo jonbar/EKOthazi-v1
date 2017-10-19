@@ -62,7 +62,7 @@ session_start();
  	 <?php
     }
         ?>
-							
+		<!-- Comienzo de header -->					
 		</ul>
 		<ul class="nav navbar-nav navbar-right" style="margin-top: 75px;">
 			<li><a href="../inicio/inicio.php">INICIO</a></li>

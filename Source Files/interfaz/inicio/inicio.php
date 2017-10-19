@@ -6,19 +6,19 @@ session_start();
 
 ?>
 <title>Inicio</title>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../../css/inicio.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="../../css/general.css" media="screen" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="../../javascript/main.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="../../css/inicio.css"
-	media="screen" />
-<link rel="stylesheet" type="text/css" href="../../css/general.css"
-	media="screen" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="main.js"></script>
 
 </head>
 <body style="text-align: justify;">
@@ -33,7 +33,10 @@ session_start();
 					</div>
 					<div class="container-fluid">
 						<ul class="nav navbar-nav navbar-right">
-						<?php
+	<?php
+	/*
+	 * Comprobación de sesión iniciada
+	 */
     if ($_SESSION == true) {
         $link = mysqli_connect('127.0.0.1:51032', 'talde1', 'admin', 'ekothazi');
         
@@ -128,6 +131,7 @@ session_start();
 						<?php
     if ($_SESSION == false) {
         ?>
+                <!-- Botón para el registro en la página -->
 					<button type="button" class="btn btn-info btn-sm"
 						data-toggle="modal" data-target="#myModalRegistro"
 						style="width: 100%; background-color: #5FB404">
@@ -137,13 +141,11 @@ session_start();
 
 					</button>
 
-					<!-- Trigger the modal with a button -->
-
 					<!-- Modal -->
 					<div id="myModalRegistro" class="modal fade" role="dialog">
 						<div class="modal-dialog">
 
-							<!-- Modal content-->
+							<!-- Formulario de registro -->
 							<div class="modal-content">
 								<div class="modal-header">
 									<button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -196,13 +198,14 @@ session_start();
                         $('[data-toggle="tooltip"]').tooltip();   
                     });
                     </script>
-
+                    <!-- Enlace por imagen a la página productos -->
 					<a href="../productos/productos.php" data-toggle="tooltip"
 						title="Ver tienda"> <img src="../../img/ecomarket.png"
 						style="width: 50%">
 					</a>
 				</div>
 				<div>
+					 <!-- Iconos a redes sociales -->
 					<table>
 						<tr>
 							<td><a href="#" data-toggle="tooltip" data-placement="bottom"
@@ -219,7 +222,7 @@ session_start();
 				</div>
 				<div class="row">
 					<div>
-
+						<!--  Widget para mostrar tweetline de #ecologico -->
 						<a class="twitter-timeline"
 							href="https://twitter.com/hashtag/ecologico"
 							data-widget-id="912648408506257408">Tweets sobre #ecologico</a>
@@ -253,10 +256,10 @@ session_start();
 						<h4 style="color: 7ac043">Conócenos</h4>
 						<ul>
 
-							<a href="../quienes_somos/quienes_somos.php"
-								style="color: 7ac043"><li>Contacto</a>
+							<li><a href="../quienes_somos/quienes_somos.php"
+								style="color: 7ac043">Contacto</a>
 							</li>
-							<a href="../noticias/noticias.php" style="color: 7ac043"><li>Blog</a>
+							<li><a href="../noticias/noticias.php" style="color: 7ac043">Blog</a>
 							</li>
 						</ul>
 					</div>
@@ -284,9 +287,5 @@ session_start();
 			</div>
 		</div>
 	</footer>
-	<!--  -->
-	<script type="text/javascript" src="jquery.js"></script>
-	<script type="text/javascript" src="main.js"></script>
-
-</body>
+	</body>
 </html>
